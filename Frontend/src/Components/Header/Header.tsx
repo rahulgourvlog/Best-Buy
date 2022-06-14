@@ -171,7 +171,8 @@ const Header = () => {
                   </button>
 
                   <div className="menuArrow menuArrowActive"></div>
-                  <div className="menu menuActive" title="Deals">
+
+                  {/* <div className="menu menuActive" title="Deals">
                     <div
                       className="menu-main-l1"
                       style={{ maxHeight: "calc(100vh - 160px)" }}
@@ -187,7 +188,7 @@ const Header = () => {
                         Best Buy Outlet
                       </a>
                     </div>
-                  </div>
+                  </div> */}
                 </li>
 
                 <li className="rootMenuItem_Qh9am">
@@ -204,7 +205,8 @@ const Header = () => {
                   </button>
 
                   <div className="menuArrow menuArrowActive"></div>
-                  <div className="menu menuActive" title="Services">
+
+                  {/* <div className="menu menuActive" title="Services">
                     <div
                       className="menu-main-l1"
                       style={{ maxHeight: "calc(100vh - 160px)" }}
@@ -240,7 +242,7 @@ const Header = () => {
                         Electronics Recycling
                       </a>
                     </div>
-                  </div>
+                  </div> */}
                 </li>
               </ul>
             </div>

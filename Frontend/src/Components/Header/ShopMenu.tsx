@@ -5,8 +5,8 @@ const ShopMenu = () => {
     <div className="menu_3LP5u">
       <div
         className="scrollWrapper_YCQ-X"
-        data-automation="menu-main-l1"
-        style="max-height: calc(100vh - 180px);"
+        data-automation="menu-main-l1"     
+        style={{ maxHeight: "calc(100vh - 180px)" }}
       >
         <h2 className="sectionHeader_fRiPg">What's Popular</h2>
         <a
@@ -23,7 +23,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-top-deals-l2"
-            style="max-height: calc(100vh - 180px);"
+            style={{maxHeight: "calc(100vh - 180px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Top Deals</span>
@@ -31,7 +31,7 @@ const ShopMenu = () => {
                 href="/en-ca/collection/shop-all-deals/16074"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -71,7 +71,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-tvs-and-home-theatre-on-sale-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>TVs and Home Theatre On Sale</span>
@@ -79,7 +79,7 @@ const ShopMenu = () => {
                     href="/en-ca/collection/tv-home-theatre-on-sale/16077"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -142,7 +142,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-smart-home-on-sale-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Smart Home On Sale</span>
@@ -150,7 +150,7 @@ const ShopMenu = () => {
                     href="/en-ca/collection/smart-home-on-sale/16089"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -229,7 +229,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-friends-&amp;-family-sale-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Friends &amp; Family Sale</span>
@@ -237,7 +237,7 @@ const ShopMenu = () => {
                 href="https://www.bestbuy.ca/en-ca/event/best-buy-mobile-friends-family-sale/blt63267743b26c2fbf"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -293,7 +293,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-father's-day-gift-ideas-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Father's Day Gift Ideas</span>
@@ -301,7 +301,7 @@ const ShopMenu = () => {
                 href="/en-ca/event/fathers-day-gifts/blt3a2da0deddd7681c"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -378,7 +378,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-play-at-best-buy-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Play at Best Buy</span>
@@ -386,7 +386,7 @@ const ShopMenu = () => {
                 href="/en-ca/event/e3/blt1fb27abab7a6ca3a"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -428,7 +428,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-sunny-summer-selections-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Sunny Summer Selections</span>
@@ -436,7 +436,7 @@ const ShopMenu = () => {
                 href="/en-ca/collection/summer-activities/300105"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -455,7 +455,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-indoor-and-outdoor-cooling-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Indoor and Outdoor Cooling</span>
@@ -463,7 +463,7 @@ const ShopMenu = () => {
                     href="/en-ca/collection/keep-cool-this-summer/402480"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -512,7 +512,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-outdoor-adventure-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Outdoor Adventure</span>
@@ -520,7 +520,7 @@ const ShopMenu = () => {
                     href="/en-ca/collection/summer-outdoors-and-adventure/363409"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -569,7 +569,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-outdoor-living-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Outdoor Living</span>
@@ -577,7 +577,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/outdoor-living/29757"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -640,7 +640,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-outdoor-theatre-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Outdoor Theatre</span>
@@ -648,7 +648,7 @@ const ShopMenu = () => {
                     href="/en-ca/event/outdoor-theatre/blt908f99cab1b95b53"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -699,7 +699,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-best-buy-outlet-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Best Buy Outlet</span>
@@ -707,7 +707,7 @@ const ShopMenu = () => {
                 href="/en-ca/collection/best-buy-outlet/113080"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -786,7 +786,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-computers-tablets-&amp;-accessories-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Computers, Tablets, &amp; Accessories</span>
@@ -794,7 +794,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/computers-tablets/20001"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -813,7 +813,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-laptops-&amp;-macbooks-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Laptops &amp; MacBooks</span>
@@ -821,7 +821,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/laptops-macbooks/20352"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -877,7 +877,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-desktop-computers-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Desktop Computers</span>
@@ -885,7 +885,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/desktop-computers/20213"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -962,7 +962,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-tablets-&amp;-ipads-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Tablets &amp; iPads</span>
@@ -970,7 +970,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/tablets-ipads/30297"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -1012,7 +1012,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-ereaders-&amp;-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>eReaders &amp; Accessories</span>
@@ -1020,7 +1020,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/ereaders/28383"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -1055,7 +1055,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-computer-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Computer Accessories</span>
@@ -1063,7 +1063,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/computer-accessories/20001a"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -1168,7 +1168,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-tablet-&amp;-ipad-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Tablet &amp; iPad Accessories</span>
@@ -1176,7 +1176,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/tablet-ipad-accessories/30317"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -1246,7 +1246,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-hard-drives-&amp;-storage-devices-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Hard Drives &amp; Storage Devices</span>
@@ -1254,7 +1254,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/hard-drives-storage-devices/20232"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -1338,7 +1338,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-pc-components-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>PC Components</span>
@@ -1346,7 +1346,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/pc-components/20374"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -1444,7 +1444,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-wi-fi-and-networking-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Wi-Fi and Networking</span>
@@ -1452,7 +1452,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/wi-fi-and-networking/21099"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -1522,7 +1522,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-printers-scanners-&amp;-fax-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Printers, Scanners &amp; Fax</span>
@@ -1530,7 +1530,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/printers-scanners-fax/20330"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -1607,7 +1607,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-monitors-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Monitors</span>
@@ -1615,7 +1615,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/monitors/20367"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -1664,7 +1664,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-software-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Software</span>
@@ -1672,7 +1672,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/software/21202"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -1772,7 +1772,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-cell-phones-and-accessories-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Cell Phones and Accessories</span>
@@ -1780,7 +1780,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/best-buy-mobile/20006"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -1799,7 +1799,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-cell-phones-&amp;-plans-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Cell Phones &amp; Plans</span>
@@ -1807,7 +1807,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/cell-phones-plans/696304"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -1842,7 +1842,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-unlocked-phones-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Unlocked Phones</span>
@@ -1850,7 +1850,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/unlocked-phones/743355"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -1899,7 +1899,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-prepaid-phones-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Prepaid Phones</span>
@@ -1907,7 +1907,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/prepaid-phones/743456"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -1942,7 +1942,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-cell-phone-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Cell Phone Accessories</span>
@@ -1950,7 +1950,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/cell-phone-accessories/27236"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -2106,7 +2106,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-office-supplies-&amp;-ink-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Office Supplies &amp; Ink</span>
@@ -2114,7 +2114,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/office-supplies-ink/30957"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -2133,7 +2133,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-ink-&amp;-toner-cartridges-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Ink &amp; Toner Cartridges</span>
@@ -2141,7 +2141,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/ink-toner-cartridges/30958"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -2211,7 +2211,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-printers-scanners-&amp;-fax-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Printers, Scanners &amp; Fax</span>
@@ -2219,7 +2219,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/printers-scanners-fax/20330"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -2296,7 +2296,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-pencils-pens-&amp;-markers-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Pencils, Pens &amp; Markers</span>
@@ -2304,7 +2304,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/pencils-pens-markers/447212"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -2395,7 +2395,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-stationery-&amp;-desk-items-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Stationery &amp; Desk Items</span>
@@ -2403,7 +2403,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/stationery-desk-items/35329"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -2501,7 +2501,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-tape-&amp;-adhesives-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Tape &amp; Adhesives</span>
@@ -2509,7 +2509,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/tape-adhesives/34455"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -2565,7 +2565,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-paper-supplies-&amp;-label-makers-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Paper Supplies &amp; Label Makers</span>
@@ -2573,7 +2573,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/paper-supplies-label-makers/30959"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -2657,7 +2657,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-notebooks-&amp;-planners-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Notebooks &amp; Planners</span>
@@ -2665,7 +2665,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/notebooks-planners/35359"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -2749,7 +2749,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-filing-storage-&amp;-binders-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Filing Storage &amp; Binders</span>
@@ -2757,7 +2757,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/filing-storage-binders/35328"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -2841,7 +2841,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-mailing-&amp;-shipping-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Mailing &amp; Shipping</span>
@@ -2849,7 +2849,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/mailing-shipping/34453"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -2898,7 +2898,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-boards-&amp;-presentation-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Boards &amp; Presentation</span>
@@ -2906,7 +2906,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/boards-presentation/35346"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -2969,7 +2969,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-binding-&amp;-laminating-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Binding &amp; Laminating</span>
@@ -2977,7 +2977,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/binding-laminating/35326"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -3026,7 +3026,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-retail-&amp;-business-equipment-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Retail &amp; Business Equipment</span>
@@ -3034,7 +3034,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/retail-business-equipment/31342"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -3090,7 +3090,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-telephones-&amp;-communications-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Telephones &amp; Communications</span>
@@ -3098,7 +3098,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/telephones-communications/21333a"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -3189,7 +3189,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-shredders-&amp;-paper-cutters-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Shredders &amp; Paper Cutters</span>
@@ -3197,7 +3197,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/shredders-paper-cutters/35327"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -3239,7 +3239,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-calculators-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Calculators</span>
@@ -3247,7 +3247,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/calculators/35330"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -3303,7 +3303,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-batteries-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Batteries</span>
@@ -3311,7 +3311,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/batteries/27362"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -3388,7 +3388,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-office-furniture-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Office Furniture</span>
@@ -3396,7 +3396,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/office-furniture/bureau"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -3447,7 +3447,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-tv-&amp;-home-theatre-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>TV &amp; Home Theatre</span>
@@ -3455,7 +3455,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/tv-home-theatre/20003"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -3474,7 +3474,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-televisions-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Televisions</span>
@@ -3482,7 +3482,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/televisions/21344"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -3594,7 +3594,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-projectors-screens-&amp;-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Projectors, Screens &amp; Accessories</span>
@@ -3602,7 +3602,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/projectors-screens-accessories/18980924"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -3679,7 +3679,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-digital-cable-satellite-&amp;-iptv-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Digital Cable, Satellite &amp; IPTV</span>
@@ -3687,7 +3687,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/digital-cable-satellite-iptv/20227"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -3736,7 +3736,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-tv-mounts-&amp;-stands-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>TV Mounts &amp; Stands</span>
@@ -3744,7 +3744,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/tv-mounts-stands/20255"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -3793,7 +3793,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-home-audio-&amp;-theatre-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Home Audio &amp; Theatre</span>
@@ -3801,7 +3801,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/home-audio-theatre/20303"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -3871,7 +3871,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-home-theatre-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Home Theatre Accessories</span>
@@ -3879,7 +3879,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/home-theatre-accessories/22662"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -3965,7 +3965,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-headphones-speakers-&amp;-audio-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Headphones, Speakers, &amp; Audio</span>
@@ -3973,7 +3973,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/audio/659699"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -3992,7 +3992,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-home-audio-&amp;-theatre-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Home Audio &amp; Theatre</span>
@@ -4000,7 +4000,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/home-audio-theatre/20303"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -4070,7 +4070,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-portable-audio-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Portable Audio</span>
@@ -4078,7 +4078,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/portable-audio/23997"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -4134,7 +4134,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-turntables-&amp;-stereo-systems-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Turntables &amp; Stereo Systems</span>
@@ -4142,7 +4142,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/turntables-stereo-systems/12521201"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -4191,7 +4191,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-headphones-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Headphones</span>
@@ -4199,7 +4199,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/headphones/21268"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -4264,7 +4264,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-cameras-&amp;-camcorders-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Cameras &amp; Camcorders</span>
@@ -4272,7 +4272,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/cameras-camcorders/20005"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -4291,7 +4291,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-cameras-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Cameras</span>
@@ -4299,7 +4299,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/cameras/cameras"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -4355,7 +4355,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-action-cameras-&amp;-camcorders-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Action Cameras &amp; Camcorders</span>
@@ -4363,7 +4363,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/action-cameras-camcorders/20042"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -4398,7 +4398,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-camera-&amp;-camcorder-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Camera &amp; Camcorder Accessories</span>
@@ -4406,7 +4406,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/camera-camcorder-accessories/27504"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -4546,7 +4546,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-drones-&amp;-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Drones &amp; Accessories</span>
@@ -4554,7 +4554,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/drones-and-accessories/628634"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -4610,7 +4610,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-security-&amp;-access-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Security &amp; Access</span>
@@ -4618,7 +4618,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/security-access/27483"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -4669,7 +4669,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-car-tech-and-gps-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Car Tech and GPS</span>
@@ -4677,7 +4677,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/car-electronics-gps/20004"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -4696,7 +4696,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-car-cameras-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Car Cameras</span>
@@ -4704,7 +4704,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/car-cameras/484597"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -4739,7 +4739,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-gps-&amp;-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>GPS &amp; Accessories</span>
@@ -4747,7 +4747,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/gps-and-accessories/25133"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -4789,7 +4789,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-car-gadgets-and-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Car Gadgets and Accessories</span>
@@ -4797,7 +4797,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/car-gadgets-and-accessories/18717400"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -4867,7 +4867,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-car-audio-video-and-satellite-radio-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Car Audio, Video and Satellite Radio</span>
@@ -4875,7 +4875,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/car-audio-video-satellite-radio/20098"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -4938,7 +4938,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-car-care-&amp;-auto-parts-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Car Care &amp; Auto Parts</span>
@@ -4946,7 +4946,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/car-care-auto-parts/484639"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -5023,7 +5023,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-marine-&amp;-atv-audio-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Marine &amp; ATV Audio</span>
@@ -5031,7 +5031,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/marine-atv-audio/30877"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -5082,7 +5082,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-appliances-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Appliances</span>
@@ -5090,7 +5090,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/appliances/26517"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -5109,7 +5109,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-major-appliances-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Major Appliances</span>
@@ -5117,7 +5117,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/major-appliances/11962778"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -5187,7 +5187,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-small-kitchen-appliances-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Small Kitchen Appliances</span>
@@ -5195,7 +5195,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/small-kitchen-appliances/26522"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -5300,7 +5300,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-microwaves-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Microwaves</span>
@@ -5308,7 +5308,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/microwaves/20363"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -5350,7 +5350,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-vacuums-&amp;-floor-care-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Vacuums &amp; Floor Care</span>
@@ -5358,7 +5358,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/vacuums-floor-care/21372"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -5435,7 +5435,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-cooling-heating-&amp;-air-quality-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Cooling, Heating &amp; Air Quality</span>
@@ -5443,7 +5443,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/cooling-heating-air-quality/14913342"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -5515,7 +5515,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-smart-home-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Smart Home</span>
@@ -5523,7 +5523,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/smart-home/30438"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -5542,7 +5542,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-smart-speakers-displays-&amp;-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Smart Speakers, Displays &amp; Accessories</span>
@@ -5550,7 +5550,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/smart-speakers-displays-accessories/12751098"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -5592,7 +5592,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-smart-lighting-&amp;-switches-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Smart Lighting &amp; Switches</span>
@@ -5600,7 +5600,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/smart-lighting-switches/653827"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -5642,7 +5642,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-security-&amp;-access-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Security &amp; Access</span>
@@ -5650,7 +5650,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/security-access/27483"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -5699,7 +5699,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-safety-sensors-&amp;-detectors-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Safety Sensors &amp; Detectors</span>
@@ -5707,7 +5707,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/safety-sensors-and-detectors/653841"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -5749,7 +5749,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-heating-cooling-&amp;-water-management-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Heating, Cooling &amp; Water Management</span>
@@ -5757,7 +5757,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/energy-water-management/36596"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -5799,7 +5799,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-smart-garage-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Smart Garage</span>
@@ -5807,7 +5807,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/smart-garage/10312849"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -5872,7 +5872,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-home-living-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Home Living</span>
@@ -5880,7 +5880,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/home-living/homegardentools"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -5899,7 +5899,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-furniture-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Furniture</span>
@@ -5907,7 +5907,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/furniture/furniture"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -5977,7 +5977,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-outdoor-living-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Outdoor Living</span>
@@ -5985,7 +5985,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/outdoor-living/29757"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -6048,7 +6048,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-kitchen-&amp;-dining-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Kitchen &amp; Dining</span>
@@ -6056,7 +6056,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/kitchen-dining/30501"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -6133,7 +6133,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-bedding-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Bedding</span>
@@ -6141,7 +6141,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/bedding/29937"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -6232,7 +6232,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-bathroom-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Bathroom</span>
@@ -6240,7 +6240,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/bathroom/818176"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -6289,7 +6289,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-home-décor-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Home Décor</span>
@@ -6297,7 +6297,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/home-decor/31700"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -6416,7 +6416,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-lighting-&amp;-lamps-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Lighting &amp; Lamps</span>
@@ -6424,7 +6424,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/lighting-lamps/32447"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -6508,7 +6508,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-tools-&amp;-hardware-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Tools &amp; Hardware</span>
@@ -6516,7 +6516,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/tools-hardware/31699"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -6607,7 +6607,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-household-cleaning-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Household Cleaning</span>
@@ -6615,7 +6615,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/household-cleaning/34947"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -6657,7 +6657,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-pets-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Pets</span>
@@ -6665,7 +6665,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/pets/31702"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -6758,7 +6758,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-baby-&amp;-maternity-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Baby &amp; Maternity</span>
@@ -6766,7 +6766,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/baby-maternity/881392"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -6785,7 +6785,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-strollers-car-seats-&amp;-travel-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Strollers, Car Seats &amp; Travel</span>
@@ -6793,7 +6793,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/strollers-car-seats-travel/34587"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -6856,7 +6856,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-nursery-furniture-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Nursery Furniture</span>
@@ -6864,7 +6864,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/nursery-furniture/34620"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -6955,7 +6955,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-nursing-&amp;-feeding-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Nursing &amp; Feeding</span>
@@ -6963,7 +6963,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/nursing-feeding/32203"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7026,7 +7026,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-baby-health-&amp;-safety-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Baby Health &amp; Safety</span>
@@ -7034,7 +7034,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/baby-health-safety/32200"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7104,7 +7104,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-crib-bedding-&amp;-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Crib Bedding &amp; Accessories</span>
@@ -7112,7 +7112,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/crib-bedding-accessories/34617"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7168,7 +7168,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-nursery-décor-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Nursery Décor</span>
@@ -7176,7 +7176,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/nursery-decor/34623"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7232,7 +7232,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-kids-room-&amp;-toddler-furniture-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Kids Room &amp; Toddler Furniture</span>
@@ -7240,7 +7240,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/kids-room-toddler-furniture/623581"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7324,7 +7324,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-baby-clothes-shoes-&amp;-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Baby Clothes, Shoes &amp; Accessories</span>
@@ -7332,7 +7332,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/baby-clothes-shoes-accessories/35446"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7395,7 +7395,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-bath-potty-&amp;-diapering-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Bath, Potty &amp; Diapering</span>
@@ -7403,7 +7403,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/bath-potty-diapering/34589"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7459,7 +7459,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-maternity-clothes-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Maternity Clothes</span>
@@ -7467,7 +7467,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/maternity-clothes/31097"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7523,7 +7523,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-baby-gifts-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Baby Gifts</span>
@@ -7531,7 +7531,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/baby-gifts/33399"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7582,7 +7582,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-video-games-&amp;-vr-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Video Games &amp; VR</span>
@@ -7590,7 +7590,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/video-games/26516"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -7609,7 +7609,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-playstation-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>PlayStation</span>
@@ -7617,7 +7617,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/playstation/621715"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7659,7 +7659,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-nintendo-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Nintendo</span>
@@ -7667,7 +7667,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/nintendo/621915"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7716,7 +7716,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-xbox-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Xbox</span>
@@ -7724,7 +7724,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/xbox/621746"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7780,7 +7780,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-virtual-reality-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Virtual Reality</span>
@@ -7788,7 +7788,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/virtual-reality/1269307"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7823,7 +7823,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-video-games-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Video Games</span>
@@ -7831,7 +7831,7 @@ const ShopMenu = () => {
                     href="/en-ca/collection/video-games/294126"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7887,7 +7887,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-pc-gaming-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>PC Gaming</span>
@@ -7895,7 +7895,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/pc-gaming/21132"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -7958,7 +7958,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-video-game-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Video Game Accessories</span>
@@ -7966,7 +7966,7 @@ const ShopMenu = () => {
                     href="/en-ca/collection/gaming-accessories/30052"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -8001,7 +8001,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-retro-gaming-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Retro Gaming</span>
@@ -8009,7 +8009,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/retro-gaming/34328"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -8051,7 +8051,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-toys-to-life-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Toys to Life</span>
@@ -8059,7 +8059,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/toys-to-life/34419"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -8117,7 +8117,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-wearable-technology-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Wearable Technology</span>
@@ -8125,7 +8125,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/wearable-technology/34444"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -8144,7 +8144,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-smartwatches-&amp;-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Smartwatches &amp; Accessories</span>
@@ -8152,7 +8152,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/smartwatches-accessories/661054"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -8187,7 +8187,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-apple-watch-&amp;-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Apple Watch &amp; Accessories</span>
@@ -8195,7 +8195,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/apple-watch-and-accessories/604402"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -8230,7 +8230,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-fitness-tracking-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Fitness Tracking</span>
@@ -8238,7 +8238,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/fitness-tracking/34445"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -8324,7 +8324,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-health-&amp;-fitness-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Health &amp; Fitness</span>
@@ -8332,7 +8332,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/health-fitness/882185"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -8351,7 +8351,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-health-tech-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Health Tech</span>
@@ -8359,7 +8359,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/health-tech/34684"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -8471,7 +8471,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-cardio-machines-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Cardio Machines</span>
@@ -8479,7 +8479,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/cardio-machines/cardiotraining"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -8535,7 +8535,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-strength-training-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Strength Training</span>
@@ -8543,7 +8543,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/strength-training/34679"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -8648,7 +8648,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-yoga-gear-&amp;-pilates-equipment-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Yoga Gear &amp; Pilates Equipment</span>
@@ -8656,7 +8656,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/yoga-gear-pilates-equipment/34680"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -8719,7 +8719,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-fitness-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Fitness Accessories</span>
@@ -8727,7 +8727,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/fitness-accessories/34683"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -8799,7 +8799,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-sports-recreation-&amp;-transportation-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Sports, Recreation, &amp; Transportation</span>
@@ -8807,7 +8807,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/sports-recreation/sportsrecreation"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -8826,7 +8826,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-camping-&amp;-hiking-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Camping &amp; Hiking</span>
@@ -8834,7 +8834,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/camping-hiking/34423"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -8918,7 +8918,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-bicycles-scooters-skateboards-&amp;-gear-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Bicycles, Scooters, Skateboards &amp; Gear</span>
@@ -8926,7 +8926,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/standard-cycling-rolling-skateboarding-gear/19781804"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -8968,7 +8968,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-electric-transportation-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Electric Transportation</span>
@@ -8976,7 +8976,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/electric-transportation/19781810"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -9032,7 +9032,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-sporting-goods-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Sporting Goods</span>
@@ -9040,7 +9040,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/sporting-goods/sportsequipment"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -9145,7 +9145,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-binoculars-monoculars-&amp;-scopes-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Binoculars, Monoculars &amp; Scopes</span>
@@ -9153,7 +9153,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/binoculars-monoculars-scopes/353183"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -9216,7 +9216,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-fishing-&amp;-hunting-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Fishing &amp; Hunting</span>
@@ -9224,7 +9224,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/fishing-hunting/587774"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -9301,7 +9301,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-rec-room-games-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Rec Room Games</span>
@@ -9309,7 +9309,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/rec-room-games/36598"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -9414,7 +9414,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-outdoor-clothing-&amp;-rain-gear-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Outdoor Clothing &amp; Rain Gear</span>
@@ -9422,7 +9422,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/outdoor-clothing-rain-gear/31701"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -9485,7 +9485,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-water-sports-&amp;-boating-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Water Sports &amp; Boating</span>
@@ -9493,7 +9493,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/water-sports-boating/14498385"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -9572,7 +9572,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-movies-&amp;-music-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Movies &amp; Music</span>
@@ -9580,7 +9580,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/movies-music/20002"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -9599,7 +9599,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-movies-&amp;-tv-shows-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Movies &amp; TV Shows</span>
@@ -9607,7 +9607,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/movies-tv-shows/20404"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -9686,7 +9686,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-musical-instruments-&amp;-equipment-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Musical Instruments &amp; Equipment</span>
@@ -9694,7 +9694,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/musical-instruments-equipment/20343"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -9713,7 +9713,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-keyboards-&amp;-digital-pianos-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Keyboards &amp; Digital Pianos</span>
@@ -9721,7 +9721,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/keyboards-digital-pianos/29339"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -9777,7 +9777,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-guitars-&amp;-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Guitars &amp; Accessories</span>
@@ -9785,7 +9785,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/guitars-accessories/29338"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -9876,7 +9876,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-band-&amp;-orchestral-instruments-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Band &amp; Orchestral Instruments</span>
@@ -9884,7 +9884,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/band-orchestral-instruments/17772621"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -9961,7 +9961,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-drums-percussion-&amp;-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Drums, Percussion &amp; Accessories</span>
@@ -9969,7 +9969,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/drums-percussion-accessories/29340"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -10046,7 +10046,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-musical-instrument-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Musical Instrument Accessories</span>
@@ -10054,7 +10054,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/musical-instrument-accessories/20343a"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -10089,7 +10089,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-microphones-recording-equipment-&amp;-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>
@@ -10099,7 +10099,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/microphones-recording-equipment-accessories/17448394"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -10134,7 +10134,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-dj-gear-&amp;-lighting-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>DJ Gear &amp; Lighting</span>
@@ -10142,7 +10142,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/dj-gear-lighting/dj_equipment"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -10200,7 +10200,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-toys-drones-&amp;-education-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Toys, Drones, &amp; Education</span>
@@ -10208,7 +10208,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/toys-drones-education/21361"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -10227,7 +10227,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-drones-&amp;-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Drones &amp; Accessories</span>
@@ -10235,7 +10235,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/drones-and-accessories/628634"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -10291,7 +10291,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-rc-toys-&amp;-vehicles-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>RC Toys &amp; Vehicles</span>
@@ -10299,7 +10299,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/rc-toys-vehicles/22102"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -10362,7 +10362,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-baby-&amp;-kids-toys-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Baby &amp; Kids Toys</span>
@@ -10370,7 +10370,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/baby-kids-toys/34591"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -10468,7 +10468,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-lego-&amp;-building-blocks-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>LEGO &amp; Building Blocks</span>
@@ -10476,7 +10476,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/lego-building-blocks/629277"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -10532,7 +10532,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-science-&amp;-education-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Science &amp; Education</span>
@@ -10540,7 +10540,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/science-education/931331"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -10596,7 +10596,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-board-games-cards-&amp;-puzzles-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Board Games, Cards &amp; Puzzles</span>
@@ -10604,7 +10604,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/board-games-cards-puzzles/22104"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -10653,7 +10653,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-hobby-models-train-&amp;-slot-car-sets-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Hobby Models, Train &amp; Slot Car Sets</span>
@@ -10661,7 +10661,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/hobby-models-train-slot-car-sets/35946"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -10731,7 +10731,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-collectibles-&amp;-memorabilia-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Collectibles &amp; Memorabilia</span>
@@ -10739,7 +10739,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/collectibles-memorabilia/31817"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -10823,7 +10823,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-outdoor-play-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Outdoor Play</span>
@@ -10831,7 +10831,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/outdoor-play/317241"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -10887,7 +10887,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-arts-&amp;-crafts-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Arts &amp; Crafts</span>
@@ -10895,7 +10895,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/arts-crafts/317089"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -10981,7 +10981,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-beauty-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Beauty</span>
@@ -10989,7 +10989,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/beauty/882187"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -11038,7 +11038,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-personal-care-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Personal Care</span>
@@ -11046,7 +11046,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/personal-care/882186"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -11065,7 +11065,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-hair-care-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Hair Care</span>
@@ -11073,7 +11073,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/hair-care/34674"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -11143,7 +11143,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-oral-care-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Oral Care</span>
@@ -11151,7 +11151,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/oral-care/34675"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -11230,7 +11230,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-travel-luggage-&amp;-bags-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Travel, Luggage, &amp; Bags</span>
@@ -11238,7 +11238,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/travel-luggage-bags/31698"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -11257,7 +11257,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-luggage-&amp;-luggage-sets-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Luggage &amp; Luggage Sets</span>
@@ -11265,7 +11265,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/luggage-luggage-sets/31698a"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -11342,7 +11342,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-handbags-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Handbags</span>
@@ -11350,7 +11350,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/handbags/32453"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -11441,7 +11441,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-travel-&amp;-luggage-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Travel &amp; Luggage Accessories</span>
@@ -11449,7 +11449,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/travel-luggage-accessories/31707"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -11528,7 +11528,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-watches-jewelry-&amp;-fashion-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Watches, Jewelry, &amp; Fashion</span>
@@ -11536,7 +11536,7 @@ const ShopMenu = () => {
                 href="/en-ca/category/fashion-watches-jewelry/10159983"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
@@ -11555,7 +11555,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-fashion-accessories-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Fashion Accessories</span>
@@ -11563,7 +11563,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/fashion-accessories/34420"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -11640,7 +11640,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-watches-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Watches</span>
@@ -11648,7 +11648,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/watches/32497"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -11704,7 +11704,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-jewelry-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Jewelry</span>
@@ -11712,7 +11712,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/jewelry/33198"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -11810,7 +11810,7 @@ const ShopMenu = () => {
               <div
                 className="scrollWrapper_YCQ-X"
                 data-automation="menu-costumes-l3"
-                style="max-height: calc(100vh - 160px);"
+                style={{maxHeight: "calc(100vh - 160px)"}}
               >
                 <h2 className="categoryTitle_3E0ay">
                   <span>Costumes</span>
@@ -11818,7 +11818,7 @@ const ShopMenu = () => {
                     href="/en-ca/category/costumes/10159999"
                     className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
                   >
-                    <span className="content_3Qnji" tabindex="-1">
+                    <span className="content_3Qnji" tabIndex={-1}>
                       Shop All
                     </span>
                   </a>
@@ -11883,7 +11883,7 @@ const ShopMenu = () => {
           <div
             className="scrollWrapper_YCQ-X"
             data-automation="menu-gift-cards-l2"
-            style="max-height: calc(100vh - 160px);"
+            style={{maxHeight: "calc(100vh - 160px)"}}
           >
             <h2 className="categoryTitle_3E0ay">
               <span>Gift Cards</span>
@@ -11891,7 +11891,7 @@ const ShopMenu = () => {
                 href="/en-ca/about/gift-cards/blta5578c9ddd209cd8"
                 className="button_1HI1h secondary_3TSqg shopAllBtn_1_RfJ small_1l6e6"
               >
-                <span className="content_3Qnji" tabindex="-1">
+                <span className="content_3Qnji" tabIndex={-1}>
                   Shop All
                 </span>
               </a>
