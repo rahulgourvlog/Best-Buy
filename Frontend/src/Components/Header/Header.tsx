@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import BrandsMenu from "./BrandsMenu";
 import { HeaderDiv } from "./HeaderStyled";
@@ -6,11 +6,34 @@ import Logosvg from "./Logosvg.svg";
 import DownDropDown from "./DownDropDown.svg";
 import UpDropDown from "./UpDropDown.svg";
 import ShopMenu from "./ShopMenu";
+import axios, { AxiosResponse } from "axios";
+
+type Product = {
+  title: string;
+  quantity: number;
+  save_amount: number;
+  price: number;
+  imageUrl: string;
+  sale_End: string;
+};
 
 const Header = () => {
   const [show, setShow] = useState(false);
   const [search, setSearch] = useState("");
   const [active, setActive] = useState("");
+  const [cartData, setCartData] = useState<Product[]>([]);
+
+  const getData = () => {
+    axios
+      .get("http://localhost:8080/cart/")
+      .then((res: AxiosResponse<Product[]>) => {
+        setCartData(res.data);
+      });
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <>
@@ -114,11 +137,11 @@ const Header = () => {
                 </Link>
               </div>
               <div>
-                <Link to="/">
+                <Link to="/Cart">
                   <svg viewBox="0 1 32 32">
                     <path d="M26.8,26.22a1.91,1.91,0,1,1-1.91-1.95h.17a1.72,1.72,0,0,1,1.74,2Zm-15.15,2a2,2,0,1,1,1.9-2A1.93,1.93,0,0,1,11.65,28.17Zm-1.3-8.59h16.1a.91.91,0,0,0,.87-.7L30,7.51a1,1,0,0,0-.17-.78.9.9,0,0,0-.71-.35H10.39a.92.92,0,0,0,0,1.84H28l-2.23,9.53H10.35l-.18,0-3.23-15A.91.91,0,0,0,6.06,2H2.9a.92.92,0,0,0,0,1.83H5.34L8.47,18.39a3.27,3.27,0,0,0,.33,5.45A3.8,3.8,0,0,0,8,26.22a3.7,3.7,0,1,0,7.39,0,3.82,3.82,0,0,0-.55-2h7a3.82,3.82,0,0,0-.54,2,3.7,3.7,0,1,0,7.39,0A3.57,3.57,0,0,0,27.05,23a4,4,0,0,0-2.06-.6H10.35a1.43,1.43,0,0,1,0-2.85Z"></path>
                   </svg>
-                  <span className="counter">1</span>
+                  <span className="counter">{cartData.length}</span>
                   <span className="label">Cart</span>
                 </Link>
               </div>
@@ -151,7 +174,7 @@ const Header = () => {
                     <div
                       className={`menuArrow ${
                         active === "Shop" ? "menuArrowActive" : ""
-                      }`} 
+                      }`}
                     ></div>
                     <div
                       className={`menu ${

@@ -273,13 +273,13 @@ const Footer = () => {
                             className="icon_1Sa2Y icon_6Cowp"
                             viewBox="0 0 24 24"
                           >
-                            <g fill="none" fill-rule="evenodd">
+                            <g fill="none" fillRule="evenodd">
                               <path d="M0 0h24v24H0z"></path>
                               <path
                                 d="M6.6 17.5c0 .504.405.917.9.917h.9v3.208c0 .76.603 1.375 1.35 1.375a1.36 1.36 0 0 0 1.35-1.375v-3.208h1.8v3.208c0 .76.603 1.375 1.35 1.375a1.36 1.36 0 0 0 1.35-1.375v-3.208h.9c.495 0 .9-.413.9-.917V8.333H6.6V17.5zM4.35 8.333A1.36 1.36 0 0 0 3 9.708v6.417c0 .76.603 1.375 1.35 1.375a1.36 1.36 0 0 0 1.35-1.375V9.708a1.36 1.36 0 0 0-1.35-1.375zm15.3 0a1.36 1.36 0 0 0-1.35 1.375v6.417c0 .76.603 1.375 1.35 1.375A1.36 1.36 0 0 0 21 16.125V9.708a1.36 1.36 0 0 0-1.35-1.375zM15.177 2.98l1.17-1.192a.46.46 0 0 0 0-.65.44.44 0 0 0-.639 0l-1.332 1.356A5.178 5.178 0 0 0 12 1.917c-.864 0-1.674.21-2.394.577L8.265 1.137a.44.44 0 0 0-.639 0 .46.46 0 0 0 0 .651L8.805 2.99A5.517 5.517 0 0 0 6.6 7.417h10.8a5.5 5.5 0 0 0-2.223-4.437zM10.2 5.583h-.9v-.916h.9v.916zm4.5 0h-.9v-.916h.9v.916z"
-                                fill-opacity=".87"
+                                fillOpacity=".87"
                                 fill="#000"
-                                fill-rule="nonzero"
+                                fillRule="nonzero"
                               ></path>
                             </g>
                           </svg>
@@ -297,13 +297,13 @@ const Footer = () => {
                             className="icon_1Sa2Y icon_6Cowp"
                             viewBox="0 0 24 24"
                           >
-                            <g fill="none" fill-rule="evenodd">
+                            <g fill="none" fillRule="evenodd">
                               <path d="M0 0h24v24H0z"></path>
                               <path
                                 d="M15.519 4.512c.823-.93 1.374-2.224 1.222-3.512-1.181.04-2.614.737-3.46 1.667-.76.823-1.427 2.14-1.247 3.401 1.318.096 2.665-.627 3.485-1.556M21.63 17.14c-.03.078-.493 1.579-1.627 3.128-.978 1.34-1.995 2.678-3.596 2.704-1.573.028-2.079-.873-3.877-.873-1.8 0-2.362.847-3.85.9-1.545.055-2.723-1.448-3.71-2.783-2.018-2.732-3.557-7.72-1.487-11.085a5.807 5.807 0 0 1 4.86-2.758c1.519-.028 2.95.955 3.878.955.928 0 2.667-1.182 4.497-1.01.765.031 2.915.29 4.297 2.183-.11.065-2.566 1.404-2.54 4.188.032 3.33 3.12 4.437 3.155 4.45"
-                                fill-opacity=".87"
+                                fillOpacity=".87"
                                 fill="#000"
-                                fill-rule="nonzero"
+                                fillRule="nonzero"
                               ></path>
                             </g>
                           </svg>
@@ -370,9 +370,9 @@ const Footer = () => {
                   <g
                     id="logos/social/facebook"
                     stroke="none"
-                    stroke-width="1"
+                    strokeWidth="1"
                     fill="none"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                   >
                     <g id="facebook">
                       <rect
@@ -417,9 +417,9 @@ const Footer = () => {
                   <g
                     id="logos/social/instagram"
                     stroke="none"
-                    stroke-width="1"
+                    strokeWidth="1"
                     fill="none"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                   >
                     <g id="instagram">
                       <rect
@@ -464,9 +464,9 @@ const Footer = () => {
                   <g
                     id="logos/social/linkedin"
                     stroke="none"
-                    stroke-width="1"
+                    strokeWidth="1"
                     fill="none"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                   >
                     <g id="linkedIn">
                       <rect
@@ -511,9 +511,9 @@ const Footer = () => {
                   <g
                     id="logos/social/pinterest"
                     stroke="none"
-                    stroke-width="1"
+                    strokeWidth="1"
                     fill="none"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                   >
                     <g id="pinterest">
                       <rect
@@ -558,9 +558,9 @@ const Footer = () => {
                   <g
                     id="logos/social/twitter"
                     stroke="none"
-                    stroke-width="1"
+                    strokeWidth="1"
                     fill="none"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                   >
                     <g id="twitter">
                       <polygon
@@ -602,9 +602,9 @@ const Footer = () => {
                   <g
                     id="logos/social/youtube"
                     stroke="none"
-                    stroke-width="1"
+                    strokeWidth="1"
                     fill="none"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                   >
                     <g id="youtube">
                       <polygon
