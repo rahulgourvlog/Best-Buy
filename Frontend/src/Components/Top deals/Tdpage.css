@@ -1,0 +1,248 @@
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/* .shop{
+border: 2px solid black;
+height: 100px;
+margin-top: 30px;
+margin-bottom: 30px;
+
+} */
+
+
+.banner{
+    height: 120px;
+    background-image: url("https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt20aea4b7f66ec9ce/61d4c561c548b77c207dd8e6/global-topdeals-20220107-title-bg-xs.jpg?width=150p&quality=80&auto=webp");
+}
+
+.banner>img{
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.infoimg{
+    margin-top: 40px;
+    cursor: pointer;
+}
+.featured{
+    display: flex;
+   gap: 30px;
+
+}
+
+
+
+.deals{
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+.left{
+    width: 20%;
+    /* border: 2px solid black; */
+    height: 800px;
+}
+
+.block{
+    display: block;
+    width: 80%;
+    margin-left: 20%;
+    height: 50px;
+    outline: none;
+}
+
+.featured>div{
+    width: 22.2%;
+    cursor: pointer;
+}
+
+.bottom{
+    margin-left: 24%;
+    margin-top: 8%;
+    width: 60%;
+}
+
+.mapping{
+    height: 400px;
+    width: 230px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.mapping>img{
+    width:100%;
+    height: 200px;
+}
+
+.right{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   line-height: 1;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+/* {
+    "name":"Dyson V8 Animal Cordless Stick Vacuum - Nickel",
+    "rating":3.5,
+    "price":399,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/152/15265/15265629.jpg",
+    "availability":"Available"
+}
+
+{
+    "name":"Belkin SoundForm Mini On-Ear Bluetooth Kids Headphones - Pink",
+    "rating":4.5,
+    "price":29.9,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/153/15325/15325425.jpg",
+    "availability":"Available"
+}
+
+{
+    "name":"GE Smart Portable Air Conditioner - 11000 BTU (SACC 7800 BTU) - White",
+    "rating":4.5,
+    "price":499.9,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/157/15753/15753557.jpg",
+    "availability":"Available"
+}
+
+{
+    "name":"Samsung 58 4K UHD HDR LED Tizen Smart TV (UN58TU7000FXZC) - Titan Grey",
+    "rating":3.5,
+    "price":699.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/144/14469/14469365.jpg",
+    "availability":"Available"
+}
+
+
+{
+    "name":"Lenovo S345 14 Chromebook - Mineral Grey (AMD A6-9220C/64GB/4GB RAM/Chrome OS) - English",
+    "rating":2.5,
+    "price":199.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/160/16011/16011817.jpg",
+    "availability":"Available"
+}
+
+
+{
+    "name":"HP 15.6 Laptop - Jet Black (Intel Pentium Silver N6000/512GB SSD/8GB RAM/Windows 11 Home)",
+    "rating":3.4,
+    "price":299.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/160/16020/16020141.jpg",
+    "availability":"Available"
+}
+
+
+{
+    "name":"Fitbit Inspire 2 Fitness Tracker with 24/7 Heart Rate - Black",
+    "rating":4.4,
+    "price":99.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/148/14882/14882488.jpg",
+    "availability":"Available"
+}
+
+
+{
+    "name":"Samsung Galaxy Buds Pro In-Ear Noise Cancelling Truly Wireless Headphones - Phantom Black - Open Box",
+    "rating":4.4,
+    "price":99.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/153/15396/15396150.jpg",
+    "availability":"Available"
+}
+
+{
+    "name":"Ninja Foodi 6-in-1 Dual Zone Air Fryer - 7.57kg/8Qt - Black",
+    "rating":4.4,
+    "price":179.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/147/14740/14740879.jpg",
+    "availability":"Available"
+}
+
+
+{
+    "name":"Sony WH-CH710N Over-Ear Noise Cancelling Bluetooth Headphones - Black",
+    "rating":3.4,
+    "price":289.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/145/14547/14547097.jpg",
+    "availability":"Available"
+}
+
+
+{
+    "name":"DJI Mini 2 Quadcopter Drone Fly More Combo - Grey - Bilingual",
+    "rating":3.4,
+    "price":289.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/150/15081/15081903.jpg",
+    "availability":"Available"
+}
+
+{
+    "name":"Samsung Galaxy S10 128GB Smartphone - Prism Black - Unlocked - Open Box",
+    "rating":1.4,
+    "price":329.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/136/13645/13645148.jpeg",
+    "availability":"Available"
+}
+
+{
+    "name":"Instant Pot 7-in-1 Duo Electric Pressure Cooker - 6 Qt",
+    "rating":2.4,
+    "price":109.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/103/10384/10384251.jpg",
+    "availability":"Available"
+}
+
+{
+    "name":"Google Nest Cam Wired Outdoor Security Camera with Floodlight",
+    "rating":2.4,
+    "price":269.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/156/15645/15645822.jpg",
+    "availability":"Available"
+}
+
+{
+    "name":"EZ-X Premium Percussion Massage Gun - 30 Speeds - 6 Heads - Extra Quiet - Extra Power - Portable Handheld Deep Tissue Therapy Pain Relief [with Carrying Case]",
+    "rating":3.8,
+    "price":169.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/151/15100/15100783.jpeg",
+    "availability":"Available"
+}
+
+{
+    "name":"Fitbit Charge 5 Fitness Tracker with GPS, Heart Rate, Sleep & 6-Months Premium - Black",
+    "rating":3.6,
+    "price":149.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/156/15666/15666446.jpg",
+    "availability":"Available"
+}
+
+{
+    "name":"ASUS ROG Strix G17 17.3 Gaming Laptop - Grey (AMD Ryzen 7 5800H/512GB SSD/16GB RAM/RTX 3050 Ti)",
+    "rating":3.4,
+    "price":2369.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/157/15799/15799663.jpg",
+    "availability":"Available"
+}
+
+{
+    "name":"Philips Hue A19 Smart Light Starter Kit w/ Hub & Dimmer -3 Pack -White/Colour Ambiance -Only at Best Buy",
+    "rating"42.4,
+    "price":159.99,
+    "img":"https://multimedia.bbycastatic.ca/multimedia/products/250x250/157/15748/15748026.jpg",
+    "availability":"Available"
+} */

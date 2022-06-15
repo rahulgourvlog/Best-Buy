@@ -5,15 +5,17 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
+import Tdpage from "./Components/Top deals/Tdpage";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-      </Routes>
-      <Footer />
+      </Routes> */}
+      <Tdpage/>
+      {/* <Footer /> */}
     </div>
   );
 }
