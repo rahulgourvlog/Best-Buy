@@ -7,13 +7,6 @@ export const HeaderDiv = styled.div`
   z-index: 1050;
   font-family: Human BBY, Arial, sans-serif;
 
-  svg {
-    height: 24px;
-    width: 24px;
-    fill: #fff;
-    padding-right: 8px;
-  }
-
   > div:first-child {
     font-size: 30px;
     color: #fff;
@@ -260,7 +253,7 @@ export const HeaderDiv = styled.div`
     }
   }
 
-  > div:last-child {
+  > .Dropdowns {
     background-color: #003da6;
 
     > div {
@@ -310,7 +303,210 @@ export const HeaderDiv = styled.div`
         border: none;
         display: flex;
         align-items: center;
+
+        > img {
+          height: 24px;
+          width: 24px;
+          padding-right: 8px;
+        }
       }
+    }
+  }
+
+  .menuArrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border: 3px solid transparent;
+    border-bottom-color: #fff;
+    border-width: 8px 10px;
+    z-index: 99999999;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  .menuArrowActive {
+    opacity: 1;
+  }
+
+  .menu {
+    @media (min-width: 1025px) {
+      top: 100%;
+      height: 0;
+      overflow: visible;
+      transform: translateY(-20px);
+      margin-top: 12px;
+      z-index: -1;
+    }
+
+    @media (min-width: 768px) {
+      width: 320px;
+    }
+
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    height: 100%;
+    background-color: #fff;
+    left: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(100vw);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .menuActive {
+    @media (min-width: 1025px) {
+      height: auto;
+      transform: translateY(0);
+    }
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .menu > div {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu > div > .menuLink {
+    margin-top: 8px;
+
+    @media (min-width: 1025px) {
+      width: 100%;
+      padding: 10px 16px 10px 24px;
+      border: none;
+      margin: 0;
+    }
+  }
+
+  .menu .categoryTitle,
+  .menu .menuLink {
+    padding: 14px 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e6ef;
+    color: #1d252c;
+    text-align: left;
+    font-size: 14px;
+    font-family: Human BBY, Arial, sans-serif;
+    line-height: 20px;
+    text-decoration: none;
+  }
+
+  .menuLink:hover {
+    background-color: #f4f6f9;
+    color: #0046be;
+    text-decoration: none;
+  }
+
+  .menu .menuLink {
+    font-weight: 100;
+
+    @media (min-width: 1025px) {
+      width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      width: 320px;
+    }
+  }
+
+  .menuLink {
+    width: 100%;
+    color: #000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 100%;
+    box-sizing: border-box;
+
+    > svg {
+      height: 24px;
+      width: 24px;
+      padding-right: 8px;
+    }
+  }
+
+  .menuInner {
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+
+    @media (min-width: 1025px) {
+      margin-top: 0;
+    }
+    @media (min-width: 1025px) {
+      left: 100%;
+    }
+
+    @media (min-width: 1025px) {
+      border-width: 1px;
+      border-left: 1px solid #e0e6ef;
+    }
+
+    @media (min-width: 768px) {
+      width: 320px;
+    }
+
+    > div {
+      .categoryTitle {
+        margin-top: 8px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0;
+        border: none;
+        width: auto;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        padding: 10px 16px 10px 24px;
+      }
+
+      .sectionHeader {
+        color: #1d252c;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: Human BBY, Arial, sans-serif;
+        padding: 12px 12px 12px 16px;
+      }
+
+      .menuLink {
+        width: 100%;
+        padding: 10px 16px 10px 24px;
+        border: none;
+        margin: 0;
+      }
+    }
+  }
+
+  .menuInnerActive {
+    visibility: visible;
+    opacity: 1;
+    left: 100%;
+
+    > div {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      width: 100%;
+      height: 100%;
     }
   }
 `;
