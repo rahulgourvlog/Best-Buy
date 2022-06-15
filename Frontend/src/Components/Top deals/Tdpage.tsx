@@ -37,6 +37,14 @@ const Tdpage= () => {
         localStorage.setItem("product",JSON.stringify(product))
     }
 
+const filter=(e:any)=>{
+    data.sort((a:any,b:any)=>{
+        return a-b
+    })
+    setData(data)
+
+}
+
     const p=localStorage.getItem("product")
     console.log(p)
    
@@ -85,6 +93,7 @@ const Tdpage= () => {
             <Accordian/>
             </div>
             <div className='right'>
+                <button onClick={((event: React.MouseEvent<HTMLElement>)=>filter)} ></button>
                {data && data.map((e)=>{
                 return (
                     // <div className='main'>
