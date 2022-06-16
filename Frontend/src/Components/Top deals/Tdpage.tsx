@@ -3,9 +3,11 @@ import "./Tdpage.css"
 import axios from "axios";
 import Accordian from "./Accordian"
 import { useNavigate } from 'react-router-dom';
+import {Link} from "react-router-dom"
 
 
 interface Product{
+    _id:string,
     name: string,
     rating:number,
     price: number,
@@ -23,19 +25,12 @@ const Tdpage= () => {
     const navigate=useNavigate()
 
     const products=async()=>{
-        const {data}=await axios.get<Product[]>("/get")
+        const {data}=await axios.get<Product[]>("http://localhost:8080/get")
 
         setData(data)
        
     }
-    const handleClick=(e:any)=>{
-
-        let product:any=[];
-
-        product.push(e)
-
-        localStorage.setItem("product",JSON.stringify(product))
-    }
+  
 
 const filter=(e:any)=>{
     data.sort((a:any,b:any)=>{
@@ -45,8 +40,6 @@ const filter=(e:any)=>{
 
 }
 
-    const p=localStorage.getItem("product")
-    console.log(p)
    
     
     useEffect(()=>{
@@ -96,15 +89,17 @@ const filter=(e:any)=>{
                 <button onClick={((event: React.MouseEvent<HTMLElement>)=>filter)} ></button>
                {data && data.map((e)=>{
                 return (
-                    // <div className='main'>
-                        <div className='mapping' onClick={((event: React.MouseEvent<HTMLElement>)=>handleClick(e))} >
+                   <Link to={`/ProductDetailPage${e._id}`} >
+                    <div className='mapping'  >
                             <img src={e.img} alt="" />
                             <p>{e.name}</p>
                             <h4>{e.rating}</h4>
                             <h3>${e.price}</h3>
                             <p>{e.availability}</p>
                         </div>
-                    // </div>
+                        </Link>
+                       
+                   
                 )
                 
 
