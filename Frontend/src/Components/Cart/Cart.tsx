@@ -65,7 +65,7 @@ const Cart = () => {
         </h1>
       </div>
 
-      {/* {cartData.length === 0 ? (
+      {cartData.length === 0 ? (
         <div className="content">
           <div className="textContainer">
             <h2>Looks like it's empty!</h2>
@@ -106,7 +106,7 @@ const Cart = () => {
                 </div>
               </div>
             </LoadingStyled>
-          ) : ( */}
+          ) : (
             <div className="Cart_info">
               <div className="Cart_info-container">
                 <div className="Cart_info-section">
@@ -549,9 +549,9 @@ const Cart = () => {
                 </div>
               </div>
             </div>
-          {/* )}
+          )}
         </>
-      )} */}
+      )}
     </CartStyled>
   );
 };
