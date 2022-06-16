@@ -22,4 +22,16 @@ cartRoute.post("/new", async (req: express.Request, res: express.Response) => {
   });
 });
 
+cartRoute.delete(
+  "/:_id",
+  async (req: express.Request, res: express.Response) => {
+    try {
+      const cart = await Cart.deleteOne(req.params);
+      res.status(200).send({ message: "item deleted successfully" });
+    } catch (err) {
+      if (err) res.status(404).send({ message: "item not found" });
+    }
+  }
+);
+
 module.exports = cartRoute;

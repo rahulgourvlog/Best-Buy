@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import BrandsMenu from "./BrandsMenu";
 import { HeaderDiv } from "./HeaderStyled";
@@ -7,17 +7,21 @@ import DownDropDown from "./DownDropDown.svg";
 import UpDropDown from "./UpDropDown.svg";
 import ShopMenu from "./ShopMenu";
 import axios, { AxiosResponse } from "axios";
+import { CartCount_Context } from "../../Context/cartCounter";
 
 type Product = {
+  _id: string;
   title: string;
   quantity: number;
   save_amount: number;
   price: number;
   imageUrl: string;
   sale_End: string;
+  protection: boolean;
 };
 
 const Header = () => {
+  const { isChanged } = useContext(CartCount_Context);
   const [show, setShow] = useState(false);
   const [search, setSearch] = useState("");
   const [active, setActive] = useState("");
@@ -28,12 +32,13 @@ const Header = () => {
       .get("http://localhost:8080/cart/")
       .then((res: AxiosResponse<Product[]>) => {
         setCartData(res.data);
-      });
+      })
+      .catch((err) => console.error(err));
   };
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [isChanged]);
 
   return (
     <>
