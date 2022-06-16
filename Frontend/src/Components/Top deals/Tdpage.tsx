@@ -85,8 +85,8 @@ const filter=(e:any)=>{
             <div className='left' >
             <Accordian/>
             </div>
-            <div className='right'>
-                <button onClick={((event: React.MouseEvent<HTMLElement>)=>filter)} ></button>
+               <div className='right'>
+                
                {data && data.map((e)=>{
                 return (
                    <Link to={`/ProductDetailPage${e._id}`} >
@@ -97,13 +97,10 @@ const filter=(e:any)=>{
                             <h3>${e.price}</h3>
                             <p>{e.availability}</p>
                         </div>
-                        </Link>
-                       
-                   
+                        </Link>  
                 )
-                
-
                })}
+
               
             </div>
         </div>

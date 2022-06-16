@@ -21,13 +21,13 @@ app.get("/get",async(req,res)=>{
 })
 
 
-app.get("/get/:id",async(req,res)=>{
+// app.get("/get/:id",async(req,res)=>{
 
-        const params=req.params.id;
-        const buy=await Bestbuy.findById(params,req.body)
-        res.send(buy)
+//         const params=req.params.id;
+//         const buy=await Bestbuy.findById(params,req.body)
+//         res.send(buy)
   
-})
+// })
 
 app.post("/post",async(req,res)=>{
 
@@ -40,7 +40,7 @@ app.post("/post",async(req,res)=>{
 
 app.listen(PORT,async()=>{
 
-    // await connection
+    await connection
 
     console.log("server started on http://localhost:8080")
 })
