@@ -80,7 +80,7 @@ const Cart = () => {
         </div>
       ) : (
         <>
-          {!isLoading ? (
+          {isLoading ? (
             <LoadingStyled className="loadingContainer">
               <div style={{ height: "210px" }} className="loader loading">
                 <div className="loadingScreen">
