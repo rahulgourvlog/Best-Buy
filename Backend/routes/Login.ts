@@ -96,6 +96,14 @@ LoginRouter.post(
 // console.log(schema.validate('joke', { list: true }));
 // // => [ 'min', 'uppercase', 'digits' ]
 
+LoginRouter.get(
+  "/:_id",
+  async (req: express.Request, res: express.Response) => {
+    const user = await User.findById(req.params);
+    res.status(200).send(user);
+  }
+);
+
 LoginRouter.post(
   "/login",
   async (req: express.Request, res: express.Response) => {

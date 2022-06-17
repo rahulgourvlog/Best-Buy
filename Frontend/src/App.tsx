@@ -35,7 +35,7 @@ function App() {
         <Route path="/topdeals" element={<Tdpage />} />
         <Route path="/Cart" element={<Cart />} />
         <Route path="/geeksquad" element={<GeekSquad />} />
-        <Route path="ProductDetailPage:id" element={<ProductDetailPage />} />
+        <Route path="/ProductDetailPage:id" element={<ProductDetailPage />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/otp" element={<Otp />} />

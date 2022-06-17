@@ -3,6 +3,7 @@ import axios from "axios";
 import styled from "./LeftSection.module.css";
 import { CartCount_Context } from "../../Context/cartCounter";
 import { red } from "@mui/material/colors";
+import { useNavigate } from "react-router-dom";
 
 type errType = {
   message: string;
@@ -10,6 +11,7 @@ type errType = {
 };
 
 const Left = () => {
+  const navigate = useNavigate();
   const [formData, Setformdata] = useState({});
   const [pass, Setpass] = useState("text");
   const { isLogged, setIsLogged } = useContext(CartCount_Context);
@@ -42,11 +44,14 @@ const Left = () => {
             message: "",
           });
         }, 3000);
+        return;
       }
+
       const user = res.data;
-      console.log("user:", user);
-      setIsLogged(res.data._id);
-      console.log(res.data);
+      // console.log("user:", user);
+      setIsLogged(user[0]._id);
+      alert("Sign In Successful");
+      // navigate("/user");
     });
   };
   return (
@@ -70,29 +75,36 @@ const Left = () => {
                     />
                     <div
                       style={
-                        logError.error == "email"
+                        logError.error == "email" || logError.error == "error"
                           ? {
                               boxShadow: "0 0 0 4px rgba(245,111,14,.15)",
                               borderColor: "#bb0628",
                             }
                           : undefined
                       }
-                      className={styled.hoverShadow}
+                      className={styled.uniqueInput}
                     ></div>
-                    {logError.error == "email" ? (
-                      <div
-                        style={{ marginTop: "8px" }}
-                        className={styled.highlight}
-                      >
-                        {logError.message}
-                      </div>
-                    ) : null}
+                    <div
+                      style={{
+                        marginTop: "8px",
+                        position: "absolute",
+                        opacity: logError.error == "error" ? "1" : "0",
+                      }}
+                      className={styled.highlight}
+                    >
+                      {logError.message}
+                    </div>
                   </div>
                 </div>
               </div>
               <div className={styled.field}>
                 <div className={styled.container}>
-                  <label className={styled.label}>Password</label>
+                  <label
+                    style={{ margin: "12px 0 3px" }}
+                    className={styled.label}
+                  >
+                    Password
+                  </label>
                   <div
                     style={{
                       display: "flex",
@@ -109,14 +121,15 @@ const Left = () => {
                     />
                     <div
                       style={
-                        logError.error == "email"
+                        logError.error == "password" ||
+                        logError.error == "error"
                           ? {
                               boxShadow: "0 0 0 4px rgba(245,111,14,.15)",
                               borderColor: "#bb0628",
                             }
                           : undefined
                       }
-                      className={styled.hoverShadow}
+                      className={styled.uniqueInput}
                     ></div>
 
                     <div
@@ -133,22 +146,26 @@ const Left = () => {
                       {pass === "text" ? "show" : "hide"}
                     </div>
                   </div>
-                  {logError.error == "password" ? (
-                    <div
-                      style={{ marginTop: "8px" }}
-                      className={styled.highlight}
-                    >
-                      {logError.message}
-                    </div>
-                  ) : null}
-                  {logError.error == "error" ? (
-                    <div
-                      style={{ marginTop: "8px" }}
-                      className={styled.highlight}
-                    >
-                      {logError.message}
-                    </div>
-                  ) : null}
+                  <div
+                    style={{
+                      marginTop: "8px",
+                      position: "absolute",
+                      opacity: logError.error == "password" ? "1" : "0",
+                    }}
+                    className={styled.highlight}
+                  >
+                    {logError.message}
+                  </div>
+                  <div
+                    style={{
+                      marginTop: "8px",
+                      position: "absolute",
+                      opacity: logError.error == "error" ? "1" : "0",
+                    }}
+                    className={styled.highlight}
+                  >
+                    {logError.message}
+                  </div>
                 </div>
               </div>
               <div
@@ -156,6 +173,7 @@ const Left = () => {
                   display: "flex",
                   width: "400px",
                   gap: "27px",
+                  marginTop: "25px",
                 }}
               >
                 <input

@@ -50,11 +50,13 @@ const LeftSection = () => {
               message: "",
             });
           }, 3000);
+          return;
         }
         const user = res.data;
-        console.log("user:", user);
-        setIsLogged(res.data._id);
-        console.log(res.data);
+        // console.log("user:", user);
+        localStorage.setItem("userid", user[0].id);
+        setIsLogged(user._id);
+        navigate("/signin");
       });
   };
 

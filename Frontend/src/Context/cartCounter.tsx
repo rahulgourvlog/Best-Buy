@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 const CartCount_Context = createContext({
   isChanged: true,
@@ -11,8 +11,16 @@ const CartCount_Context = createContext({
 
 const CartCount_Provider = ({ children }: React.PropsWithChildren<{}>) => {
   const [isChanged, setIsChanged] = useState<boolean>(false);
-  const [isLogged, setIsLogged] = useState("");
-  const [total, setTotalContext] = useState(0);
+  const [isLogged, setIsLogged] = useState(
+    localStorage.getItem("userid") || ""
+  );
+  const [total, setTotalContext] = useState(
+    Number(localStorage.getItem("userid")) || 0
+  );
+
+  // useEffect(() => {
+  //   console.log(isLogged);
+  // }, [isLogged]);
 
   return (
     <CartCount_Context.Provider

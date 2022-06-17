@@ -28,20 +28,19 @@ type Product = {
 
 const Cart = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const { isChanged, setIsChanged, setTotalContext } =
+  const { isChanged, setIsChanged, setTotalContext, isLogged } =
     useContext(CartCount_Context);
   const [cartData, setCartData] = useState<Product[]>([]);
   const [postalCode, setPostalCode] = useState("M5G 2C3");
-  const [quantity, setQuantity] = useState<number | string>(1);
   const [total, setTotal] = useState<number>(0);
   const [totalDis, setTotalDis] = useState<number>(0);
 
   const getData = () => {
     setIsLoading(true);
     axios
-      .get("http://localhost:8080/cart/")
+      .get(`http://localhost:8080/cart/${isLogged}`)
       .then((res: AxiosResponse<Product[]>) => {
-        console.log("res.data:", res.data);
+        // console.log("res.data:", res.data);
         setCartData(res.data);
         setIsLoading(false);
       })
@@ -78,7 +77,7 @@ const Cart = () => {
       ac += data.price * data.quantity;
       return +ac.toFixed(2);
     }, 0);
-    console.log("total_Price:", total_Price);
+    // console.log("total_Price:", total_Price);
     setTotal(total_Price);
 
     const total_Dis = cartData.reduce((ac: number, data: Product) => {
@@ -87,7 +86,7 @@ const Cart = () => {
     }, 0);
     // console.log("total_Dis:", total_Dis);
     setTotalDis(total_Dis);
-
+    localStorage.setItem("total", (total + (total * 4) / 100).toFixed(2));
     setTotalContext(+(total + (total * 4) / 100).toFixed(2));
   };
 
@@ -184,7 +183,10 @@ const Cart = () => {
                                     </div>
                                     <div className="Cart_info-detailsContainer">
                                       <div className="leftContainer">
-                                        <Link className="title-link" to="/">
+                                        <Link
+                                          className="title-link"
+                                          to={`/ProductDetailPage${item._id}`}
+                                        >
                                           {item.title}
                                         </Link>
                                       </div>
@@ -262,9 +264,7 @@ const Cart = () => {
                                               autoComplete="off"
                                               value={item.quantity}
                                               onChange={(e) =>
-                                                setQuantity(
-                                                  +e.target.value.slice(0, 1)
-                                                )
+                                                e.target.value.slice(0, 1)
                                               }
                                             />
                                             <div>
