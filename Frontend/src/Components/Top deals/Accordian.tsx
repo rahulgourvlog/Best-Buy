@@ -18,8 +18,9 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <option>Computers & Tablets</option>
+            <option>Computers & Tablets</option>  
           </Typography>
+          
           <Typography>
             <option>Appliances</option>
           </Typography>

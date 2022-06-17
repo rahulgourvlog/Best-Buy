@@ -4,6 +4,7 @@ import axios from "axios";
 import Accordian from "./Accordian"
 import { useNavigate } from 'react-router-dom';
 import {Link} from "react-router-dom"
+import Navofout from './Navofout';
 
 
 interface Product{
@@ -17,34 +18,65 @@ interface Product{
 
 const Tdpage= () => {
 
-   
-
-
     const [data,setData]=useState<Product[]>([])
-
     const navigate=useNavigate()
 
     const products=async()=>{
         const {data}=await axios.get<Product[]>("http://localhost:8080/get")
-
-        setData(data)
-       
+        setData(data)   
     }
+
+    
   
 
-const filter=(e:any)=>{
-    data.sort((a:any,b:any)=>{
-        return a-b
-    })
-    setData(data)
+// const handleFilter=(e:any)=>{
 
-}
-
+//     if(e.target.value==="htl")
+//     {
+//         console.log(e.target.value)
+        
+//         data.sort((a,b)=>{
+//             return b.price-a.price
+//         })
+//         console.log(data)
+//         setData([...data]);
+        
+//     }
+//   else if(e.target.value==="lth")
+//     {
+//         const htl=data.sort((a,b)=>{
+//             return a.price-b.price
+//         })
+//         console.log(htl)
+//         setData([...data]);
+//     } 
+//     else{
+//         const rating=data.sort((a,b)=>{
+//             return b.rating-a.rating;
+//         })
+//         setData([...data])
+//     }
+// }
+function SortD(val: number) {
    
-    
-    useEffect(()=>{
-     products()
-    },[])
+    let buy = data.sort((a:any, b:any) => {
+      if (val == 1) {
+        return a.price - b.price;
+      } else  {
+        return b.price - a.price;
+      }
+    });
+
+    setData([...data]);
+  }
+
+
+
+useEffect(()=>{
+    products()
+   },[])
+
+  
 
   return (
     <div className='container'>
@@ -52,9 +84,7 @@ const filter=(e:any)=>{
          <div className='banner' >
             <img src="https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt927ef2113bc4d318/61d4bdefe5a70e7d5276d21f/global-topdeals-20220107-title-logo-m-en.png?width=50p&quality=80&auto=webp"  alt="" /> 
     </div>
-    {/* <div className='shop'>
-    <img src="https://tpc.googlesyndication.com/simgad/9514289847257481417"  alt="" />
-    </div> */}
+    
     <div className='infoimg' >
         <img src="https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt0ca797fe4791c852/61d8c3637c5435387a0c0115/heb-20220107-bby-valueprops-en-m.jpg?width=50p&quality=80&auto=webp" alt="" />
     </div>
@@ -85,22 +115,35 @@ const filter=(e:any)=>{
             <div className='left' >
             <Accordian/>
             </div>
-               <div className='right'>
-                
-               {data && data.map((e)=>{
+               <div className='rightmain'>
+                {/* <div className='filter'>
+                  <select  onChange={handleFilter}>
+                    <option value="lth">Price Low-High</option>
+                     <option value="htl">Price High-Low</option>
+                      <option value="hr">Highest Rated</option>
+                  </select>
+                </div> */}
+                <Navofout sortd={SortD}/>
+
+                <div className='right'>
+
+                {data && data.map((e)=>{
                 return (
-                   <Link to={`/ProductDetailPage${e._id}`} >
-                    <div className='mapping'  >
+                   <Link to={`/ProductDetailPage${e._id}`} style={{ textDecoration: 'none' }} >
+                    <div className='mapping'   >
                             <img src={e.img} alt="" />
-                            <p>{e.name}</p>
-                            <h4>{e.rating}</h4>
-                            <h3>${e.price}</h3>
-                            <p>{e.availability}</p>
+                            <p >{e.name}</p>
+                            <h4>⭐⭐⭐⭐{e.rating}</h4>
+                            <div className='topdeals'><h6>Top Deals</h6></div>
+                            <h3 className='red'>${e.price}</h3>
+                            <p className='small'>{e.availability} to ship</p>
+                          
                         </div>
                         </Link>  
                 )
                })}
-
+                </div>
+            
               
             </div>
         </div>
@@ -123,7 +166,6 @@ const filter=(e:any)=>{
         </div>
 
     </div>
-  )
-}
+    )}
 
 export default Tdpage

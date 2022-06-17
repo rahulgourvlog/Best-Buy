@@ -70,11 +70,15 @@ margin-bottom: 30px;
 }
 
 .mapping{
-    height: 400px;
-    width: 230px;
+    height: auto;
+    width: 250px;
     margin-left: 10px;
     margin-bottom: 10px;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .mapping>img{
@@ -89,14 +93,72 @@ margin-bottom: 30px;
     width: 100%;
 
 }
+.filter{
+    border: 2px solid black;
+    height: 100px;
+   
+
+}
+
+.red{
+    color: rgb(233, 12, 12);
+}
 
 
+.outletnav {
+    display: flex;
+    width: 100%;
+    background-color: #f4f6f9;
+    justify-content: space-between;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  .instock {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+  }
+  .instock div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .instock p {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 8px;
+  }
+  .aie {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-family: Open Sans, Roboto, Arial, sans-serif;
+    line-height: 1.46429em;
+    display: flex;
+    justify-content: center;
+  }
 
+.mapping{
+    text-decoration: none;
+    outline: none;
+    color: black;
+    margin: 10px;
+   
+}
 
+.topdeals{
+    background-color: rgba(255, 0, 0, 0.847);
+    width:50px;
+    color: #f4f6f9;
+    height: 15px;
+}
 
-
-
-
+.small{
+    font-size: 12px;
+}
 /* {
     "name":"Dyson V8 Animal Cordless Stick Vacuum - Nickel",
     "rating":3.5,
