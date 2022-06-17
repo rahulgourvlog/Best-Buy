@@ -1,0 +1,101 @@
+.chtitle{
+    /* border: 1px solid black; */
+    width:76%;
+    height:60px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chtitle>h2{
+    font-weight: 100;
+}
+.rnum{
+    color: blue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chmain{
+    /* border:1px solid black; */
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 900px;
+}
+.chmain>div{
+    /* border:1px solid black; */
+}
+.chaddy{
+    background-color: #f4f6f9;
+    height:1000px;
+}
+.chaddyb{
+    /* border:1px solid black; */
+    margin-left: 150px;
+    height:900px;
+    padding:30px;
+}
+.chemail{
+    /* border:1px solid black; */
+    width:90%;
+    background-color: white;
+    height: 150px;
+    padding:20px;
+}
+.chemail>input{
+    width:90%;
+    height:50px;
+    font-size: larger;
+}
+.chaddress{
+    margin-top: 50px;
+    /* border:1px solid black; */
+    width:90%;
+    background-color: white;
+    height: 500px;
+    padding:20px;
+}
+.chinp{
+    width:95%;
+    height:50px;
+    font-size: 15px;
+}
+.chinp1{
+    width:50%;
+    height:50px;
+    font-size: 15px;
+}
+.chinp2{
+    width:20%;
+    height:50px;
+    font-size: 15px;
+}
+.chinp3{
+    width:45%;
+    height:50px;
+    font-size: 15px;
+}
+.chtotal{
+    /* border: 1px solid crimson; */
+    padding:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 0;
+}
+.chweight{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: none;
+    display: flex;
+    justify-content: space-around;
+    /* border:2px solid black; */
+}
+.chcan{
+    margin-top: 30px;
+    /* border:1px solid black; */
+    border-radius: 5px;
+    height:20px;
+    width:90%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:20px;
+    background-color: #f4f6f9;
+}
