@@ -1,0 +1,31 @@
+.header {
+  background: #0046be;
+  position: relative;
+  height: 56px;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.link {
+  color: #0046be;
+  text-decoration: none;
+  text-decoration: initial;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.top {
+  left: 0%;
+  display: inline-flex;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 8px;
+}
+
+.toplink {
+  color: #0046be;
+  text-decoration: none;
+  text-decoration: initial;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
