@@ -26,7 +26,7 @@ const BrandsMenu = () => {
         }
         className="menuLink"
         title="Popular Brands"
-        to=""
+        to="#"
       >
         Popular Brands
         <svg
@@ -51,116 +51,112 @@ const BrandsMenu = () => {
           <h2 className="categoryTitle">
             <span>Popular Brands</span>
           </h2>
-          <a className="menuLink" title="Acer" href="/acer">
+          <a className="menuLink" title="Acer" href="#">
             Acer
           </a>
-          <a className="menuLink" title="Amazon" href="/amazon">
+          <a className="menuLink" title="Amazon" href="#">
             Amazon
           </a>
-          <a className="menuLink" title="Apple" href="/apple">
+          <a className="menuLink" title="Apple" href="#">
             Apple
           </a>
-          <a className="menuLink" title="Asus" href="/asus">
+          <a className="menuLink" title="Asus" href="#">
             Asus
           </a>
-          <a
-            className="menuLink"
-            title="Beats By Dr. Dre"
-            href="/beats by dr. dre"
-          >
+          <a className="menuLink" title="Beats By Dr. Dre" href="#e">
             Beats By Dr. Dre
           </a>
-          <a className="menuLink" title="Bose" href="/bose">
+          <a className="menuLink" title="Bose" href="#">
             Bose
           </a>
-          <a className="menuLink" title="Breville" href="/breville">
+          <a className="menuLink" title="Breville" href="#">
             Breville
           </a>
-          <a className="menuLink" title="Canon" href="/canon">
+          <a className="menuLink" title="Canon" href="#">
             Canon
           </a>
-          <a className="menuLink" title="Dell" href="/dell">
+          <a className="menuLink" title="Dell" href="#">
             Dell
           </a>
-          <a className="menuLink" title="Dyson" href="/dyson">
+          <a className="menuLink" title="Dyson" href="#">
             Dyson
           </a>
-          <a className="menuLink" title="Fitbit" href="/fitbit">
+          <a className="menuLink" title="Fitbit" href="#">
             Fitbit
           </a>
-          <a className="menuLink" title="GE" href="/ge">
+          <a className="menuLink" title="GE" href="#">
             GE
           </a>
-          <a className="menuLink" title="Google" href="/google">
+          <a className="menuLink" title="Google" href="#">
             Google
           </a>
-          <a className="menuLink" title="GoPro" href="/gopro">
+          <a className="menuLink" title="GoPro" href="#">
             GoPro
           </a>
-          <a className="menuLink" title="HP" href="/hp">
+          <a className="menuLink" title="HP" href="#">
             HP
           </a>
-          <a className="menuLink" title="Insignia" href="/insignia">
+          <a className="menuLink" title="Insignia" href="#">
             Insignia
           </a>
-          <a className="menuLink" title="Instant Pot" href="/instant pot">
+          <a className="menuLink" title="Instant Pot" href="#">
             Instant Pot
           </a>
-          <a className="menuLink" title="JBL" href="/jbl">
+          <a className="menuLink" title="JBL" href="#">
             JBL
           </a>
-          <a className="menuLink" title="KitchenAid" href="/kitchenaid">
+          <a className="menuLink" title="KitchenAid" href="#">
             KitchenAid
           </a>
-          <a className="menuLink" title="Lenovo" href="/lenovo">
+          <a className="menuLink" title="Lenovo" href="#">
             Lenovo
           </a>
-          <a className="menuLink" title="LG" href="/lg">
+          <a className="menuLink" title="LG" href="#">
             LG
           </a>
-          <a className="menuLink" title="Logitech" href="/logitech">
+          <a className="menuLink" title="Logitech" href="#">
             Logitech
           </a>
-          <a className="menuLink" title="Microsoft" href="/microsoft">
+          <a className="menuLink" title="Microsoft" href="#">
             Microsoft
           </a>
-          <a className="menuLink" title="Nintendo" href="/nintendo">
+          <a className="menuLink" title="Nintendo" href="#">
             Nintendo
           </a>
-          <a className="menuLink" title="NVIDIA" href="/nvidia">
+          <a className="menuLink" title="NVIDIA" href="#">
             NVIDIA
           </a>
-          <a className="menuLink" title="Panasonic" href="/panasonic">
+          <a className="menuLink" title="Panasonic" href="#">
             Panasonic
           </a>
-          <a className="menuLink" title="Philips" href="/philips">
+          <a className="menuLink" title="Philips" href="#">
             Philips
           </a>
-          <a className="menuLink" title="PlayStation" href="/playstation">
+          <a className="menuLink" title="PlayStation" href="#">
             PlayStation
           </a>
-          <a className="menuLink" title="Samsung" href="/samsung">
+          <a className="menuLink" title="Samsung" href="#">
             Samsung
           </a>
-          <a className="menuLink" title="Seagate" href="/seagate">
+          <a className="menuLink" title="Seagate" href="#">
             Seagate
           </a>
-          <a className="menuLink" title="Sharp" href="/sharp">
+          <a className="menuLink" title="Sharp" href="#">
             Sharp
           </a>
-          <a className="menuLink" title="Sony" href="/sony">
+          <a className="menuLink" title="Sony" href="#">
             Sony
           </a>
-          <a className="menuLink" title="Toshiba" href="/toshiba">
+          <a className="menuLink" title="Toshiba" href="#">
             Toshiba
           </a>
-          <a className="menuLink" title="Ultimate Ears" href="/ultimate ears">
+          <a className="menuLink" title="Ultimate Ears" href="#">
             Ultimate Ears
           </a>
-          <a className="menuLink" title="Whirlpool" href="/whirlpool">
+          <a className="menuLink" title="Whirlpool" href="#">
             Whirlpool
           </a>
-          <a className="menuLink" title="Xbox" href="/xbox">
+          <a className="menuLink" title="Xbox" href="#">
             Xbox
           </a>
         </div>
@@ -175,7 +171,7 @@ const BrandsMenu = () => {
         }}
         className="menuLink"
         title="A B"
-        to=""
+        to="#"
         style={
           active == "A B" ? { backgroundColor: "#001e73", color: "#fff" } : {}
         }
@@ -199,87 +195,79 @@ const BrandsMenu = () => {
           <h2 className="categoryTitle">
             <span>A B</span>
           </h2>
-          <a className="menuLink" title="Acer" href="/acer">
+          <a className="menuLink" title="Acer" href="#">
             Acer
           </a>
-          <a className="menuLink" title="AKG" href="/akg">
+          <a className="menuLink" title="AKG" href="#">
             AKG
           </a>
-          <a className="menuLink" title="Alienware" href="/alienware">
+          <a className="menuLink" title="Alienware" href="#">
             Alienware
           </a>
-          <a className="menuLink" title="Altec Lansing" href="/altec lansing">
+          <a className="menuLink" title="Altec Lansing" href="#">
             Altec Lansing
           </a>
-          <a className="menuLink" title="Amazon" href="/amazon">
+          <a className="menuLink" title="Amazon" href="#">
             Amazon
           </a>
-          <a className="menuLink" title="Apple" href="/apple">
+          <a className="menuLink" title="Apple" href="#">
             Apple
           </a>
-          <a className="menuLink" title="Arlo" href="/arlo">
+          <a className="menuLink" title="Arlo" href="#">
             Arlo
           </a>
-          <a className="menuLink" title="Astro Gaming" href="/astro gaming">
+          <a className="menuLink" title="Astro Gaming" href="#">
             Astro Gaming
           </a>
-          <a className="menuLink" title="Asus" href="/asus">
+          <a className="menuLink" title="Asus" href="#">
             Asus
           </a>
-          <a className="menuLink" title="Audio Technica" href="/audio technica">
+          <a className="menuLink" title="Audio Technica" href="#">
             Audio Technica
           </a>
-          <a className="menuLink" title="August" href="/august">
+          <a className="menuLink" title="August" href="#">
             August
           </a>
-          <a
-            className="menuLink"
-            title="Beats by Dr. Dre"
-            href="/beats by dr. dre"
-          >
+          <a className="menuLink" title="Beats by Dr. Dre" href="#e">
             Beats by Dr. Dre
           </a>
-          <a className="menuLink" title="Belkin" href="/belkin">
+          <a className="menuLink" title="Belkin" href="#">
             Belkin
           </a>
-          <a className="menuLink" title="Bell" href="/bell">
+          <a className="menuLink" title="Bell" href="#">
             Bell
           </a>
-          <a className="menuLink" title="BenQ" href="/benq">
+          <a className="menuLink" title="BenQ" href="#">
             BenQ
           </a>
-          <a className="menuLink" title="Bissell" href="/bissell">
+          <a className="menuLink" title="Bissell" href="#">
             Bissell
           </a>
-          <a className="menuLink" title="Bitdefender" href="/bitdefender">
+          <a className="menuLink" title="Bitdefender" href="#">
             Bitdefender
           </a>
-          <a className="menuLink" title="Blendtec" href="/blendtec">
+          <a className="menuLink" title="Blendtec" href="#">
             Blendtec
           </a>
-          <a className="menuLink" title="Bosch" href="/bosch">
+          <a className="menuLink" title="Bosch" href="#">
             Bosch
           </a>
-          <a className="menuLink" title="Bose" href="/bose">
+          <a className="menuLink" title="Bose" href="#">
             Bose
           </a>
-          <a
-            className="menuLink"
-            title="Bowers &amp; Wilkins"
-            href="/bowers &amp; wilkins"
-          >
+          <a className="menuLink" title="Bowers &amp; Wilkins" href="#s">
             Bowers &amp; Wilkins
           </a>
-          <a className="menuLink" title="Braun" href="/braun">
+          <a className="menuLink" title="Braun" href="#">
             Braun
           </a>
-          <a className="menuLink" title="Breville" href="/breville">
+          <a className="menuLink" title="Breville" href="#">
             Breville
           </a>
-          <a className="menuLink" title="broan" href="/broan">
+          <a className="menuLink" title="broan" href="#">
             broan
           </a>
-          <a className="menuLink" title="Brother" href="/brother">
+          <a className="menuLink" title="Brother" href="#">
             Brother
           </a>
         </div>
@@ -294,7 +282,7 @@ const BrandsMenu = () => {
         }}
         className="menuLink"
         title="C D E F"
-        to=""
+        to="#"
         style={
           active == "C D E F"
             ? { backgroundColor: "#001e73", color: "#fff" }
@@ -322,80 +310,76 @@ const BrandsMenu = () => {
           <h2 className="categoryTitle">
             <span>C D E F</span>
           </h2>
-          <a className="menuLink" title="Canon" href="/canon">
+          <a className="menuLink" title="Canon" href="#">
             Canon
           </a>
-          <a className="menuLink" title="Casio" href="/casio">
+          <a className="menuLink" title="Casio" href="#">
             Casio
           </a>
-          <a className="menuLink" title="Chatr Wireless" href="/chatr wireless">
+          <a className="menuLink" title="Chatr Wireless" href="#">
             Chatr Wireless
           </a>
-          <a className="menuLink" title="Citizen" href="/citizen">
+          <a className="menuLink" title="Citizen" href="#">
             Citizen
           </a>
-          <a className="menuLink" title="Conair" href="/conair">
+          <a className="menuLink" title="Conair" href="#">
             Conair
           </a>
-          <a className="menuLink" title="Corsair" href="/corsair">
+          <a className="menuLink" title="Corsair" href="#">
             Corsair
           </a>
-          <a className="menuLink" title="Cuisinart" href="/cuisinart">
+          <a className="menuLink" title="Cuisinart" href="#">
             Cuisinart
           </a>
-          <a className="menuLink" title="CyberPowerPC" href="/cyberpowerpc">
+          <a className="menuLink" title="CyberPowerPC" href="#">
             CyberPowerPC
           </a>
-          <a className="menuLink" title="D-Link" href="/d-link">
+          <a className="menuLink" title="D-Link" href="#">
             D-Link
           </a>
-          <a
-            className="menuLink"
-            title="DefinitiveTechnology"
-            href="/definitivetechnology"
-          >
+          <a className="menuLink" title="DefinitiveTechnology" href="#y">
             DefinitiveTechnology
           </a>
-          <a className="menuLink" title="Dell" href="/dell">
+          <a className="menuLink" title="Dell" href="#">
             Dell
           </a>
-          <a className="menuLink" title="Delonghi" href="/delonghi">
+          <a className="menuLink" title="Delonghi" href="#">
             Delonghi
           </a>
-          <a className="menuLink" title="Denon" href="/denon">
+          <a className="menuLink" title="Denon" href="#">
             Denon
           </a>
-          <a className="menuLink" title="DJI" href="/dji">
+          <a className="menuLink" title="DJI" href="#">
             DJI
           </a>
-          <a className="menuLink" title="Dyson" href="/dyson">
+          <a className="menuLink" title="Dyson" href="#">
             Dyson
           </a>
-          <a className="menuLink" title="Electrolux" href="/electrolux">
+          <a className="menuLink" title="Electrolux" href="#">
             Electrolux
           </a>
-          <a className="menuLink" title="Epson" href="/epson">
+          <a className="menuLink" title="Epson" href="#">
             Epson
           </a>
-          <a className="menuLink" title="Ezviz" href="/ezviz">
+          <a className="menuLink" title="Ezviz" href="#">
             Ezviz
           </a>
-          <a className="menuLink" title="Fido" href="/fido">
+          <a className="menuLink" title="Fido" href="#">
             Fido
           </a>
-          <a className="menuLink" title="Fitbit" href="/fitbit">
+          <a className="menuLink" title="Fitbit" href="#">
             Fitbit
           </a>
-          <a className="menuLink" title="Fossil" href="/fossil">
+          <a className="menuLink" title="Fossil" href="#">
             Fossil
           </a>
-          <a className="menuLink" title="Freedom Mobile" href="/freedom mobile">
+          <a className="menuLink" title="Freedom Mobile" href="#">
             Freedom Mobile
           </a>
-          <a className="menuLink" title="Frigidaire" href="/frigidaire">
+          <a className="menuLink" title="Frigidaire" href="#">
             Frigidaire
           </a>
-          <a className="menuLink" title="Fujifilm" href="/fujifilm">
+          <a className="menuLink" title="Fujifilm" href="#">
             Fujifilm
           </a>
         </div>
@@ -410,7 +394,7 @@ const BrandsMenu = () => {
         }}
         className="menuLink"
         title="G H I J K"
-        to=""
+        to="#"
         style={
           active == "G H I J K"
             ? { backgroundColor: "#001e73", color: "#fff" }
@@ -440,77 +424,73 @@ const BrandsMenu = () => {
           <h2 className="categoryTitle">
             <span>G H I J K</span>
           </h2>
-          <a className="menuLink" title="Garmin" href="/garmin">
+          <a className="menuLink" title="Garmin" href="#">
             Garmin
           </a>
-          <a className="menuLink" title="GE" href="/ge">
+          <a className="menuLink" title="GE" href="#">
             GE
           </a>
-          <a className="menuLink" title="Google" href="/google">
+          <a className="menuLink" title="Google" href="#">
             Google
           </a>
-          <a className="menuLink" title="GoPro" href="/gopro">
+          <a className="menuLink" title="GoPro" href="#">
             GoPro
           </a>
-          <a className="menuLink" title="Haier" href="/haier">
+          <a className="menuLink" title="Haier" href="#">
             Haier
           </a>
-          <a className="menuLink" title="Hamilton Beach" href="/hamilton beach">
+          <a className="menuLink" title="Hamilton Beach" href="#">
             Hamilton Beach
           </a>
-          <a className="menuLink" title="Happy Plugs" href="/happy plugs">
+          <a className="menuLink" title="Happy Plugs" href="#">
             Happy Plugs
           </a>
-          <a className="menuLink" title="Hisense" href="/hisense">
+          <a className="menuLink" title="Hisense" href="#">
             Hisense
           </a>
-          <a className="menuLink" title="Honeywell" href="/honeywell">
+          <a className="menuLink" title="Honeywell" href="#">
             Honeywell
           </a>
-          <a
-            className="menuLink"
-            title="House of Marley"
-            href="/house of marley"
-          >
+          <a className="menuLink" title="House of Marley" href="#y">
             House of Marley
           </a>
-          <a className="menuLink" title="HP" href="/hp">
+          <a className="menuLink" title="HP" href="#">
             HP
           </a>
-          <a className="menuLink" title="Insignia" href="/insignia">
+          <a className="menuLink" title="Insignia" href="#">
             Insignia
           </a>
-          <a className="menuLink" title="Instant Pot" href="/instant pot">
+          <a className="menuLink" title="Instant Pot" href="#">
             Instant Pot
           </a>
-          <a className="menuLink" title="Intel" href="/intel">
+          <a className="menuLink" title="Intel" href="#">
             Intel
           </a>
-          <a className="menuLink" title="iRobot" href="/irobot">
+          <a className="menuLink" title="iRobot" href="#">
             iRobot
           </a>
-          <a className="menuLink" title="Jabra" href="/jabra">
+          <a className="menuLink" title="Jabra" href="#">
             Jabra
           </a>
-          <a className="menuLink" title="Jaybird" href="/jaybird">
+          <a className="menuLink" title="Jaybird" href="#">
             Jaybird
           </a>
-          <a className="menuLink" title="JBL" href="/jbl">
+          <a className="menuLink" title="JBL" href="#">
             JBL
           </a>
-          <a className="menuLink" title="JLAB" href="/jlab">
+          <a className="menuLink" title="JLAB" href="#">
             JLAB
           </a>
-          <a className="menuLink" title="Kate Spade" href="/kate spade">
+          <a className="menuLink" title="Kate Spade" href="#">
             Kate Spade
           </a>
-          <a className="menuLink" title="Keurig" href="/keurig">
+          <a className="menuLink" title="Keurig" href="#">
             Keurig
           </a>
-          <a className="menuLink" title="KitchenAid" href="/kitchenaid">
+          <a className="menuLink" title="KitchenAid" href="#">
             KitchenAid
           </a>
-          <a className="menuLink" title="Klipsch" href="/klipsch">
+          <a className="menuLink" title="Klipsch" href="#">
             Klipsch
           </a>
         </div>
@@ -525,7 +505,7 @@ const BrandsMenu = () => {
         }}
         className="menuLink"
         title="L M N O"
-        to=""
+        to="#"
         style={
           active == "L M N O"
             ? { backgroundColor: "#001e73", color: "#fff" }
@@ -553,82 +533,82 @@ const BrandsMenu = () => {
           <h2 className="categoryTitle">
             <span>L M N O</span>
           </h2>
-          <a className="menuLink" title="Lenovo" href="/lenovo">
+          <a className="menuLink" title="Lenovo" href="#">
             Lenovo
           </a>
-          <a className="menuLink" title="LG Electronics" href="/lg electronics">
+          <a className="menuLink" title="LG Electronics" href="#">
             LG Electronics
           </a>
-          <a className="menuLink" title="LifeProof" href="/lifeproof">
+          <a className="menuLink" title="LifeProof" href="#">
             LifeProof
           </a>
-          <a className="menuLink" title="LIFX" href="/lifx">
+          <a className="menuLink" title="LIFX" href="#">
             LIFX
           </a>
-          <a className="menuLink" title="Linksys" href="/linksys">
+          <a className="menuLink" title="Linksys" href="#">
             Linksys
           </a>
-          <a className="menuLink" title="Logitech" href="/logitech">
+          <a className="menuLink" title="Logitech" href="#">
             Logitech
           </a>
-          <a className="menuLink" title="Marantz" href="/marantz">
+          <a className="menuLink" title="Marantz" href="#">
             Marantz
           </a>
-          <a className="menuLink" title="Marshall" href="/marshall">
+          <a className="menuLink" title="Marshall" href="#">
             Marshall
           </a>
-          <a className="menuLink" title="Maytag" href="/maytag">
+          <a className="menuLink" title="Maytag" href="#">
             Maytag
           </a>
-          <a className="menuLink" title="McAfee" href="/mcafee">
+          <a className="menuLink" title="McAfee" href="#">
             McAfee
           </a>
-          <a className="menuLink" title="Michael Kors" href="/michael kors">
+          <a className="menuLink" title="Michael Kors" href="#">
             Michael Kors
           </a>
-          <a className="menuLink" title="Microsoft" href="/microsoft">
+          <a className="menuLink" title="Microsoft" href="#">
             Microsoft
           </a>
-          <a className="menuLink" title="Miele" href="/miele">
+          <a className="menuLink" title="Miele" href="#">
             Miele
           </a>
-          <a className="menuLink" title="Monster" href="/monster">
+          <a className="menuLink" title="Monster" href="#">
             Monster
           </a>
-          <a className="menuLink" title="Ncredible" href="/ncredible">
+          <a className="menuLink" title="Ncredible" href="#">
             Ncredible
           </a>
-          <a className="menuLink" title="Nespresso" href="/nespresso">
+          <a className="menuLink" title="Nespresso" href="#">
             Nespresso
           </a>
-          <a className="menuLink" title="Netgear" href="/netgear">
+          <a className="menuLink" title="Netgear" href="#">
             Netgear
           </a>
-          <a className="menuLink" title="Nikon" href="/nikon">
+          <a className="menuLink" title="Nikon" href="#">
             Nikon
           </a>
-          <a className="menuLink" title="Ninja" href="/ninja">
+          <a className="menuLink" title="Ninja" href="#">
             Ninja
           </a>
-          <a className="menuLink" title="Nintendo" href="/nintendo">
+          <a className="menuLink" title="Nintendo" href="#">
             Nintendo
           </a>
-          <a className="menuLink" title="NVIDIA" href="/nvidia">
+          <a className="menuLink" title="NVIDIA" href="#">
             NVIDIA
           </a>
-          <a className="menuLink" title="Oculus" href="/oculus">
+          <a className="menuLink" title="Oculus" href="#">
             Oculus
           </a>
-          <a className="menuLink" title="Olympus" href="/olympus">
+          <a className="menuLink" title="Olympus" href="#">
             Olympus
           </a>
-          <a className="menuLink" title="Onkyo" href="/onkyo">
+          <a className="menuLink" title="Onkyo" href="#">
             Onkyo
           </a>
-          <a className="menuLink" title="Oster" href="/oster">
+          <a className="menuLink" title="Oster" href="#">
             Oster
           </a>
-          <a className="menuLink" title="OtterBox" href="/otterbox">
+          <a className="menuLink" title="OtterBox" href="#">
             OtterBox
           </a>
         </div>
@@ -643,7 +623,7 @@ const BrandsMenu = () => {
         }}
         className="menuLink"
         title="P Q R S"
-        to=""
+        to="#"
         style={
           active == "P Q R S"
             ? { backgroundColor: "#001e73", color: "#fff" }
@@ -671,82 +651,82 @@ const BrandsMenu = () => {
           <h2 className="categoryTitle">
             <span>P Q R S</span>
           </h2>
-          <a className="menuLink" title="Panasonic" href="/panasonic">
+          <a className="menuLink" title="Panasonic" href="#">
             Panasonic
           </a>
-          <a className="menuLink" title="Philips" href="/philips">
+          <a className="menuLink" title="Philips" href="#">
             Philips
           </a>
-          <a className="menuLink" title="Philips Hue" href="/philips hue">
+          <a className="menuLink" title="Philips Hue" href="#">
             Philips Hue
           </a>
-          <a className="menuLink" title="Pioneer" href="/pioneer">
+          <a className="menuLink" title="Pioneer" href="#">
             Pioneer
           </a>
-          <a className="menuLink" title="Plantronics" href="/plantronics">
+          <a className="menuLink" title="Plantronics" href="#">
             Plantronics
           </a>
-          <a className="menuLink" title="PlayStation" href="/playstation">
+          <a className="menuLink" title="PlayStation" href="#">
             PlayStation
           </a>
-          <a className="menuLink" title="Polk Audio" href="/polk audio">
+          <a className="menuLink" title="Polk Audio" href="#">
             Polk Audio
           </a>
-          <a className="menuLink" title="Razer" href="/razer">
+          <a className="menuLink" title="Razer" href="#">
             Razer
           </a>
-          <a className="menuLink" title="RCA" href="/rca">
+          <a className="menuLink" title="RCA" href="#">
             RCA
           </a>
-          <a className="menuLink" title="Ring" href="/ring">
+          <a className="menuLink" title="Ring" href="#">
             Ring
           </a>
-          <a className="menuLink" title="Rogers" href="/rogers">
+          <a className="menuLink" title="Rogers" href="#">
             Rogers
           </a>
-          <a className="menuLink" title="Roku" href="/roku">
+          <a className="menuLink" title="Roku" href="#">
             Roku
           </a>
-          <a className="menuLink" title="Samsonite" href="/samsonite">
+          <a className="menuLink" title="Samsonite" href="#">
             Samsonite
           </a>
-          <a className="menuLink" title="Samsung" href="/samsung">
+          <a className="menuLink" title="Samsung" href="#">
             Samsung
           </a>
-          <a className="menuLink" title="Sandisk" href="/sandisk">
+          <a className="menuLink" title="Sandisk" href="#">
             Sandisk
           </a>
-          <a className="menuLink" title="Seagate" href="/seagate">
+          <a className="menuLink" title="Seagate" href="#">
             Seagate
           </a>
-          <a className="menuLink" title="Seiko" href="/seiko">
+          <a className="menuLink" title="Seiko" href="#">
             Seiko
           </a>
-          <a className="menuLink" title="Sennheiser" href="/sennheiser">
+          <a className="menuLink" title="Sennheiser" href="#">
             Sennheiser
           </a>
-          <a className="menuLink" title="Sharp" href="/sharp">
+          <a className="menuLink" title="Sharp" href="#">
             Sharp
           </a>
-          <a className="menuLink" title="Shaw" href="/shaw">
+          <a className="menuLink" title="Shaw" href="#">
             Shaw
           </a>
-          <a className="menuLink" title="Skullcandy" href="/skullcandy">
+          <a className="menuLink" title="Skullcandy" href="#">
             Skullcandy
           </a>
-          <a className="menuLink" title="Sleep Country" href="/sleep country">
+          <a className="menuLink" title="Sleep Country" href="#">
             Sleep Country
           </a>
-          <a className="menuLink" title="Sonos" href="/sonos">
+          <a className="menuLink" title="Sonos" href="#">
             Sonos
           </a>
-          <a className="menuLink" title="Sony" href="/sony">
+          <a className="menuLink" title="Sony" href="#">
             Sony
           </a>
-          <a className="menuLink" title="Swann" href="/swann">
+          <a className="menuLink" title="Swann" href="#">
             Swann
           </a>
-          <a className="menuLink" title="Swissgear" href="/swissgear">
+          <a className="menuLink" title="Swissgear" href="#">
             Swissgear
           </a>
         </div>
@@ -761,7 +741,7 @@ const BrandsMenu = () => {
         }}
         className="menuLink"
         title="T U V W X Y Z"
-        to=""
+        to="#"
         style={
           active == "T U V W X Y Z"
             ? { backgroundColor: "#001e73", color: "#fff" }
@@ -791,71 +771,67 @@ const BrandsMenu = () => {
           <h2 className="categoryTitle">
             <span>T U V W X Y Z</span>
           </h2>
-          <a className="menuLink" title="T-Fal" href="/t-fal">
+          <a className="menuLink" title="T-Fal" href="#">
             T-Fal
           </a>
-          <a className="menuLink" title="TCL" href="/tcl">
+          <a className="menuLink" title="TCL" href="#">
             TCL
           </a>
-          <a className="menuLink" title="TELUS" href="/telus">
+          <a className="menuLink" title="TELUS" href="#">
             TELUS
           </a>
-          <a className="menuLink" title="Thinkware" href="/thinkware">
+          <a className="menuLink" title="Thinkware" href="#">
             Thinkware
           </a>
-          <a className="menuLink" title="Tile" href="/tile">
+          <a className="menuLink" title="Tile" href="#">
             Tile
           </a>
-          <a className="menuLink" title="Toshiba" href="/toshiba">
+          <a className="menuLink" title="Toshiba" href="#">
             Toshiba
           </a>
-          <a className="menuLink" title="TP Link" href="/tp link">
+          <a className="menuLink" title="TP Link" href="#">
             TP Link
           </a>
-          <a className="menuLink" title="Tumi" href="/tumi">
+          <a className="menuLink" title="Tumi" href="#">
             Tumi
           </a>
-          <a className="menuLink" title="Turtle Beach" href="/turtle beach">
+          <a className="menuLink" title="Turtle Beach" href="#">
             Turtle Beach
           </a>
-          <a className="menuLink" title="Ultimate Ears" href="/ultimate ears">
+          <a className="menuLink" title="Ultimate Ears" href="#">
             Ultimate Ears
           </a>
-          <a className="menuLink" title="Virgin Plus" href="/virgin plus">
+          <a className="menuLink" title="Virgin Plus" href="#">
             Virgin Plus
           </a>
-          <a className="menuLink" title="Vitamix" href="/vitamix">
+          <a className="menuLink" title="Vitamix" href="#">
             Vitamix
           </a>
-          <a className="menuLink" title="VTech" href="/vtech">
+          <a className="menuLink" title="VTech" href="#">
             VTech
           </a>
-          <a className="menuLink" title="Weber" href="/weber">
+          <a className="menuLink" title="Weber" href="#">
             Weber
           </a>
-          <a
-            className="menuLink"
-            title="Western Digital"
-            href="/western digital"
-          >
+          <a className="menuLink" title="Western Digital" href="#l">
             Western Digital
           </a>
-          <a className="menuLink" title="Whirlpool" href="/whirlpool">
+          <a className="menuLink" title="Whirlpool" href="#">
             Whirlpool
           </a>
-          <a className="menuLink" title="Wolf Gourmet" href="/wolf gourmet">
+          <a className="menuLink" title="Wolf Gourmet" href="#">
             Wolf Gourmet
           </a>
-          <a className="menuLink" title="Xbox" href="/xbox">
+          <a className="menuLink" title="Xbox" href="#">
             Xbox
           </a>
-          <a className="menuLink" title="Xerox" href="/xerox">
+          <a className="menuLink" title="Xerox" href="#">
             Xerox
           </a>
-          <a className="menuLink" title="Yale" href="/yale">
+          <a className="menuLink" title="Yale" href="#">
             Yale
           </a>
-          <a className="menuLink" title="Yamaha" href="/yamaha">
+          <a className="menuLink" title="Yamaha" href="#">
             Yamaha
           </a>
         </div>

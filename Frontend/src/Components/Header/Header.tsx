@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import BrandsMenu from "./BrandsMenu";
 import { HeaderDiv } from "./HeaderStyled";
@@ -7,17 +7,21 @@ import DownDropDown from "./DownDropDown.svg";
 import UpDropDown from "./UpDropDown.svg";
 import ShopMenu from "./ShopMenu";
 import axios, { AxiosResponse } from "axios";
+import { CartCount_Context } from "../../Context/cartCounter";
 
 type Product = {
+  _id: string;
   title: string;
   quantity: number;
   save_amount: number;
   price: number;
   imageUrl: string;
   sale_End: string;
+  protection: boolean;
 };
 
 const Header = () => {
+  const { isChanged } = useContext(CartCount_Context);
   const [show, setShow] = useState(false);
   const [search, setSearch] = useState("");
   const [active, setActive] = useState("");
@@ -28,12 +32,13 @@ const Header = () => {
       .get("http://localhost:8080/cart/")
       .then((res: AxiosResponse<Product[]>) => {
         setCartData(res.data);
-      });
+      })
+      .catch((err) => console.error(err));
   };
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [isChanged]);
 
   return (
     <>
@@ -134,6 +139,17 @@ const Header = () => {
                     <path d="M0 0h24v24H0z" fill="none"></path>
                   </svg>
                   <span>Account</span>
+                  {/* <div
+                    className="containerProfile flyoutContainerProfile"
+                  >
+                    <span
+                      className="letterProfile"
+                    >
+                      D
+                    </span>
+
+                    <div class="flyoutMenuContent_SDrzC flyoutMenuContent_1Wflh" data-automation="account-flyout-menu-content" style="display: block;"><ul class="accountMenuContent_YtbbN accountMenuContentIcons_2NF_5" data-automation="account-menu-content"><li><a class="linkWithIcon_3zBQG" href="https://www.bestbuy.ca/account/en-ca" data-automation="my-account-link"><svg class="myAccountSvg_1c-6H" data-automation="myAccountSvg_1c-6H" fill="#FFFFFF" viewBox="0 0 32 32" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12.14,12A3.86,3.86,0,1,1,16,15.87,3.85,3.85,0,0,1,12.14,12Zm13.93,12.3V23.08A8.71,8.71,0,0,0,23,16.44a1,1,0,1,0-1.25,1.46,6.8,6.8,0,0,1,2.39,5.18v3.13a13,13,0,0,1-16.28,0V23.08a6.83,6.83,0,0,1,4.67-6.45,5.8,5.8,0,1,0-1.41-1.52,8.78,8.78,0,0,0-5.19,8v1.25A13.08,13.08,0,1,1,29.08,16,13,13,0,0,1,26.07,24.33ZM16,1A15,15,0,1,0,31,16,15,15,0,0,0,16,1Z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><span>Your Account</span></a></li><li><hr class="divider_mO4Xz"></li><li><a class="SignInOutNavLink_qR-Uu signOut_4jwCE linkWithIcon_3zBQG" data-automation="sign-out-link"><svg class="accountIcon_yy6Vi" data-automation="accountIcon_yy6Vi" fill="#FFFFFF" viewBox="0 0 32 32" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M24.28,17H10.21a1,1,0,0,1,0-1.92H24.28L19.09,9.85a1,1,0,1,1,1.37-1.36l6.81,6.81h0a1,1,0,0,1,.29.69.94.94,0,0,1-.3.7l-6.81,6.81a1,1,0,0,1-1.37-1.36ZM6.36,27.57h3.85a1,1,0,1,1,0,1.93H5.39a1,1,0,0,1-1-1V3.46a1,1,0,0,1,1-1h4.82a1,1,0,1,1,0,1.93H6.36Z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><span class="accountLabel_2tZVN" data-automation="sign-out-text">Sign Out</span></a></li></ul></div>
+                  </div> */}
                 </Link>
               </div>
               <div>
@@ -250,13 +266,17 @@ const Header = () => {
                         className="menu-main-l1"
                         style={{ maxHeight: "calc(100vh - 160px)" }}
                       >
-                        <a className="menuLink" title="Top Deals" href="/">
+                        <a
+                          className="menuLink"
+                          title="Top Deals"
+                          href="/topdeals"
+                        >
                           Top Deals
                         </a>
                         <a
                           className="menuLink"
                           title="Best Buy Outlet"
-                          href="/"
+                          href="/bestOutlet"
                         >
                           Best Buy Outlet
                         </a>
@@ -298,13 +318,12 @@ const Header = () => {
                         className="menu-main-l1"
                         style={{ maxHeight: "calc(100vh - 160px)" }}
                       >
-                        
                         <a
                           className="menuLink"
                           title="Geek Squad Services"
-                          href="/"
+                          href="/geeksquad"
                         >
-                        <Link className="linkt" to="/geeksquad">Geek Squad Services</Link>
+                          Geek Squad Services
                         </a>
                         <a
                           className="menuLink"
@@ -350,7 +369,10 @@ const Header = () => {
           </div>
         </div>
       </HeaderDiv>
-      <div className={active !== "" ? "globalOverlay" : ""}></div>
+      <div
+        onClick={() => setActive("")}
+        className={active !== "" ? "globalOverlay" : ""}
+      ></div>
     </>
   );
 };

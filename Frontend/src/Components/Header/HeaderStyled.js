@@ -336,7 +336,6 @@ export const HeaderDiv = styled.div`
     @media (min-width: 1025px) {
       top: 100%;
       height: 0;
-      overflow: visible;
       transform: translateY(-20px);
       margin-top: 12px;
       z-index: -1;
@@ -363,6 +362,7 @@ export const HeaderDiv = styled.div`
     @media (min-width: 1025px) {
       height: auto;
       transform: translateY(0);
+      overflow: visible;
     }
     opacity: 1;
     visibility: visible;
