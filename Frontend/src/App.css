@@ -1,6 +1,7 @@
-/* .App {
+.App {
   text-align: center;
-} */
+  /* width: 70%; */
+}
 
 .App-logo {
   height: 40vmin;
@@ -12,7 +13,73 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.buybestpro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 400px; */
+  grid-gap: 10px;
+  line-height: 1;
+}
 
+.singleproduct {
+  /* border: 1px solid pink; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  list-style: none;
+  gap: 10px;
+}
+li {
+  color: #282c34;
+  font-family: Human BBY, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.singleproduct > img {
+  width: 70%;
+  position: relative;
+}
+.singleproduct > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Human BBY, Arial, sans-serif;
+}
+.singleproduct h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0;
+}
+
+.filterbestbuy {
+  display: flex;
+
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+.filterbestbuy > div:nth-child(1) {
+  /* width: 25%; */
+  flex: 1;
+  /* border: 2px solid red; */
+}
+.filterbestbuy > div:nth-child(2) {
+  /* width: 60%; */
+  flex: 4;
+  /* border: 2px solid red; */
+}
+.bestbuyheading {
+  width: 95%;
+  margin: auto;
+}
+.bestbuyheading > img {
+  width: 100%;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,6 +89,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+StarBorderIcon {
+  background-color: yellow;
+}
+.jsonprice {
+  display: inline-block;
+  font-size: 18px;
+  color: red;
+  padding-left: 5px;
+  line-height: 1;
 }
 
 .App-link {
@@ -34,22 +111,5 @@
   }
   to {
     transform: rotate(360deg);
-  }
-}
-
-.globalOverlay {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100vh;
-  z-index: 1021;
-  transition: 0.1s;
-  position: fixed;
-  touch-action: none;
-  background-color: rgba(0, 0, 0, 0.5);
-
-  @media (min-width: 768px) {
-    z-index: 1010;
   }
 }
