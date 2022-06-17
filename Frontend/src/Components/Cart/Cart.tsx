@@ -24,13 +24,15 @@ const Cart = () => {
   const [cartData, setCartData] = useState<Product[]>([]);
   const [postalCode, setPostalCode] = useState("M5G 2C3");
   const [quantity, setQuantity] = useState<number | string>(1);
+  const [total, setTotal] = useState<number>(0);
+  const [totalDis, setTotalDis] = useState<number>(0);
 
   const getData = () => {
     setIsLoading(true);
     axios
       .get("http://localhost:8080/cart/")
       .then((res: AxiosResponse<Product[]>) => {
-        console.log("res.data:", res.data);
+        // console.log("res.data:", res.data);
         setCartData(res.data);
         setIsLoading(false);
       })
@@ -44,18 +46,49 @@ const Cart = () => {
     axios
       .delete(`http://localhost:8080/cart/${id}`)
       .then((res) => {
-        console.log("res.data:", res.data);
+        // console.log("res.data:", res.data);
         setIsChanged(!isChanged);
         getData();
       })
       .catch((err) => console.error(err));
   };
 
+  const upDateFunction = (id: string, quantity: number, val: number) => {
+    axios
+      .patch(`http://localhost:8080/cart/${id}`, { quantity: quantity + val })
+      .then((res) => {
+        // console.log("res.data:", res.data);
+        setIsChanged(!isChanged);
+        getData();
+      })
+      .catch((err) => console.error(err));
+  };
+
+  const calculateTotal = () => {
+    const total_Price = cartData.reduce((ac: number, data: Product) => {
+      ac += data.price * data.quantity;
+      return +ac.toFixed(2);
+    }, 0);
+    // console.log("total_Price:", total_Price);
+    setTotal(total_Price);
+
+    const total_Dis = cartData.reduce((ac: number, data: Product) => {
+      ac += data.save_amount * data.quantity;
+      return +ac.toFixed(2);
+    }, 0);
+    // console.log("total_Dis:", total_Dis);
+    setTotalDis(total_Dis);
+
+    localStorage.setItem("total", (total + (total * 4) / 100).toFixed(2));
+  };
+
   useEffect(() => {
     getData();
   }, []);
 
-  useEffect(() => {}, [quantity]);
+  useEffect(() => {
+    calculateTotal();
+  }, [cartData]);
 
   return (
     <CartStyled>
@@ -185,14 +218,19 @@ const Cart = () => {
                                           <div className="quantity-btns">
                                             <div>
                                               <svg
-                                                onClick={(e) => {
-                                                  setQuantity((prev) => {
-                                                    if (prev > 1) {
-                                                      return +prev - 1;
-                                                    } else {
-                                                      return +prev;
-                                                    }
-                                                  });
+                                                style={
+                                                  item.quantity <= 1
+                                                    ? { cursor: "arrow" }
+                                                    : { cursor: "pointer" }
+                                                }
+                                                onClick={() => {
+                                                  if (item.quantity >= 2) {
+                                                    upDateFunction(
+                                                      item._id,
+                                                      item.quantity,
+                                                      -1
+                                                    );
+                                                  }
                                                 }}
                                                 fill={
                                                   item.quantity <= 1
@@ -222,10 +260,13 @@ const Cart = () => {
                                             />
                                             <div>
                                               <svg
+                                                style={{ cursor: "pointer" }}
                                                 onClick={(e) => {
-                                                  setQuantity((prev) => {
-                                                    return +prev + 1;
-                                                  });
+                                                  upDateFunction(
+                                                    item._id,
+                                                    item.quantity,
+                                                    1
+                                                  );
                                                 }}
                                                 fill="#0046be"
                                                 className="darkGrey_oThXm icon_2kG7b icon_q2ZYd"
@@ -344,7 +385,10 @@ const Cart = () => {
                                         <td className="Cart_info-subTotalValue">
                                           <strong>
                                             <span>
-                                              ${item.price * item.quantity}
+                                              $
+                                              {(
+                                                item.price * item.quantity
+                                              ).toFixed(2)}
                                             </span>
                                           </strong>
                                         </td>
@@ -449,12 +493,12 @@ const Cart = () => {
                               <tbody>
                                 <tr>
                                   <th>Product Subtotal</th>
-                                  <td>$429.99</td>
+                                  <td>${total.toFixed(2)}</td>
                                 </tr>
                                 <tr className="discount">
                                   <th>Order Discounts</th>
                                   <td>
-                                    <div>-$100.00</div>
+                                    <div>-${totalDis.toFixed(2)}</div>
                                   </td>
                                 </tr>
                                 <tr>
@@ -463,13 +507,15 @@ const Cart = () => {
                                 </tr>
                                 <tr>
                                   <th>Estimated Taxes</th>
-                                  <td>$42.90</td>
+                                  <td>${((total * 4) / 100).toFixed(2)}</td>
                                 </tr>
                               </tbody>
                               <tfoot>
                                 <tr className="total">
                                   <th>Estimated Total</th>
-                                  <td>$372.89</td>
+                                  <td>
+                                    ${(total + (total * 4) / 100).toFixed(2)}
+                                  </td>
                                 </tr>
                               </tfoot>
                             </table>
@@ -525,7 +571,7 @@ const Cart = () => {
                           </p>
                         </div>
 
-                        <Link to="/Payment" className="checkoutbutton">
+                        <Link to="/checkout" className="checkoutbutton">
                           <span className="checkoutcontent" tabIndex={-1}>
                             <span>Continue to Checkout</span>
                           </span>

@@ -257,6 +257,7 @@ export const CartStyled = styled.div`
 
                               > div {
                                 margin: 16px 16px 16px 0;
+
                                 > span {
                                   display: flex;
                                   align-items: center;
@@ -996,7 +997,7 @@ export const CartStyled = styled.div`
     }
   }
 
-  .content {
+  > .content {
     display: flex;
     max-width: 1280px;
     margin: 0 auto;
