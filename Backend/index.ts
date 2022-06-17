@@ -2,6 +2,7 @@ import express from "express";
 const Connection = require("./storage/db");
 const cartRoute = require("./routes/cart.route");
 const bestProductRoute = require("./routes/bestProduct.route");
+const LoginRouter = require("./routes/Login");
 const cors = require("cors");
 
 let app = express();
@@ -19,6 +20,7 @@ app.use(express.json());
 const port = process.env.PORT || 8080;
 
 app.use("/cart", cartRoute);
+app.use("/auth", LoginRouter);
 
 app.use("/best", bestProductRoute);
 
