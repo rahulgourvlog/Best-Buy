@@ -8,7 +8,12 @@ const Signin = () => {
     <>
       <Header />
       <div
-        style={{ display: "flex", width: "100%", backgroundColor: "#fbfcfd" }}
+        style={{
+          display: "flex",
+          width: "100%",
+          backgroundColor: "#fbfcfd",
+          padding: " 0 0 100px 0",
+        }}
       >
         <Left />
         <Common />

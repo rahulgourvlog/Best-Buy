@@ -34,14 +34,16 @@ cartRoute.delete(
   }
 );
 
-cartRoute.patch("/:_id", async (req: express.Request, res: express.Response) => {
-  try {
-    const cart = await Cart.updateOne(req.params, { $set: req.body });
-    res.status(200).send({ message: "item updated successfully" });
-  } catch (err) {
-    if (err) res.status(404).send({ message: "item not found" });
+cartRoute.patch(
+  "/:_id",
+  async (req: express.Request, res: express.Response) => {
+    try {
+      const cart = await Cart.updateOne(req.params, { $set: req.body });
+      res.status(200).send({ message: "item updated successfully" });
+    } catch (err) {
+      if (err) res.status(404).send({ message: "item not found" });
+    }
   }
-});
-
+);
 
 module.exports = cartRoute;

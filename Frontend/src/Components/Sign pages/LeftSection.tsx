@@ -31,16 +31,17 @@ const Left = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
+    let timer: string | number | NodeJS.Timeout | undefined;
+    clearTimeout(timer);
     axios.post("http://localhost:8080/auth/login", formData).then((res) => {
       if (res.data.error) {
         setlogError(res.data);
-        let timer =setInterval(() => {
+        timer = setTimeout(() => {
           setlogError({
             error: "",
             message: "",
           });
         }, 3000);
-        clearInterval(timer)
       }
       const user = res.data;
       console.log("user:", user);
@@ -67,6 +68,17 @@ const Left = () => {
                       name={"email"}
                       onChange={handlechange}
                     />
+                    <div
+                      style={
+                        logError.error == "email"
+                          ? {
+                              boxShadow: "0 0 0 4px rgba(245,111,14,.15)",
+                              borderColor: "#bb0628",
+                            }
+                          : undefined
+                      }
+                      className={styled.hoverShadow}
+                    ></div>
                     {logError.error == "email" ? (
                       <div
                         style={{ marginTop: "8px" }}
@@ -96,12 +108,26 @@ const Left = () => {
                       style={{ border: "none" }}
                     />
                     <div
+                      style={
+                        logError.error == "email"
+                          ? {
+                              boxShadow: "0 0 0 4px rgba(245,111,14,.15)",
+                              borderColor: "#bb0628",
+                            }
+                          : undefined
+                      }
+                      className={styled.hoverShadow}
+                    ></div>
+
+                    <div
                       onClick={handleclick}
                       style={{
-                        marginTop: "15px",
-                        color: " #0046be",
+                        padding: "10px",
+                        color: "rgb(0, 70, 190)",
                         fontWeight: "400",
                         cursor: "pointer",
+                        display: "flex",
+                        alignItems: "center",
                       }}
                     >
                       {pass === "text" ? "show" : "hide"}
@@ -129,19 +155,18 @@ const Left = () => {
                 style={{
                   display: "flex",
                   width: "400px",
-                  justifyContent: "space-between",
-                  marginTop: "30px",
+                  gap: "27px",
                 }}
               >
                 <input
+                  className={styled.signInBtn}
                   type="submit"
                   value="Sign In"
                   style={{
                     backgroundColor: " #0046be",
                     border: "none",
-                    padding: "10px 10px",
+                    padding: "0.938rem 1.5rem",
                     width: "150px",
-                    borderRadius: "5px",
                     color: "white",
                     fontSize: "15px",
                     cursor: "pointer",

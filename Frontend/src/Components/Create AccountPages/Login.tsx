@@ -8,7 +8,12 @@ const Login = () => {
     <>
       <Header />
       <div
-        style={{ display: "flex", width: "100%", backgroundColor: "#fbfcfd" }}
+        style={{
+          display: "flex",
+          width: "100%",
+          backgroundColor: "#fbfcfd",
+          paddingBottom: "100px",
+        }}
       >
         <LeftSection />
         <RightSection />
