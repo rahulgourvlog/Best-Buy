@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+  /* width: 70%; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.buybestpro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 400px; */
+  grid-gap: 10px;
+  line-height: 1;
+}
+.buybestpro > div {
+  /* border: 2px solid red; */
+}
+/* .buybestpro > div img {
+  width: 100%;
+} */
+.singleproduct {
+  border: 1px solid pink;
+  width: 100%;
+  height: auto;
+  line-height: -10;
+}
+.singleproduct > img {
+  width: 100%;
+}
+.singleproduct > p {
+  text-align: center;
+  align-items: center;
+  /* font-weight: 400;
+  font-size: 14px;
+  line-height: 20px; */
+}
+.singleproduct h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0;
+}
+
+.filterbestbuy {
+  display: flex;
+
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+.filterbestbuy > div:nth-child(1) {
+  /* width: 25%; */
+  flex: 1;
+  /* border: 2px solid red; */
+}
+.filterbestbuy > div:nth-child(2) {
+  /* width: 60%; */
+  flex: 4;
+  /* border: 2px solid red; */
+}
+.bestbuyheading {
+  width: 95%;
+  margin: auto;
+}
+.bestbuyheading > img {
+  width: 100%;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+StarBorderIcon {
+  background-color: yellow;
+}
+.jsonprice {
+  display: inline-block;
+  font-size: 18px;
+  color: red;
+
+  line-height: 1;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

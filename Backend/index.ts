@@ -1,28 +1,31 @@
 import express from "express";
-const Connection = require("./storage/db");
-const cartRoute = require("./routes/cart.route");
 const cors = require("cors");
+const { Best, connection } = require("./BestSchema");
 
-let app = express();
-
-app.use(cors());
-
+const app = express();
 app.use(express.urlencoded({ extended: true }));
-
 app.use(express.json());
+app.use(
+  cors({
+    origin: ["http://localhost:3000"],
+  })
+);
 
-const port = process.env.PORT || 8080;
+app.get("/", (req, res) => {
+  res.send("working with type");
+});
 
-app.use("/cart", cartRoute);
+app.get("/Best", async (req, res) => {
+  const product = await Best.find();
+  return res.send(product);
+});
 
-app.listen(port, async () => {
-  
+const PORT = process.env.PORT || 8070;
+app.listen(PORT, async () => {
   try {
-    await Connection;
-    console.log("Connected Successfully");
-  } catch (err) {
-    console.log(err);
+    await connection;
+    console.log("Connected to db");
+  } catch {
+    console.log("failed to connect to db");
   }
-
-  console.log("Sever is live at http://localhost:8080");
 });

@@ -1,0 +1,33 @@
+.jsonprice {
+  display: inline-block;
+  font-size: 18px;
+  color: red;
+  color: #bb0628;
+  line-height: 1;
+  text-align: center;
+
+  font-family: Human BBY, Arial, sans-serif;
+
+  /* font-size: 14px; */
+  align-items: center;
+}
+.jsondiscount {
+  font-size: 12px;
+  font-weight: 600;
+  color: #bb0628;
+  white-space: nowrap;
+  margin: 0px 2px;
+  font-size: 14px;
+  align-items: center;
+  font-family: Human BBY, Arial, sans-serif;
+}
+.tododrating {
+  font-size: 12px;
+  font-weight: 600;
+  color: #bb0628;
+  white-space: nowrap;
+  margin: 0px 2px;
+  font-size: 14px;
+  align-items: center;
+  font-family: Human BBY, Arial, sans-serif;
+}

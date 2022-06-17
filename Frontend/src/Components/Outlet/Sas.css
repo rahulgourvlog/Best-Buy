@@ -1,0 +1,128 @@
+.Avilability {
+  display: flex;
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+}
+.category,
+.Avilability > p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.outletnav {
+  display: flex;
+  width: 100%;
+  background-color: #f4f6f9;
+  justify-content: space-between;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+}
+.instock {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+.instock div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.instock p {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 8px;
+}
+.aie {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: Open Sans, Roboto, Arial, sans-serif;
+  line-height: 1.46429em;
+  display: flex;
+  justify-content: center;
+}
+.qandans {
+  width: 85%;
+ 
+  margin: auto;
+}
+.qandans h2,
+p {
+  text-align: start;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px;
+  font-family: Human BBY, Arial, sans-serif;
+  color: #1d252c;
+}
+.beast {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
+  padding: 2px 10px;
+  grid-gap: 10px;
+}
+.mama,
+.mama2,
+.mama3,
+.mama4 {
+  width: 100%;
+  background-size: cover;
+  padding-top: 0;
+  height: 176px;
+}
+.mama {
+  background-image: url(https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt8f28bc4558658f14/5e963cb7461e697539f2362c/global-evergreen-offer-clearance-4col-m-en.png?width=1800&quality=80&auto=webp);
+}
+.mama2 {
+  background-image: url(https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt1805720cffe7d190/5e975e0189fc5535892fa6b6/eo-outletcentre-geekopenbox-4col-m-en.png?width=1800&quality=80&auto=webp);
+}
+.mama3 {
+  background-image: url(https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt8d0ed037e79ce7d8/5e963e0a5ce5f45edfe35925/global-evergreen-offer-openbox-4col-m-en.png?width=1800&quality=80&auto=webp);
+}
+.mama4 {
+  background-image: url(https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt945a8309e017a232/5e964afc068136747810ff7a/global-evergreen-offer-refurbished-4col-m-en.png?width=1800&quality=80&auto=webp);
+}
+.clearence {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 8px;
+  font-family: Human BBY, Arial, sans-serif;
+  /* color: pink; */
+}
+.boxdescription {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.linkshop {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0046be;
+}
+.linkshop:hover {
+  color: #0046be;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* color: #0046be; */
+  text-underline-offset: 0.5em;
+  text-decoration: underline;
+}
+
+.spancat {
+  font-size: 12px;
+  width: 10%;
+}
+.exploreoutlet {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 0 24px;
+}
