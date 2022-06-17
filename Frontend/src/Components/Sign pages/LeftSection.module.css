@@ -88,6 +88,22 @@
   border-color: #001e73;
 }
 
+.heading {
+  /* overflow: hidden; */
+  font-size: 12px;
+  line-height: 16px;
+  height: auto;
+  color: #bb0628;
+  
+  max-height: 5em;
+  opacity: 1;
+  transition: all 0.2s ease-in-out 0.2s, opacity 1s;
+  margin-top: 8px !important;
+}
+/* 
+transition: all .2s ease-out 0ms;
+    border-color: #bb0628; */
+
 .vPpxf input {
   position: relative;
 }

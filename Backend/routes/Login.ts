@@ -17,16 +17,18 @@ LoginRouter.post(
     ) {
       await user.save((err: express.Errback, data: express.Response) => {
         if (err) throw console.log(err);
-        return res.status(200).send(data);
+        return res.status(200).send(user);
       });
     } else if (!validator.isEmail(req.body.email)) {
-      return res
-        .status(200)
-        .send({ message: "Please give a valid email", error: true });
+      return res.status(200).send({
+        message: "Please give a valid email",
+        error: "email",
+      });
     } else {
-      return res
-        .status(200)
-        .send({ message: "Please give a stronger Passward", error: true });
+      return res.status(200).send({
+        message: "Please give a stronger Password",
+        error: "password",
+      });
     }
   }
 );
@@ -35,12 +37,28 @@ LoginRouter.post(
   "/login",
   async (req: express.Request, res: express.Response) => {
     const { email, password } = req.body;
-    const validuser = await User.find({ email, password });
-    console.log("validuser:", validuser);
-    if (!validuser) {
-      res.status(401).send({ message: "Invalid Crediancial" });
+    const validuserEmail = await User.find({ email });
+    const validuserPass = await User.find({ password });
+
+    console.log("validuserEmail:", validuserEmail);
+    console.log("validuserPass:", validuserPass);
+
+    if (validuserEmail.length === 0 && validuserPass.length === 0) {
+      res.status(200).send({ message: "Invalid Crediancial", error: "error" });
+    } else if (validuserEmail.length > 0 && validuserPass.length === 0) {
+      res.status(200).send({
+        message:
+          "Please enter your password. It must be 6 to 30 characters and contain at least one number and one letter.",
+        error: "password",
+      });
+    } else if (validuserEmail.length === 0 && validuserPass.length > 0) {
+      res.status(200).send({
+        message: "Please enter a valid email address.",
+        error: "email",
+      });
+    } else {
+      return res.send(validuserEmail);
     }
-    return res.send(validuser);
   }
 );
 

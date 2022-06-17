@@ -7,6 +7,7 @@ type SchemaType = {
   price: number;
   imageUrl: string;
   sale_End: string;
+  userid: string;
   protection: boolean;
 };
 
@@ -18,6 +19,7 @@ const cartSchema = new mongoose.Schema<SchemaType>({
   imageUrl: String,
   sale_End: String,
   protection: Boolean,
+  userid: String,
 });
 
 const Cart = mongoose.model("Cart", cartSchema);

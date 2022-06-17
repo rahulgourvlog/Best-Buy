@@ -1,9 +1,22 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import axios from "axios";
 import styled from "./LeftSection.module.css";
+import { CartCount_Context } from "../../Context/cartCounter";
+import { red } from "@mui/material/colors";
+
+type errType = {
+  message: string;
+  error: string;
+};
+
 const Left = () => {
   const [formData, Setformdata] = useState({});
   const [pass, Setpass] = useState("text");
+  const { isLogged, setIsLogged } = useContext(CartCount_Context);
+  const [logError, setlogError] = useState<errType>({
+    error: "",
+    message: "",
+  });
 
   const handleclick = () => {
     Setpass(pass === "text" ? "password" : "text");
@@ -17,12 +30,21 @@ const Left = () => {
   };
 
   const handleSubmit = (e: any) => {
-    console.log("e:", e);
     e.preventDefault();
     axios.post("http://localhost:8080/auth/login", formData).then((res) => {
-      alert("Sign In Successfully");
+      if (res.data.error) {
+        setlogError(res.data);
+        let timer =setInterval(() => {
+          setlogError({
+            error: "",
+            message: "",
+          });
+        }, 3000);
+        clearInterval(timer)
+      }
       const user = res.data;
-      localStorage.setItem("user", JSON.stringify(res.data));
+      console.log("user:", user);
+      setIsLogged(res.data._id);
       console.log(res.data);
     });
   };
@@ -45,7 +67,14 @@ const Left = () => {
                       name={"email"}
                       onChange={handlechange}
                     />
-                    <div className={styled.highlight}></div>
+                    {logError.error == "email" ? (
+                      <div
+                        style={{ marginTop: "8px" }}
+                        className={styled.highlight}
+                      >
+                        {logError.message}
+                      </div>
+                    ) : null}
                   </div>
                 </div>
               </div>
@@ -78,7 +107,22 @@ const Left = () => {
                       {pass === "text" ? "show" : "hide"}
                     </div>
                   </div>
-                  <div className={styled.highlight}></div>
+                  {logError.error == "password" ? (
+                    <div
+                      style={{ marginTop: "8px" }}
+                      className={styled.highlight}
+                    >
+                      {logError.message}
+                    </div>
+                  ) : null}
+                  {logError.error == "error" ? (
+                    <div
+                      style={{ marginTop: "8px" }}
+                      className={styled.highlight}
+                    >
+                      {logError.message}
+                    </div>
+                  ) : null}
                 </div>
               </div>
               <div

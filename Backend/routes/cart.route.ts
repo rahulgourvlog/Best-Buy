@@ -43,17 +43,5 @@ cartRoute.patch("/:_id", async (req: express.Request, res: express.Response) => 
   }
 });
 
-// {
-
-//   "_id": "62ab5152a7609e19309cb07c",
-//    "title": "Deckster 3-Piece Patio Conversation Set - Grey Brown Wicker/Beige Cushions",
-//    "quantity": 1,
-//    "price": 869.99,
-//    "imageUrl": "https://multimedia.bbycastatic.ca/multimedia/products/300x300/139/13974/13974513.jpg",
-//    "sale_End": "June 16, 2022",
-//    "protection": false,
-//    "save_amount": 130
-
-// }
 
 module.exports = cartRoute;

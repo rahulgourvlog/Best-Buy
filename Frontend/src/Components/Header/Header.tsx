@@ -127,7 +127,7 @@ const Header = () => {
                 <div>Stores</div>
               </Link>
               <div>
-                <Link to="/">
+                <Link to="/signin">
                   <svg
                     fill="#FFFFFF"
                     viewBox="0 0 32 32"
