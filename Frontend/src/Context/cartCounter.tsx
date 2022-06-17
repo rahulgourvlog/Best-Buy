@@ -5,15 +5,25 @@ const CartCount_Context = createContext({
   setIsChanged: (value: boolean) => {},
   isLogged: "",
   setIsLogged: (value: string) => {},
+  total: 0,
+  setTotalContext: (value: number) => {},
 });
 
 const CartCount_Provider = ({ children }: React.PropsWithChildren<{}>) => {
   const [isChanged, setIsChanged] = useState<boolean>(false);
   const [isLogged, setIsLogged] = useState("");
+  const [total, setTotalContext] = useState(0);
 
   return (
     <CartCount_Context.Provider
-      value={{ isChanged, setIsChanged, isLogged, setIsLogged }}
+      value={{
+        isChanged,
+        setIsChanged,
+        isLogged,
+        setIsLogged,
+        total,
+        setTotalContext,
+      }}
     >
       {children}
     </CartCount_Context.Provider>

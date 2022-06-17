@@ -1,0 +1,134 @@
+.sservices1{
+    width:80%;
+    /* border:1px solid black; */
+    height:70px;
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding:10px;
+}
+.stitle{
+    font-weight: 100;
+}
+.sbanner1{
+    width:100%;
+    height:400px;
+    background-color: #ececec;
+}
+.sbanner2{
+    background-image: url('https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt97fd413442696429/5f0d39abaf2a927f93b3bb50/geek-squad-service-evergreen-we_re-here-to-help-s.jpg?width=2877&quality=80&auto=webp');
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    height: 400px;
+    width:60%;
+    margin: auto;
+    padding-top: 120px;
+    line-height: 20px;
+}
+.smat1{
+    /* border:1px solid black; */
+    text-align: center;
+    height:100px;
+    margin-top: 40px;
+}
+.smat11{
+    /* border:1px solid black; */
+    text-align: center;
+    height:80px;
+}
+.smat12{
+    /* border:1px solid black; */
+    text-align: center;
+    height:70px;
+    width:80%;
+    margin:auto;
+}
+.smat12 >img {
+    height:100%;
+    width:100%;
+}
+.smat2{
+    /* border: 1px solid black; */
+    width:83%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: 190px 80px;
+    gap:10px;
+    padding: 20px;
+}
+.smat2 >div{
+    /* border:1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+.smat2 img{
+    height:100%;
+    width:100%;
+    border-radius: 2px;
+}
+.smat3{
+    /* border: 1px solid black; */
+    width:80%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: 180px 120px;
+    gap:20px;
+    padding: 40px;
+}
+.smat3 >div{
+    /* border:1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+.smat3 img{
+    height:100%;
+    width:100%;
+    border-radius: 2px;
+}
+.smat4{
+    /* border: 1px solid black; */
+    width:80%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: 180px 150px;
+    gap:20px;
+    padding: 40px;
+}
+.smat4 >div{
+    /* border:1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+}
+.smat4 img{
+    height:100%;
+    width:100%;
+    border-radius: 2px;
+}
+.smat5{
+    /* border: 1px solid black; */
+    width:80%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(2,42%);
+    grid-template-rows: 200px 120px;
+    gap:100px;
+    padding: 40px;
+    padding-left: 150px;
+}
+.smat5 >div{
+    /* border:1px solid black; */
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.smat5 img{
+    height:100%;
+    width:100%;
+    border-radius: 2px;
+}
+.linkt{
+    color:black;
+    text-decoration: none;
+}

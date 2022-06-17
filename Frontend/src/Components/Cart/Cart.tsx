@@ -9,18 +9,27 @@ import { CartCount_Context } from "../../Context/cartCounter";
 
 type Product = {
   _id: string;
-  title: string;
-  quantity: number;
   save_amount: number;
-  price: number;
-  imageUrl: string;
   sale_End: string;
+  quantity: number;
+  userid: string;
+  title: string;
+  description: string;
+  discountPercentage: number;
+  price: number;
+  thumbnail: string;
+  stock: number;
+  images: [string];
   protection: boolean;
+  rating: number;
+  brand: string;
+  category: string;
 };
 
 const Cart = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const { isChanged, setIsChanged } = useContext(CartCount_Context);
+  const { isChanged, setIsChanged, setTotalContext } =
+    useContext(CartCount_Context);
   const [cartData, setCartData] = useState<Product[]>([]);
   const [postalCode, setPostalCode] = useState("M5G 2C3");
   const [quantity, setQuantity] = useState<number | string>(1);
@@ -32,7 +41,7 @@ const Cart = () => {
     axios
       .get("http://localhost:8080/cart/")
       .then((res: AxiosResponse<Product[]>) => {
-        // console.log("res.data:", res.data);
+        console.log("res.data:", res.data);
         setCartData(res.data);
         setIsLoading(false);
       })
@@ -69,17 +78,17 @@ const Cart = () => {
       ac += data.price * data.quantity;
       return +ac.toFixed(2);
     }, 0);
-    // console.log("total_Price:", total_Price);
+    console.log("total_Price:", total_Price);
     setTotal(total_Price);
 
     const total_Dis = cartData.reduce((ac: number, data: Product) => {
-      ac += data.save_amount * data.quantity;
+      ac += 200 * data.quantity;
       return +ac.toFixed(2);
     }, 0);
     // console.log("total_Dis:", total_Dis);
     setTotalDis(total_Dis);
 
-    localStorage.setItem("total", (total + (total * 4) / 100).toFixed(2));
+    setTotalContext(+(total + (total * 4) / 100).toFixed(2));
   };
 
   useEffect(() => {
@@ -163,11 +172,11 @@ const Cart = () => {
                                 <div className="Cart_info-items">
                                   <div className="Cart_info-productDetails">
                                     <div className="Cart_info-imageContainer">
-                                      <Link to="">
+                                      <Link to="#">
                                         <img
+                                          src={item.thumbnail}
                                           style={{ width: "100%" }}
                                           itemProp="image"
-                                          src={item.imageUrl}
                                           alt="image placeHolder"
                                           width="100%"
                                         />
@@ -182,7 +191,7 @@ const Cart = () => {
                                       <div className="rightContainer">
                                         <div>
                                           <span className="productSaving">
-                                            SAVE ${item.save_amount}
+                                            SAVE ${item.save_amount || 200}
                                           </span>
                                           <span>${item.price}</span>
                                           <div className="productSaleEnds">

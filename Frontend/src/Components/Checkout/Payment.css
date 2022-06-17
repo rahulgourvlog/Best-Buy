@@ -1,0 +1,37 @@
+.chinp21{
+    width:20%;
+    height:56px;
+    font-size: 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.ppaypal{
+    width:95%;
+    height:50px;
+    background-color: #009cde;
+    text-align: center;
+    color: white;
+}
+.ppaypal >img{
+    margin-top: 9px;
+}
+.pcard{
+    border :1px solid black;
+    border-radius: 5px;
+    width:95%;
+    height:400px;
+    padding:20px;
+}
+.pcard:hover{
+   border:1px solid blue;
+}
+.pcard>img{
+    height:40px;
+    width:40px;
+}
+.chinp4{
+    width:28%;
+    height:50px;
+}

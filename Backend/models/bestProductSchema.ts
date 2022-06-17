@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-type SchemaType = {
+export type SchemaType = {
   title: string;
   description: string;
   discountPercentage: number;

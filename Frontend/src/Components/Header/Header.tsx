@@ -266,13 +266,17 @@ const Header = () => {
                         className="menu-main-l1"
                         style={{ maxHeight: "calc(100vh - 160px)" }}
                       >
-                        <a className="menuLink" title="Top Deals" href="/">
+                        <a
+                          className="menuLink"
+                          title="Top Deals"
+                          href="/topdeals"
+                        >
                           Top Deals
                         </a>
                         <a
                           className="menuLink"
                           title="Best Buy Outlet"
-                          href="/"
+                          href="/bestOutlet"
                         >
                           Best Buy Outlet
                         </a>
@@ -317,7 +321,7 @@ const Header = () => {
                         <a
                           className="menuLink"
                           title="Geek Squad Services"
-                          href="/"
+                          href="/geeksquad"
                         >
                           Geek Squad Services
                         </a>
