@@ -6,32 +6,13 @@ var { Router } = require("express");
 const User = require("../models/User");
 var LoginRouter = Router();
 
-//  LoginRouter.post("/signin",async(req,res)=>{
-//     const userdata=new User(req.body);
-// console.log(req.body)
-//  await userdata.save(
-// (err,data) => {
-
-// }
-
-//  )
-
-// if(err){
-//     res.status(500).send({message:"Error Occured"})
-// }
-// //return res.status(200).send(` HI ${req.body.firstName}`)
-// return res.status(201).send("sucess")
-// })
-
-//  })
-
 LoginRouter.post(
   "/signin",
   async (req: express.Request, res: express.Response) => {
     const user = new User(req.body);
 
     if (
-      validator.isEmail(req.body.email) ||
+      validator.isEmail(req.body.email) &&
       validator.isStrongPassword(req.body.password)
     ) {
       await user.save((err: express.Errback, data: express.Response) => {
@@ -39,11 +20,13 @@ LoginRouter.post(
         return res.status(200).send(data);
       });
     } else if (!validator.isEmail(req.body.email)) {
-      return res.status(200).send({ message: "Please give a valid email" });
+      return res
+        .status(200)
+        .send({ message: "Please give a valid email", error: true });
     } else {
       return res
         .status(200)
-        .send({ message: "Please give a stronger Passward" });
+        .send({ message: "Please give a stronger Passward", error: true });
     }
   }
 );
