@@ -149,6 +149,10 @@ margin-bottom: 30px;
    
 }
 
+.alldeals{
+    text-align: center;
+}
+
 .topdeals{
     background-color: rgba(255, 0, 0, 0.847);
     width:50px;

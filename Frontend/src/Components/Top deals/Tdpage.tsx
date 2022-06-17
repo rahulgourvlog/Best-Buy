@@ -110,7 +110,7 @@ useEffect(()=>{
             <h3>Save up to $1,000 with the purchase of 2 or more major kitchen appliances*.</h3>
         </div>
     </div>
-    <h1>All Top Deals</h1>
+    <h1 className='alldeals'>All Top Deals</h1>
         <div className='deals'>
             <div className='left' >
             <Accordian/>
