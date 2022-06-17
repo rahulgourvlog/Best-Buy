@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const AcccountNav = () => {
-  return (
-    <div>Create an account</div>
-  )
-}
+  return <div>Create an account</div>;
+};
 
-export default AcccountNav
+export default AcccountNav;

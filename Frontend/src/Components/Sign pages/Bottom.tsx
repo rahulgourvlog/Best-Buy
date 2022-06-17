@@ -1,13 +1,13 @@
 import React from "react";
 //import styled from "./header.module.css";
-import styled from "./Bottom.module.css"
+import styled from "./Bottom.module.css";
 const Bottom = () => {
   return (
     <>
-    <div>
+      <div>
         <div className={styled.securitytab}>
           <div className={styled.securitytab1}>
-            <svg 
+            <svg
               className="lock-icon"
               id="Layer_1"
               data-name="Layer 1"
@@ -20,7 +20,7 @@ const Bottom = () => {
             </svg>
           </div>
           <div className={styled.securityprivacy}>
-            <h3 className={styled.h3} style={{marginBottom:"-10px"}}>
+            <h3 className={styled.h3} style={{ marginBottom: "-10px" }}>
               <span>Security &amp; Privacy</span>
             </h3>
             <p className={styled.p}>
@@ -38,7 +38,7 @@ const Bottom = () => {
             </p>
           </div>
         </div>
-    </div>
+      </div>
     </>
   );
 };
