@@ -136,7 +136,7 @@ useEffect(()=>{
                             <h4>⭐⭐⭐⭐{e.rating}</h4>
                             <div className='topdeals'><h6>Top Deals</h6></div>
                             <h3 className='red'>${e.price}</h3>
-                            <p className='small'>{e.availability} to ship</p>
+                            <p className='small'>✔️ {e.availability} to ship</p>
                           
                         </div>
                         </Link>  
