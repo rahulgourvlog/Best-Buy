@@ -18,6 +18,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const port = process.env.PORT || 8080;
+app.get("/", (req, res) => {
+  res.send("App working");
+});
 
 app.use("/cart", cartRoute);
 app.use("/auth", LoginRouter);

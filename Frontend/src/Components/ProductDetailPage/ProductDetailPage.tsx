@@ -55,6 +55,7 @@ const ProductDetailPage = () => {
   const handleItem = async (e: any) => {
     const cartData = {
       quantity: 1,
+      save_amount: Math.round(Math.random() * (400 - 30)) + 30,
       userid: isLogged,
       ...pdata[0],
     };

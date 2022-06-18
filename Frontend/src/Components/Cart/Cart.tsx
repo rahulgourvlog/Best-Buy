@@ -6,6 +6,7 @@ import ProtectionSvg from "./ProtectionSvg.svg";
 import Paypal from "./Paypal.svg";
 import axios, { AxiosResponse } from "axios";
 import { CartCount_Context } from "../../Context/cartCounter";
+import moment from "moment";
 
 type Product = {
   _id: string;
@@ -66,7 +67,6 @@ const Cart = () => {
       .patch(`http://localhost:8080/cart/${id}`, { quantity: quantity + val })
       .then((res) => {
         // console.log("res.data:", res.data);
-        setIsChanged(!isChanged);
         getData();
       })
       .catch((err) => console.error(err));
@@ -88,6 +88,16 @@ const Cart = () => {
     setTotalDis(total_Dis);
     localStorage.setItem("total", (total + (total * 4) / 100).toFixed(2));
     setTotalContext(+(total + (total * 4) / 100).toFixed(2));
+  };
+
+  const Input_quantity = (id: string, value: number) => {
+    axios
+      .patch(`http://localhost:8080/cart/${id}`, { quantity: value })
+      .then((res) => {
+        // console.log("res.data:", res.data);
+        getData();
+      })
+      .catch((err) => console.error(err));
   };
 
   useEffect(() => {
@@ -202,7 +212,9 @@ const Cart = () => {
                                               itemProp="priceValidUntil"
                                               dateTime="2022-06-17T06:59:59Z"
                                             >
-                                              {item.sale_End}
+                                              {moment()
+                                                .add(Math.random(), "day")
+                                                .format("MMMM Do YYYY")}
                                             </time>
                                           </div>
                                         </div>
@@ -219,7 +231,7 @@ const Cart = () => {
                                                 <path d="M12.22,24.64a.94.94,0,0,1-1.34,0L4.07,17.69a1,1,0,0,1,0-1.37.93.93,0,0,1,1.34,0l6.17,6.25,15-15.21a.93.93,0,0,1,1.34,0,1,1,0,0,1,0,1.36Z"></path>
                                               </svg>
                                             </span>
-                                            <span className="container">
+                                            <span className="Available_container">
                                               Available to ship
                                             </span>
                                           </p>
@@ -262,10 +274,18 @@ const Cart = () => {
                                               name="quantity"
                                               className="quantity"
                                               autoComplete="off"
-                                              value={item.quantity}
-                                              onChange={(e) =>
-                                                e.target.value.slice(0, 1)
-                                              }
+                                              defaultValue={item.quantity}
+                                              onChange={(e) => {
+                                                if (
+                                                  +e.target.value.slice(0, 1) >
+                                                  0
+                                                ) {
+                                                  Input_quantity(
+                                                    item._id,
+                                                    +e.target.value.slice(0, 1)
+                                                  );
+                                                }
+                                              }}
                                             />
                                             <div>
                                               <svg

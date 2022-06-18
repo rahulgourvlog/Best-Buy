@@ -15,6 +15,7 @@ import ProductDetailPage from "./Components/ProductDetailPage/ProductDetailPage"
 import Checkout from "./Components/Checkout/Checkout";
 import Payment from "./Components/Checkout/Payment";
 import Otp from "./Components/Otp & success/Otp";
+import Your_account from "./Components/Your Account/Your_account";
 
 function App() {
   const location = useLocation();
@@ -28,10 +29,12 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/signin" element={<Signin />}></Route>
-        <Route path="/login" element={<Login />}></Route>
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/user" element={<Users />} />
         <Route path="/Home" element={<Best />} />
-        <Route path="/user" element={<Users />}></Route>
+        <Route path="/user" element={<Users />} />
+        <Route path="/account" element={<Your_account />} />
         <Route path="/topdeals" element={<Tdpage />} />
         <Route path="/Cart" element={<Cart />} />
         <Route path="/geeksquad" element={<GeekSquad />} />
