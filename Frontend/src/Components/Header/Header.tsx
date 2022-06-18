@@ -471,7 +471,10 @@ const Header = () => {
         </div>
       </HeaderDiv>
       <div
-        onClick={() => setActive("")}
+        onClick={() => {
+          setActive("");
+          document.body.style.overflow = "visible";
+        }}
         className={active !== "" ? "globalOverlay" : ""}
       ></div>
     </>
