@@ -2,24 +2,30 @@ import mongoose from "mongoose";
 
 type SchemaType = {
   title: string;
-  quantity: number;
-  save_amount: number;
+  description: string;
+  discountPercentage: number;
   price: number;
-  imageUrl: string;
-  sale_End: string;
-  userid: string;
+  thumbnail: string;
+  stock: number;
+  images: string[];
   protection: boolean;
+  rating: number;
+  brand: string;
+  category: string;
 };
 
 const cartSchema = new mongoose.Schema<SchemaType>({
   title: String,
-  quantity: Number,
-  save_amount: Number,
+  description: String,
+  discountPercentage: Number,
   price: Number,
-  imageUrl: String,
-  sale_End: String,
+  thumbnail: String,
+  stock: Number,
+  images: [String],
   protection: Boolean,
-  userid: String,
+  rating: Number,
+  brand: String,
+  category: String,
 });
 
 const Cart = mongoose.model("Cart", cartSchema);
