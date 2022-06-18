@@ -16,7 +16,7 @@ function Navofout(props: propstype) {
           <BasicSwitches />
         </div>
         <div className="aie">
-          <div>In Stock</div>
+          <div>Best Buy only</div>
           <BasicSwitches />
         </div>
         <div className="instock">

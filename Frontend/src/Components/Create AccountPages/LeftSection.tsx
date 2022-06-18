@@ -1,14 +1,26 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import axios, { AxiosResponse } from "axios";
 import styled from "../Sign pages/LeftSection.module.css";
 import { VscAccount } from "react-icons/vsc";
 import { VscChevronRight } from "react-icons/vsc";
 
 import { useNavigate } from "react-router-dom";
+import { CartCount_Context } from "../../Context/cartCounter";
+
+type errType = {
+  message: string;
+  error: string;
+};
+
 const LeftSection = () => {
   const [formData, Setformdata] = useState({});
   const navigate = useNavigate();
   const [pass, Setpass] = useState("text");
+  const { isLogged, setIsLogged } = useContext(CartCount_Context);
+  const [logError, setlogError] = useState<errType>({
+    error: "",
+    message: "",
+  });
 
   const handleclick = () => {
     Setpass(pass === "text" ? "password" : "text");
@@ -25,14 +37,26 @@ const LeftSection = () => {
     var id = localStorage.getItem("userid") || "";
     e.preventDefault();
     //console.log(formData)
+    let timer: string | number | NodeJS.Timeout | undefined;
+    clearTimeout(timer);
     axios
       .post("http://localhost:8080/auth/signin", formData)
       .then((res: AxiosResponse<any, any>) => {
-        alert("Sign In Successfully");
-        console.log(res.data);
-
-        id = res.data._id;
-        localStorage.setItem("userid", id);
+        if (res.data.error) {
+          setlogError(res.data);
+          timer = setTimeout(() => {
+            setlogError({
+              error: "",
+              message: "",
+            });
+          }, 3000);
+          return;
+        }
+        const user = res.data;
+        // console.log("user:", user);
+        localStorage.setItem("userid", user[0].id);
+        setIsLogged(user._id);
+        navigate("/signin");
       });
   };
 
@@ -59,7 +83,28 @@ const LeftSection = () => {
                       name={"firstName"}
                       onChange={handlechange}
                     />
-                    <div className={styled.highlight}></div>
+                    <div
+                      style={
+                        logError.error == "firstName"
+                          ? {
+                              boxShadow: "0 0 0 4px rgba(245,111,14,.15)",
+                              borderColor: "#bb0628",
+                              height: "53%",
+                            }
+                          : undefined
+                      }
+                      className={styled.hoverShadow}
+                    ></div>
+
+                    <div
+                      style={{
+                        marginTop: "8px",
+                        opacity: logError.error == "firstName" ? "1" : "0",
+                      }}
+                      className={styled.highlight}
+                    >
+                      {logError.message}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -73,7 +118,27 @@ const LeftSection = () => {
                       name={"lastName"}
                       onChange={handlechange}
                     />
-                    <div className={styled.highlight}></div>
+                    <div
+                      style={
+                        logError.error == "lastName"
+                          ? {
+                              boxShadow: "0 0 0 4px rgba(245,111,14,.15)",
+                              borderColor: "#bb0628",
+                              height: "53%",
+                            }
+                          : undefined
+                      }
+                      className={styled.hoverShadow}
+                    ></div>
+                    <div
+                      style={{
+                        marginTop: "8px",
+                        opacity: logError.error == "lastName" ? "1" : "0",
+                      }}
+                      className={styled.highlight}
+                    >
+                      {logError.message}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -87,7 +152,27 @@ const LeftSection = () => {
                       name={"email"}
                       onChange={handlechange}
                     />
-                    <div className={styled.highlight}></div>
+                    <div
+                      style={
+                        logError.error == "email"
+                          ? {
+                              boxShadow: "0 0 0 4px rgba(245,111,14,.15)",
+                              borderColor: "#bb0628",
+                              height: "53%",
+                            }
+                          : undefined
+                      }
+                      className={styled.hoverShadow}
+                    ></div>
+                    <div
+                      style={{
+                        marginTop: "8px",
+                        opacity: logError.error == "email" ? "1" : "0",
+                      }}
+                      className={styled.highlight}
+                    >
+                      {logError.message}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -109,18 +194,42 @@ const LeftSection = () => {
                       style={{ border: "none" }}
                     />
                     <div
+                      style={
+                        logError.error == "password"
+                          ? {
+                              boxShadow: "0 0 0 4px rgba(245,111,14,.15)",
+                              borderColor: "#bb0628",
+                              height: "53%",
+                            }
+                          : undefined
+                      }
+                      className={styled.hoverShadow}
+                    ></div>
+
+                    <div
                       onClick={handleclick}
                       style={{
-                        marginTop: "15px",
                         color: " #0046be",
                         fontWeight: "400",
                         cursor: "pointer",
+                        padding: "10px",
+                        display: "flex",
+                        alignItems: "center",
                       }}
                     >
                       {pass === "text" ? "show" : "hide"}
                     </div>
                   </div>
-                  <div className={styled.highlight}></div>
+
+                  <div
+                    style={{
+                      marginTop: "8px",
+                      opacity: logError.error == "password" ? "1" : "0",
+                    }}
+                    className={styled.highlight}
+                  >
+                    {logError.message}
+                  </div>
                 </div>
               </div>
               <div
@@ -148,17 +257,16 @@ const LeftSection = () => {
                   deals, new products, and more. Don’t worry, you can
                   unsubscribe at any time.
                 </label>
-                <div className="highlight"></div>
               </div>
               <input
                 type="submit"
                 value="Create Account"
                 style={{
+                  outline: "none",
                   backgroundColor: "#ffce00 ",
                   border: "none",
                   padding: "15px 10px",
                   width: "150px",
-                  borderRadius: "5px",
                   color: "black",
                   fontSize: "15px",
                   cursor: "pointer",

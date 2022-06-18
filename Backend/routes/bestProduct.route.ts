@@ -12,6 +12,14 @@ bestProductRoute.get(
   }
 );
 
+bestProductRoute.get(
+  "/:_id",
+  async (req: express.Request, res: express.Response) => {
+    const bestProduct = await BestProduct.find(req.params);
+    res.status(200).send(bestProduct);
+  }
+);
+
 bestProductRoute.post(
   "/",
   async (req: express.Request, res: express.Response) => {

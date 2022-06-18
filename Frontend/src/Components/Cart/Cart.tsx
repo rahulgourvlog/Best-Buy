@@ -6,31 +6,40 @@ import ProtectionSvg from "./ProtectionSvg.svg";
 import Paypal from "./Paypal.svg";
 import axios, { AxiosResponse } from "axios";
 import { CartCount_Context } from "../../Context/cartCounter";
+import moment from "moment";
 
 type Product = {
   _id: string;
-  title: string;
-  quantity: number;
   save_amount: number;
-  price: number;
-  imageUrl: string;
   sale_End: string;
+  quantity: number;
+  userid: string;
+  title: string;
+  description: string;
+  discountPercentage: number;
+  price: number;
+  thumbnail: string;
+  stock: number;
+  images: [string];
   protection: boolean;
+  rating: number;
+  brand: string;
+  category: string;
 };
 
 const Cart = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const { isChanged, setIsChanged } = useContext(CartCount_Context);
+  const { isChanged, setIsChanged, setTotalContext, isLogged } =
+    useContext(CartCount_Context);
   const [cartData, setCartData] = useState<Product[]>([]);
   const [postalCode, setPostalCode] = useState("M5G 2C3");
-  const [quantity, setQuantity] = useState<number | string>(1);
   const [total, setTotal] = useState<number>(0);
   const [totalDis, setTotalDis] = useState<number>(0);
 
   const getData = () => {
     setIsLoading(true);
     axios
-      .get("http://localhost:8080/cart/")
+      .get(`http://localhost:8080/cart/${isLogged}`)
       .then((res: AxiosResponse<Product[]>) => {
         // console.log("res.data:", res.data);
         setCartData(res.data);
@@ -58,7 +67,6 @@ const Cart = () => {
       .patch(`http://localhost:8080/cart/${id}`, { quantity: quantity + val })
       .then((res) => {
         // console.log("res.data:", res.data);
-        setIsChanged(!isChanged);
         getData();
       })
       .catch((err) => console.error(err));
@@ -73,13 +81,23 @@ const Cart = () => {
     setTotal(total_Price);
 
     const total_Dis = cartData.reduce((ac: number, data: Product) => {
-      ac += data.save_amount * data.quantity;
+      ac += 200 * data.quantity;
       return +ac.toFixed(2);
     }, 0);
     // console.log("total_Dis:", total_Dis);
     setTotalDis(total_Dis);
-
     localStorage.setItem("total", (total + (total * 4) / 100).toFixed(2));
+    setTotalContext(+(total + (total * 4) / 100).toFixed(2));
+  };
+
+  const Input_quantity = (id: string, value: number) => {
+    axios
+      .patch(`http://localhost:8080/cart/${id}`, { quantity: value })
+      .then((res) => {
+        // console.log("res.data:", res.data);
+        getData();
+      })
+      .catch((err) => console.error(err));
   };
 
   useEffect(() => {
@@ -163,11 +181,11 @@ const Cart = () => {
                                 <div className="Cart_info-items">
                                   <div className="Cart_info-productDetails">
                                     <div className="Cart_info-imageContainer">
-                                      <Link to="">
+                                      <Link to="#">
                                         <img
+                                          src={item.thumbnail}
                                           style={{ width: "100%" }}
                                           itemProp="image"
-                                          src={item.imageUrl}
                                           alt="image placeHolder"
                                           width="100%"
                                         />
@@ -175,14 +193,17 @@ const Cart = () => {
                                     </div>
                                     <div className="Cart_info-detailsContainer">
                                       <div className="leftContainer">
-                                        <Link className="title-link" to="/">
+                                        <Link
+                                          className="title-link"
+                                          to={`/ProductDetailPage${item._id}`}
+                                        >
                                           {item.title}
                                         </Link>
                                       </div>
                                       <div className="rightContainer">
                                         <div>
                                           <span className="productSaving">
-                                            SAVE ${item.save_amount}
+                                            SAVE ${item.save_amount || 200}
                                           </span>
                                           <span>${item.price}</span>
                                           <div className="productSaleEnds">
@@ -191,7 +212,9 @@ const Cart = () => {
                                               itemProp="priceValidUntil"
                                               dateTime="2022-06-17T06:59:59Z"
                                             >
-                                              {item.sale_End}
+                                              {moment()
+                                                .add(Math.random(), "day")
+                                                .format("MMMM Do YYYY")}
                                             </time>
                                           </div>
                                         </div>
@@ -208,7 +231,7 @@ const Cart = () => {
                                                 <path d="M12.22,24.64a.94.94,0,0,1-1.34,0L4.07,17.69a1,1,0,0,1,0-1.37.93.93,0,0,1,1.34,0l6.17,6.25,15-15.21a.93.93,0,0,1,1.34,0,1,1,0,0,1,0,1.36Z"></path>
                                               </svg>
                                             </span>
-                                            <span className="container">
+                                            <span className="Available_container">
                                               Available to ship
                                             </span>
                                           </p>
@@ -251,12 +274,18 @@ const Cart = () => {
                                               name="quantity"
                                               className="quantity"
                                               autoComplete="off"
-                                              value={item.quantity}
-                                              onChange={(e) =>
-                                                setQuantity(
-                                                  +e.target.value.slice(0, 1)
-                                                )
-                                              }
+                                              defaultValue={item.quantity}
+                                              onChange={(e) => {
+                                                if (
+                                                  +e.target.value.slice(0, 1) >
+                                                  0
+                                                ) {
+                                                  Input_quantity(
+                                                    item._id,
+                                                    +e.target.value.slice(0, 1)
+                                                  );
+                                                }
+                                              }}
                                             />
                                             <div>
                                               <svg

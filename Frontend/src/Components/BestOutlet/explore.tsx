@@ -4,7 +4,7 @@ import "./Sas.css";
 function Explore() {
   return (
     <div>
-      <h4>Explore our Outlet</h4>
+      <h4 className="exploreoutlet">Explore our Outlet</h4>
       <div className="beast">
         <div className="">
           <div className="mama"></div>

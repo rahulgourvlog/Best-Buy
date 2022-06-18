@@ -12,33 +12,42 @@ import Video from "./images/video.jpg";
 import Camera from "./images/camera.jpg";
 import watch from "./images/watch.jpg";
 import Fridge from "./images/fridge.jpg";
+import Db from "./db.json";
 import axios from "axios";
-
-interface productType {
-  thumbnail: string;
-  title: string;
-}
+import StarBorderIcon from "@mui/icons-material/StarBorder";
+import "./Data.css";
+import products from "./db.json";
 
 function Shopour() {
-  const [product, setProduct] = useState<productType[]>([]);
-  useEffect(() => {
-    getdata();
-  }, []);
-  const getdata = () => {
-    axios({
-      url: "http://localhost:3000/products",
-      method: "GET",
-    })
-      .then((res) => {
-        setProduct(res.data.splice(0, 12));
-      })
-      .catch((err) => console.log("Err"));
-  };
-  console.log(product);
+  interface product {
+    thumbnail: string;
+    title: string;
+    rating: string;
+    price: number;
+    discountPercentage: number;
+  }
+  // const [product, setProduct] = useState([]);
+  // useEffect(() => {
+  //   getdata();
+  // }, []);
+  // const getdata = () => {
+  //   axios({
+  //     url: "http://localhost:3000/products",
+  //     method: "GET",
+  //   })
+  //     .then((res) => {
+  //       setProduct(res.data.splice(0, 12));
+  //     })
+  //     .catch((err) => console.log("Err"));
+  // };
+  const product = products.products;
+  // console.log(product);
   return (
     <>
       <div>
-        <h3>Shop our most popular outlet categories</h3>
+        <h4 className="exploreoutlet">
+          Shop our most popular outlet categories
+        </h4>
         <div className="shopour">
           <div>
             <img src={Laptop} alt="" />
@@ -88,19 +97,24 @@ function Shopour() {
           <div>
             <img src={Fridge} alt="" />
             <p>
-              <a href="*/#">Major Appliances</a>
+              <a>Major Appliances</a>
             </p>
           </div>
         </div>
-        <h3>More deals to get excited about</h3>
+        <h4 className="exploreoutlet">More deals to get excited about</h4>
 
         <div className="mehbooba">
-          {product.map((t: productType) => {
+          {product.map((t: product) => {
             return (
               <div className="abcd">
                 <div>
-                  <img src={t.thumbnail} alt="" />
+                  <img src={t.thumbnail} />
                   <p>{t.title}</p>
+                  <p>{t.rating}</p>
+                  <h3 className="jsonprice">{`$  ${t.price} `}</h3>
+                  <span className="jsondiscount">{`
+                       save  $ ${t.discountPercentage}
+                  `}</span>
                 </div>
               </div>
             );

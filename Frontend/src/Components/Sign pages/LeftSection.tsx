@@ -1,9 +1,24 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import axios from "axios";
 import styled from "./LeftSection.module.css";
+import { CartCount_Context } from "../../Context/cartCounter";
+import { red } from "@mui/material/colors";
+import { useNavigate } from "react-router-dom";
+
+type errType = {
+  message: string;
+  error: string;
+};
+
 const Left = () => {
+  const navigate = useNavigate();
   const [formData, Setformdata] = useState({});
   const [pass, Setpass] = useState("text");
+  const { isLogged, setIsLogged } = useContext(CartCount_Context);
+  const [logError, setlogError] = useState<errType>({
+    error: "",
+    message: "",
+  });
 
   const handleclick = () => {
     Setpass(pass === "text" ? "password" : "text");
@@ -17,13 +32,26 @@ const Left = () => {
   };
 
   const handleSubmit = (e: any) => {
-    console.log("e:", e);
     e.preventDefault();
+    let timer: string | number | NodeJS.Timeout | undefined;
+    clearTimeout(timer);
     axios.post("http://localhost:8080/auth/login", formData).then((res) => {
-      alert("Sign In Successfully");
+      if (res.data.error) {
+        setlogError(res.data);
+        timer = setTimeout(() => {
+          setlogError({
+            error: "",
+            message: "",
+          });
+        }, 3000);
+        return;
+      }
+
       const user = res.data;
-      localStorage.setItem("user", JSON.stringify(res.data));
-      console.log(res.data);
+      // console.log("user:", user);
+      setIsLogged(user[0]._id);
+      alert("Sign In Successful");
+      // navigate("/user");
     });
   };
   return (
@@ -45,13 +73,38 @@ const Left = () => {
                       name={"email"}
                       onChange={handlechange}
                     />
-                    <div className={styled.highlight}></div>
+                    <div
+                      style={
+                        logError.error == "email" || logError.error == "error"
+                          ? {
+                              boxShadow: "0 0 0 4px rgba(245,111,14,.15)",
+                              borderColor: "#bb0628",
+                            }
+                          : undefined
+                      }
+                      className={styled.uniqueInput}
+                    ></div>
+                    <div
+                      style={{
+                        marginTop: "8px",
+                        position: "absolute",
+                        opacity: logError.error == "error" ? "1" : "0",
+                      }}
+                      className={styled.highlight}
+                    >
+                      {logError.message}
+                    </div>
                   </div>
                 </div>
               </div>
               <div className={styled.field}>
                 <div className={styled.container}>
-                  <label className={styled.label}>Password</label>
+                  <label
+                    style={{ margin: "12px 0 3px" }}
+                    className={styled.label}
+                  >
+                    Password
+                  </label>
                   <div
                     style={{
                       display: "flex",
@@ -67,37 +120,71 @@ const Left = () => {
                       style={{ border: "none" }}
                     />
                     <div
+                      style={
+                        logError.error == "password" ||
+                        logError.error == "error"
+                          ? {
+                              boxShadow: "0 0 0 4px rgba(245,111,14,.15)",
+                              borderColor: "#bb0628",
+                            }
+                          : undefined
+                      }
+                      className={styled.uniqueInput}
+                    ></div>
+
+                    <div
                       onClick={handleclick}
                       style={{
-                        marginTop: "15px",
-                        color: " #0046be",
+                        padding: "10px",
+                        color: "rgb(0, 70, 190)",
                         fontWeight: "400",
                         cursor: "pointer",
+                        display: "flex",
+                        alignItems: "center",
                       }}
                     >
                       {pass === "text" ? "show" : "hide"}
                     </div>
                   </div>
-                  <div className={styled.highlight}></div>
+                  <div
+                    style={{
+                      marginTop: "8px",
+                      position: "absolute",
+                      opacity: logError.error == "password" ? "1" : "0",
+                    }}
+                    className={styled.highlight}
+                  >
+                    {logError.message}
+                  </div>
+                  <div
+                    style={{
+                      marginTop: "8px",
+                      position: "absolute",
+                      opacity: logError.error == "error" ? "1" : "0",
+                    }}
+                    className={styled.highlight}
+                  >
+                    {logError.message}
+                  </div>
                 </div>
               </div>
               <div
                 style={{
                   display: "flex",
                   width: "400px",
-                  justifyContent: "space-between",
-                  marginTop: "30px",
+                  gap: "27px",
+                  marginTop: "25px",
                 }}
               >
                 <input
+                  className={styled.signInBtn}
                   type="submit"
                   value="Sign In"
                   style={{
                     backgroundColor: " #0046be",
                     border: "none",
-                    padding: "10px 10px",
+                    padding: "0.938rem 1.5rem",
                     width: "150px",
-                    borderRadius: "5px",
                     color: "white",
                     fontSize: "15px",
                     cursor: "pointer",

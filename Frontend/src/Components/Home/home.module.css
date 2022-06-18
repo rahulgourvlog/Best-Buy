@@ -1,0 +1,158 @@
+.slidermain1{
+    border:1px solid black;
+    border-radius: 5px;
+    background-image: url("https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt71e1383b68204484/61d61aa8f8d92f215589284c/global-topdeals-20220107-showcase-bg-s.jpg?width=2877&quality=80&auto=webp");
+    background-size: 100% 100%;
+    height:500px;
+    padding:10px;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: 450px;
+    gap:90px;
+    width:1100px;
+    margin:auto;
+    margin-top: 50px;
+    
+}
+
+.slidermain1grey{
+    border:1px solid black;
+    border-radius: 5px;
+    background-image:url(https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt19347504a66c4c3c/6177317b6c56425dcbf64c33/global-lg-evergreen-featureskulist-less-m.jpg?width=5760&quality=80&auto=webp);
+    background-size: 100% 100%;
+    height:500px;
+    padding:10px;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: 450px;
+    gap:90px;
+    width:1100px;
+    margin:auto;
+    margin-top: 50px;
+    
+}
+.slidermain2{
+    border:1px solid black;
+    border-radius: 5px;
+    background-image: url("https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt19347504a66c4c3c/6177317b6c56425dcbf64c33/global-lg-evergreen-featureskulist-less-m.jpg?width=2877&quality=80&auto=webp");
+    background-size: 100% 100%;
+    height:500px;
+    padding:10px;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: 450px;
+    gap:90px;
+    width:80%;
+    margin:auto;
+    margin-top: 50px;
+    
+}
+
+.slider1{
+    padding-top: 50px;
+    color: white;
+}
+.slider2{
+    height:360px;
+    /* border:2px solid black; */
+    width:100%;
+    height:100%;
+    margin:auto;
+    padding-top:20px;
+    /* display:flex;
+    gap:10px; */
+}
+.products1{
+    /* border:2px solid black; */
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px;
+    background-color: white;
+    height:480px;
+}
+.slider2 img{
+    width:80%;
+    height:200px;
+     margin-bottom:10px ; 
+   
+}
+img{
+    padding-top: 10px;
+}
+
+.p1{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box!important;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Human BBY,Arial,sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:#868d91  ;
+}
+.p2{
+    border: none;
+}
+.p4{
+  
+        display: inline-block;
+        background-color: #bb0628;
+        color: #fff;
+        position: relative;
+        height: 16px;
+        max-height: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 10px;
+        font-weight: 800;
+        line-height: 16px;
+    }
+
+
+
+    .div {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        margin: 0 0 16px;
+        text-align: center;
+        font-weight: 600;
+        line-height: 24px;
+        font-size: 20px;
+        margin: 0 0 16px;
+        display: block;
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .slick-prev:before,
+.slick-next:before {
+  color: #3d72d5 ;
+}
+    /* .sectionTitle_x2Bri, .singleButton_1aTOv {
+        
+    }
+    h2, h3 {
+        
+    }
+    h2 {
+        font-size: 20px;
+        margin: 0 0 16px;
+    }
+    h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    } */
