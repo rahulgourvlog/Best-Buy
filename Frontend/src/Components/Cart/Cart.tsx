@@ -39,7 +39,7 @@ const Cart = () => {
   const getData = () => {
     setIsLoading(true);
     axios
-      .get(`http://localhost:8080/cart/${isLogged}`)
+      .get(`https://best-buy-web-clone.herokuapp.com/cart/${isLogged}`)
       .then((res: AxiosResponse<Product[]>) => {
         // console.log("res.data:", res.data);
         setCartData(res.data);
@@ -53,7 +53,7 @@ const Cart = () => {
 
   const deleteFunction = (id: string) => {
     axios
-      .delete(`http://localhost:8080/cart/${id}`)
+      .delete(`https://best-buy-web-clone.herokuapp.com/cart/${id}`)
       .then((res) => {
         // console.log("res.data:", res.data);
         setIsChanged(!isChanged);
@@ -64,7 +64,9 @@ const Cart = () => {
 
   const upDateFunction = (id: string, quantity: number, val: number) => {
     axios
-      .patch(`http://localhost:8080/cart/${id}`, { quantity: quantity + val })
+      .patch(`https://best-buy-web-clone.herokuapp.com/cart/${id}`, {
+        quantity: quantity + val,
+      })
       .then((res) => {
         // console.log("res.data:", res.data);
         getData();
@@ -92,7 +94,9 @@ const Cart = () => {
 
   const Input_quantity = (id: string, value: number) => {
     axios
-      .patch(`http://localhost:8080/cart/${id}`, { quantity: value })
+      .patch(`https://best-buy-web-clone.herokuapp.com/cart/${id}`, {
+        quantity: value,
+      })
       .then((res) => {
         // console.log("res.data:", res.data);
         getData();

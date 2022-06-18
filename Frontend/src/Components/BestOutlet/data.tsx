@@ -40,7 +40,7 @@ function Data() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:8080/best")
+    fetch("https://best-buy-web-clone.herokuapp.com/best")
       .then((res) =>
         res.json().then((response) => setTodos(response.slice(0, 13)))
       )

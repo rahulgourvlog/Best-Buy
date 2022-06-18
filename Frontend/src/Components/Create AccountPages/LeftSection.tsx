@@ -40,7 +40,7 @@ const LeftSection = () => {
     let timer: string | number | NodeJS.Timeout | undefined;
     clearTimeout(timer);
     axios
-      .post("http://localhost:8080/auth/signin", formData)
+      .post("https://best-buy-web-clone.herokuapp.com/auth/signin", formData)
       .then((res: AxiosResponse<any, any>) => {
         if (res.data.error) {
           setlogError(res.data);

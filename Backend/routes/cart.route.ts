@@ -9,10 +9,13 @@ cartRoute.get("/", async (req: express.Request, res: express.Response) => {
   res.status(200).send(cart);
 });
 
-cartRoute.get("/:userid", async (req: express.Request, res: express.Response) => {
-  const cart = await Cart.find(req.params);
-  res.status(200).send(cart);
-});
+cartRoute.get(
+  "/:userid",
+  async (req: express.Request, res: express.Response) => {
+    const cart = await Cart.find(req.params);
+    res.status(200).send(cart);
+  }
+);
 
 cartRoute.post("/new", async (req: express.Request, res: express.Response) => {
   console.log("req.body:", req.body);

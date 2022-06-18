@@ -16,7 +16,7 @@ const Users = () => {
 
   const getData = () => {
     axios
-      .get(`http://localhost:8080/auth/${isLogged}`)
+      .get(`https://best-buy-web-clone.herokuapp.com/auth/${isLogged}`)
       .then((res: AxiosResponse<User>) => {
         // console.log("res.data:", res.data);
         setUserData(res.data);

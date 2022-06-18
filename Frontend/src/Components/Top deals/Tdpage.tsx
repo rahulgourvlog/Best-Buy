@@ -26,7 +26,9 @@ const Tdpage = () => {
   const navigate = useNavigate();
 
   const products = async () => {
-    const { data } = await axios.get<Product[]>("http://localhost:8080/best");
+    const { data } = await axios.get<Product[]>(
+      "https://best-buy-web-clone.herokuapp.com/best"
+    );
     setData(data);
   };
 
