@@ -35,7 +35,7 @@ export type SchemaType = {
   brand: string;
   category: string;
   quantity: number;
-  userid: string,
+  userid: string;
 };
 
 const cartSchema = new mongoose.Schema<SchemaType>({

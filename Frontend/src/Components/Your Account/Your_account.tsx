@@ -11,7 +11,7 @@ const Your_account = () => {
 
   const getData = () => {
     axios
-      .get(`http://localhost:8080/auth/${isLogged}`)
+      .get(`https://best-buy-web-clone.herokuapp.com/auth/${isLogged}`)
       .then((res: AxiosResponse<User>) => {
         // console.log("res.data:", res.data);
         setUserData(res.data);
@@ -25,7 +25,10 @@ const Your_account = () => {
 
   return (
     <>
-      <div className="links" style={{ display: "flex", margin: "10px 0px 0 50px" }}>
+      <div
+        className="links"
+        style={{ display: "flex", margin: "10px 0px 0 50px" }}
+      >
         <a href="/">Home</a>
         <div>
           <svg

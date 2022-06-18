@@ -70,7 +70,6 @@ LoginRouter.post(
   }
 );
 
-
 LoginRouter.get(
   "/:_id",
   async (req: express.Request, res: express.Response) => {

@@ -35,25 +35,27 @@ const Left = () => {
     e.preventDefault();
     let timer: string | number | NodeJS.Timeout | undefined;
     clearTimeout(timer);
-    axios.post("http://localhost:8080/auth/login", formData).then((res) => {
-      if (res.data.error) {
-        setlogError(res.data);
-        timer = setTimeout(() => {
-          setlogError({
-            error: "",
-            message: "",
-          });
-        }, 3000);
-        return;
-      }
+    axios
+      .post("https://best-buy-web-clone.herokuapp.com/auth/login", formData)
+      .then((res) => {
+        if (res.data.error) {
+          setlogError(res.data);
+          timer = setTimeout(() => {
+            setlogError({
+              error: "",
+              message: "",
+            });
+          }, 3000);
+          return;
+        }
 
-      const user = res.data;
-      // console.log("user:", user);
-      localStorage.setItem("userid", user[0]._id);
-      setIsLogged(user[0]._id);
-      alert("Sign In Successful");
-      navigate("/user");
-    });
+        const user = res.data;
+        // console.log("user:", user);
+        localStorage.setItem("userid", user[0]._id);
+        setIsLogged(user[0]._id);
+        alert("Sign In Successful");
+        navigate("/user");
+      });
   };
   return (
     <>

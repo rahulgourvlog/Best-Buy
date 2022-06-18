@@ -45,7 +45,7 @@ const ProductDetailPage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/best/${id}`)
+      .get(`https://best-buy-web-clone.herokuapp.com/best/${id}`)
       .then((responce: AxiosResponse<Product[]>) => {
         const { data } = responce;
         setPData(data);
@@ -59,9 +59,9 @@ const ProductDetailPage = () => {
       userid: isLogged,
       ...pdata[0],
     };
-    
-    console.log('cartData:', cartData)
-    axios.post(`http://localhost:8080/cart/new`, cartData, {
+
+    console.log("cartData:", cartData);
+    axios.post(`https://best-buy-web-clone.herokuapp.com/cart/new`, cartData, {
       headers: { "Content-Type": "application/json" },
     });
 
