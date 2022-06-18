@@ -53,8 +53,8 @@ const LeftSection = () => {
           return;
         }
         const user = res.data;
-        // console.log("user:", user);
-        localStorage.setItem("userid", user[0].id);
+        console.log("user:", user);
+        localStorage.setItem("userid", user._id);
         setIsLogged(user._id);
         navigate("/signin");
       });
