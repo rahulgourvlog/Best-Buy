@@ -1,22 +1,20 @@
 .title {
-    margin: 0 0 30px;
-    font-size: 48px;
-    line-height: 60px;
-    color: #0046be;
-    font-weight: 750;
-    margin-left: 20px;
-  
+  margin: 0 0 30px;
+  font-size: 48px;
+  line-height: 60px;
+  color: #0046be;
+  font-weight: 750;
+  margin-left: 20px;
 }
 .heading {
-    padding-right: 16px;
-    padding-left: 16px;
-    max-width:60%;
-    
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 60%;
 }
 .head {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
 }
 
 /* .highlight {
@@ -34,29 +32,27 @@
    
 } */
 .form {
-    display: block;
-    margin-top: 0em;
+  display: block;
+  margin-top: 0em;
 }
 
-
-
 .field {
-    font-family: Human BBY,Arial,sans-serif;
-    position: relative;
-    padding: 0 0 16px;
-    text-align: left;
+  font-family: Human BBY, Arial, sans-serif;
+  position: relative;
+  padding: 0 0 16px;
+  text-align: left;
 }
 
 .field .container {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
 }
 .field .label {
-    color: #1d252c;
-    font-size: 14px;
-    line-height: 20px;
-    display: block;
-    margin: 0 0 3px;
+  color: #1d252c;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  margin: 0 0 3px;
 }
 
 /* .vPpxf, .vPpxf input {
@@ -64,42 +60,41 @@
 } */
 
 .input {
-    font-family: Human BBY,Arial,sans-serif;
-    font-weight: 300;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: block;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-size: 14px;
-    line-height: 20px;
-    height: 48px;
-    padding: 12px;
-    border: 1px solid #adadad;
-    border-radius: 2px;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
+  font-family: Human BBY, Arial, sans-serif;
+  font-weight: 300;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+  height: 48px;
+  padding: 12px;
+  border: 1px solid #adadad;
+  border-radius: 2px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  outline: none;
+  transition: border-color 0.4s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.input:focus {
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 4px rgba(8, 94, 185, 0.15);
+  border-color: #001e73;
 }
 
 .vPpxf input {
-    position: relative;
+  position: relative;
 }
-
-
-
-
 
 /* .S1zQf, .S1zQf input {
     position: relative;
 } */
-
-
-
-
-
- 
 
 /* ._18GWE .error-msg, ._18GWE .help-txt {
     overflow: hidden;
@@ -114,28 +109,27 @@
 } */
 
 ._3eMWM:hover {
-    background-color: #001e73;
-    border: none;
+  background-color: #001e73;
+  border: none;
 }
 
-
 .signin-page-forgot-password-link {
-    text-align: center;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 signin-page-forgot-password-link {
-    text-align: center;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 form {
-    display: block;
-    margin-top: 0em;
+  display: block;
+  margin-top: 0em;
 }
 
 /* hr {

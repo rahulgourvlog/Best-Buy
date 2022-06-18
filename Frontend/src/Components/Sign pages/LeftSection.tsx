@@ -3,13 +3,11 @@ import axios from "axios";
 import styled from "./LeftSection.module.css";
 const Left = () => {
   const [formData, Setformdata] = useState({});
-  const [pass,Setpass]=useState("text");
+  const [pass, Setpass] = useState("text");
 
-
-  
-   const handleclick=()=>{
-    Setpass(pass==="text"? "password":"text")
-   }
+  const handleclick = () => {
+    Setpass(pass === "text" ? "password" : "text");
+  };
   const handlechange = (e: any) => {
     let name = e.target.name;
     Setformdata({
@@ -19,12 +17,12 @@ const Left = () => {
   };
 
   const handleSubmit = (e: any) => {
-    
+    console.log("e:", e);
     e.preventDefault();
-   axios.post("http://localhost:8080/login", formData).then((res) => {
-        alert("Sign In Successfully")
-        const user= res.data
-        localStorage.setItem("user",JSON.stringify(res.data))
+    axios.post("http://localhost:8080/auth/login", formData).then((res) => {
+      alert("Sign In Successfully");
+      const user = res.data;
+      localStorage.setItem("user", JSON.stringify(res.data));
       console.log(res.data);
     });
   };
@@ -54,23 +52,68 @@ const Left = () => {
               <div className={styled.field}>
                 <div className={styled.container}>
                   <label className={styled.label}>Password</label>
-                  <div style={{display:"flex" ,border:" 1px solid #adadad",paddingRight:"5px"}}>
+                  <div
+                    style={{
+                      display: "flex",
+                      border: " 1px solid #adadad",
+                      paddingRight: "5px",
+                    }}
+                  >
                     <input
                       className={styled.input}
                       type={pass}
                       name={"password"}
                       onChange={handlechange}
-                     style={{border:'none'}}
+                      style={{ border: "none" }}
                     />
-                    <div onClick={handleclick} style={{marginTop:"15px",color:" #0046be",fontWeight:"400",cursor:'pointer'}}>{pass==="text"?"show":"hide"}</div>
-                    
+                    <div
+                      onClick={handleclick}
+                      style={{
+                        marginTop: "15px",
+                        color: " #0046be",
+                        fontWeight: "400",
+                        cursor: "pointer",
+                      }}
+                    >
+                      {pass === "text" ? "show" : "hide"}
+                    </div>
                   </div>
                   <div className={styled.highlight}></div>
                 </div>
               </div>
-              <div style={{display:"flex",width:"400px",justifyContent:"space-between",marginTop:"30px"}}>
-              <input type="submit" value="Sign In" style={{backgroundColor:" #0046be",border:"none",padding:"10px 10px",width:"150px",borderRadius:'5px',color:"white",fontSize:'15px',cursor:"pointer", }}/>
-              <div><p style={{color:" #0046be",fontWeight:"700",cursor:"pointer"}}>Forgot Password?</p></div>
+              <div
+                style={{
+                  display: "flex",
+                  width: "400px",
+                  justifyContent: "space-between",
+                  marginTop: "30px",
+                }}
+              >
+                <input
+                  type="submit"
+                  value="Sign In"
+                  style={{
+                    backgroundColor: " #0046be",
+                    border: "none",
+                    padding: "10px 10px",
+                    width: "150px",
+                    borderRadius: "5px",
+                    color: "white",
+                    fontSize: "15px",
+                    cursor: "pointer",
+                  }}
+                />
+                <div>
+                  <p
+                    style={{
+                      color: " #0046be",
+                      fontWeight: "700",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Forgot Password?
+                  </p>
+                </div>
               </div>
             </form>
           </div>
