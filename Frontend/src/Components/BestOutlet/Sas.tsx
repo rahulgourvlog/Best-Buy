@@ -65,16 +65,12 @@ export default function SimpleAccordion() {
         <AccordionDetails>
           <Typography>
             <div className="Avilability">
-              <p>
-                <a>Get Shiped</a>
-              </p>
-              <Check />
+              Get Shiped
+              <input type="checkbox" />
             </div>
             <div className="Avilability">
-              <p>
-                <a>Pick Up at Nearby Stores</a>
-              </p>
-              <Check />
+              Pick Up at Nearby Stores
+              <input type="checkbox" />
             </div>
           </Typography>
         </AccordionDetails>
@@ -93,74 +89,32 @@ export default function SimpleAccordion() {
           <Typography>
             <div className="category">
               <div className="Avilability">
-                <p>
-                  <a>
-                    <p>on Sale</p>
-                  </a>
-                </p>
-                <Check />
+                onsale
+                <input type="checkbox" />
               </div>{" "}
               <div className="Avilability">
-                <p>
-                  <a>
-                    {" "}
-                    <p>Top Deals</p>
-                  </a>
-                </p>
-                <Check />
+                Top Deals
+                <input type="checkbox" />
               </div>
               <div className="Avilability">
-                <p>
-                  <a>
-                    {" "}
-                    <p>On Clearence</p>
-                  </a>
-                </p>
-                <Check />
+                On Clearence
+                <input type="checkbox" />
               </div>
               <div className="Avilability">
-                <p>
-                  <a>
-                    {" "}
-                    <p>
-                      <p>Best Buy Execlusive</p>
-                    </p>
-                  </a>
-                </p>
-                <Check />
+                Best Buy Execlusive
+                <input type="checkbox" />
               </div>
               <div className="Avilability">
-                <p>
-                  <a>
-                    {" "}
-                    <p>
-                      <p>Refrushibed</p>
-                    </p>
-                  </a>
-                </p>
-                <Check />
+                Refrushibed
+                <input type="checkbox" />
               </div>
               <div className="Avilability">
-                <p>
-                  <a>
-                    {" "}
-                    <p>
-                      <p>Open Box</p>
-                    </p>
-                  </a>
-                </p>
-                <Check />
+                Open Box
+                <input type="checkbox" />
               </div>
               <div className="Avilability">
-                <p>
-                  <a>
-                    {" "}
-                    <p>
-                      <p>Online Only</p>
-                    </p>
-                  </a>
-                </p>
-                <Check />
+                Online Only
+                <input type="checkbox" />
               </div>
             </div>
           </Typography>
@@ -201,28 +155,28 @@ export default function SimpleAccordion() {
         <AccordionDetails>
           <Typography>
             <div className="Avilability">
-              <Check />
-              <p>60% off or More(4)</p>
+              <input type="checkbox" />
+              60% off or More(4)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>50% off or More(14)</p>
+              <input type="checkbox" />
+              50% off or More(14)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>40% off or More(29)</p>
+              <input type="checkbox" />
+              40% off or More(29)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>30% off or More(91)</p>
+              <input type="checkbox" />
+              30% off or More(91)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>20% off or More(181)</p>
+              <input type="checkbox" />
+              20% off or More(181)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>All discounts items(373)</p>
+              <input type="checkbox" />
+              All discounts items(373)
             </div>
           </Typography>
         </AccordionDetails>
@@ -240,8 +194,8 @@ export default function SimpleAccordion() {
         <AccordionDetails>
           <Typography>
             <div className="Avilability">
-              <Check />
-              <p>Whats New</p>
+              <input type="checkbox" />
+              Whats New
             </div>
           </Typography>
         </AccordionDetails>
@@ -259,49 +213,49 @@ export default function SimpleAccordion() {
         <AccordionDetails>
           <Typography>
             <div className="Avilability">
-              <Check />
-              <p>Apple(345)</p>
+              <input type="checkbox" />
+              Apple(345)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>SAMSUNG(1,872)</p>
+              <input type="checkbox" />
+              SAMSUNG(1,872)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>ASUS(378)</p>
+              <input type="checkbox" />
+              ASUS(378)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>HP(6,456)</p>
+              <input type="checkbox" />
+              HP(6,456)
             </div>
             \{" "}
             <div className="Avilability">
-              <Check />
-              <p>ACER(368)</p>
+              <input type="checkbox" />
+              ACER(368)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>LG ELECTRONICS(1,872)</p>
+              <input type="checkbox" />
+              LG ELECTRONICS(1,872)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>PLAY STATION(24)</p>
+              <input type="checkbox" />
+              PLAY STATION(24)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>SONY(267)</p>
+              <input type="checkbox" />
+              SONY(267)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>LENOVO(4,560)</p>
+              <input type="checkbox" />
+              LENOVO(4,560)
             </div>{" "}
             <div className="Avilability">
-              <Check />
-              <p>DELL(12)</p>
+              <input type="checkbox" />
+              DELL(12)
             </div>{" "}
             <div className="Avilability">
-              <Check />
-              <p>MICROSOFT(1,872)</p>
+              <input type="checkbox" />
+              MICROSOFT(1,872)
             </div>
           </Typography>
         </AccordionDetails>
@@ -319,8 +273,8 @@ export default function SimpleAccordion() {
         <AccordionDetails>
           <Typography>
             <div className="Avilability">
-              <Check />
-              <p>Best buy In Canada</p>
+              <input type="checkbox" />
+              Best buy In Canada
             </div>
           </Typography>
         </AccordionDetails>
@@ -338,24 +292,24 @@ export default function SimpleAccordion() {
         <AccordionDetails>
           <Typography>
             <div className="Avilability">
-              <Check />
-              <p>5(698)</p>
+              <input type="checkbox" />
+              5(698)
             </div>{" "}
             <div className="Avilability">
-              <Check />
-              <p>4(963)</p>
+              <input type="checkbox" />
+              4(963)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>3(460)</p>
+              <input type="checkbox" />
+              3(460)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>2(153)</p>
+              <input type="checkbox" />
+              2(153)
             </div>
             <div className="Avilability">
-              <Check />
-              <p>1(346)</p>
+              <input type="checkbox" />
+              1(346)
             </div>
           </Typography>
         </AccordionDetails>

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import BrandsMenu from "./BrandsMenu";
 import { HeaderDiv } from "./HeaderStyled";
 import Logosvg from "./Logosvg.svg";
@@ -29,6 +29,7 @@ type User = {
 
 const Header = () => {
   const { isChanged, isLogged } = useContext(CartCount_Context);
+  const navigate = useNavigate();
   const [show, setShow] = useState(false);
   const [search, setSearch] = useState("");
   const [active, setActive] = useState("");
@@ -229,7 +230,10 @@ const Header = () => {
                       <li>
                         <a
                           className="SignInOutNavLink"
-                          onClick={() => localStorage.removeItem("userid")}
+                          onClick={() => {
+                            localStorage.removeItem("userid");
+                            navigate("/");
+                          }}
                         >
                           <svg
                             className="accountIcon"

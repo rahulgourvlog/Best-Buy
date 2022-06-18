@@ -1,0 +1,202 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "LG 27 FHD 75Hz 5ms GTG IPS LED FreeSync JBL: speaker (27MP500-B) - Black - Open Box",
+      "description": "**Open Box product. Minimum 6-month warranty. See more information below.** Bring the cinematic experience right to your home with the LG 48' HDR smart TV. Boasting a self-lit OLED display, it presents your movies and other content in Ultra HD 4K resolution with realistic colours and precise image details. Additionally, it features webOS operating system that is intuitive, and gives you access to an array of entertainment apps to stream movies, shows, and more.",
+      "price": 101,
+      "discountPercentage": 10.68,
+      "rating": "⭐⭐⭐⭐4",
+      "stock": 54,
+      "brand": "Jbl",
+      "category": "speaker",
+      "thumbnail": "https://multimedia.bbycastatic.ca/multimedia/products/250x250/137/13797/13797305.jpg",
+      "images": [
+        "https://dummyjson.com/image/i/products/19/1.jpg",
+        "https://dummyjson.com/image/i/products/19/2.jpg",
+        "https://dummyjson.com/image/i/products/19/3.png",
+        "https://dummyjson.com/image/i/products/19/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Acer 13.5” Swift 3 Laptop (Intel Core i7-1165G7/16Gb/1.0Tb SSD/Win10) - Manufacturer ReCertified w/ 1 Year Warranty",
+      "description": "Acer 13.5” Swift 3 Laptop (Intel Core i7-1165G7/16Gb/1.0Tb SSD/Win10) - Manufacturer ReCertified w/ 1 Year Warranty",
+      "price": 930,
+      "discountPercentage": 10.99,
+      "rating": "⭐⭐⭐⭐4",
+      "stock": 105,
+      "brand": "Acer",
+      "category": "laptops",
+      "thumbnail": "https://multimedia.bbycastatic.ca/multimedia/products/250x250/153/15348/15348316.jpeg",
+      "images": [
+        "https://multimedia.bbycastatic.ca/multimedia/products/100x100/153/15348/15348316_1.jpeg",
+        "https://multimedia.bbycastatic.ca/multimedia/products/100x100/153/15348/15348316_1.jpeg",
+        "https://multimedia.bbycastatic.ca/multimedia/products/100x100/153/15348/15348316_3.jpeg",
+        "https://multimedia.bbycastatic.ca/multimedia/products/100x100/153/15348/15348316_4.jpeg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Samsung Galaxy Buds Pro In-Ear Noise Cancelling Truly Wireless Headphones - Phantom Black - Open Box",
+      "description": "Samsung Galaxy Buds Pro In-Ear Noise Cancelling Truly Wireless Headphones - Phantom Black - Open Box",
+      "price": 1249,
+      "discountPercentage": 15.46,
+      "rating": "⭐⭐⭐⭐  4.5",
+      "stock": 36,
+      "brand": "Samsung",
+      "category": "Earbuds",
+      "thumbnail": "https://multimedia.bbycastatic.ca/multimedia/products/250x250/153/15396/15396150.jpg",
+      "images": ["https://dummyjson.com/image/i/products/3/1.jpg"]
+    },
+    {
+      "id": 4,
+      "title": "Microsoft Surface Laptop Go, 12.4in Home in S Mode, Sandstone - Certified Refurbished",
+      "description": "Microsoft Surface Laptop Go 12.4 Multi-Touch - Intel Core i5, 8GB RAM, 128GB SSD, Windows 10 Home in S Mode - Platinum - Certified Refurbished",
+      "price": 499,
+      "discountPercentage": 17.91,
+      "rating": "⭐⭐⭐  3.5",
+      "stock": 123,
+      "brand": "Microsoft",
+      "category": "Laptops",
+      "thumbnail": "https://multimedia.bbycastatic.ca/multimedia/products/250x250/158/15821/15821434.jpeg"
+    },
+    {
+      "id": 14,
+      "title": "Sony SRS-XB12 Waterproof Wireless Bluetooth Speaker - Black - Open Box - (Condition 10/10)",
+      "description": "Original Al Munakh® by Mahal Al Musk | Our Impression of Climate | 6ml Non-Alcoholic Concentrated Perfume Oil",
+      "price": 48.99,
+      "discountPercentage": 15.6,
+      "rating": "⭐⭐⭐3.5",
+      "stock": 114,
+      "brand": "Sony",
+      "category": "PortableAudio",
+      "thumbnail": "https://multimedia.bbycastatic.ca/multimedia/products/250x250/158/15890/15890932.png",
+      "images": [
+        "https://dummyjson.com/image/i/products/14/1.jpg",
+        "https://dummyjson.com/image/i/products/14/2.jpg",
+        "https://dummyjson.com/image/i/products/14/3.jpg",
+        "https://dummyjson.com/image/i/products/14/thumbnail.jpg"
+      ]
+    },
+
+    {
+      "id": 5,
+      "title": "Samsung Galaxy S10 128GB Smartphone - Prism Black - Unlocked - Open Box",
+      "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+      "price": 322,
+      "discountPercentage": 10.58,
+      "rating": "⭐⭐ 2.5",
+      "stock": 32,
+      "brand": "Samsung",
+      "category": "smartphones",
+      "thumbnail": "https://multimedia.bbycastatic.ca/multimedia/products/250x250/136/13645/13645148.jpeg",
+      "images": [
+        "https://dummyjson.com/image/i/products/5/1.jpg",
+        "https://dummyjson.com/image/i/products/5/2.jpg",
+        "https://dummyjson.com/image/i/products/5/3.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Samsung Galaxy Watch4 44mm Smartwatch with Heart Rate Monitor - Black - Open Box",
+      "description": "**Open Box product. Minimum 6-month warranty. See more information below.** Make a stylish statement while keeping your life on track with the Samsung Galaxy Watch4 Classic smartwatch. The sophisticated Watch4 Classic features a sleek, touchscreen display that allows you to connect with the world from your wrist. Its smart features like the advanced coaching and oxygen-level tracking help you exercise smarter, increase endurance, and level up your wellness routine.",
+      "price": 179,
+      "discountPercentage": 11.02,
+      "rating": "⭐⭐⭐⭐ 4.6",
+      "stock": 83,
+      "brand": "Apple",
+      "category": "laptops",
+      "thumbnail": "https://multimedia.bbycastatic.ca/multimedia/products/250x250/158/15887/15887538.jpeg",
+      "images": [
+        "https://dummyjson.com/image/i/products/6/1.png",
+        "https://dummyjson.com/image/i/products/6/2.jpg",
+        "https://dummyjson.com/image/i/products/6/3.png",
+        "https://dummyjson.com/image/i/products/6/4.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Samsung Galaxy S20 FE 5G 128GB Smartphone - Cloud Navy - Unlocked - Open Box",
+      "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+      "price": 499,
+      "discountPercentage": 4.15,
+      "rating": "⭐⭐⭐⭐ 4",
+      "stock": 50,
+      "brand": "Samsung",
+      "category": "laptops",
+      "thumbnail": "https://multimedia.bbycastatic.ca/multimedia/products/250x250/152/15222/15222477.jpeg",
+      "images": [
+        "https://dummyjson.com/image/i/products/7/1.jpg",
+        "https://dummyjson.com/image/i/products/7/2.jpg",
+        "https://dummyjson.com/image/i/products/7/3.jpg",
+        "https://dummyjson.com/image/i/products/7/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Microsoft Surface Laptop Go 12.4 Multi-Touch -  in S Mode - Platinum - Certified Refurbished",
+      "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+      "price": 1499,
+      "discountPercentage": 10.23,
+      "rating": "⭐⭐⭐⭐⭐4.5",
+      "stock": 68,
+      "brand": "Microsoft Surface",
+      "category": "laptops",
+      "thumbnail": "https://multimedia.bbycastatic.ca/multimedia/products/250x250/157/15758/15758822.jpeg",
+      "images": [
+        "https://dummyjson.com/image/i/products/8/1.jpg",
+        "https://dummyjson.com/image/i/products/8/2.jpg",
+        "https://dummyjson.com/image/i/products/8/3.jpg",
+        "https://dummyjson.com/image/i/products/8/4.jpg",
+        "https://dummyjson.com/image/i/products/8/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Apple MacBook Air 13.3 w/ Touch ID (2020) - Space Grey (Intel Core i7 1.2GHz/512GB SSD/16GB RAM) -En - Open Box  ",
+
+      "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+      "price": 1099,
+      "discountPercentage": 11.83,
+      "rating": "⭐⭐⭐⭐4.5",
+      "stock": 96,
+      "brand": "Apple",
+      "category": "laptops",
+      "thumbnail": "https://multimedia.bbycastatic.ca/multimedia/products/250x250/154/15460/15460972.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Apple iPad Pro 12.9 128GB with Wi-Fi (5th Generation) - Space Grey - Open Box",
+
+      "description": "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
+      "price": 1099,
+      "discountPercentage": 8.4,
+      "rating": "⭐⭐⭐3.5",
+      "stock": 65,
+      "brand": "Apple",
+      "category": "tablets",
+      "thumbnail": "https://multimedia.bbycastatic.ca/multimedia/products/250x250/155/15569/15569294.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Sony WH-1000XM3 Wireless Noise-Canceling Over-Ear Headphones BLACK - Open Box",
+
+      "description": "Sony WH-1000XM3 Wireless Noise-Canceling Over-Ear Headphones BLACK - Open Box",
+      "price": 349,
+      "discountPercentage": 8.14,
+      "rating": "⭐⭐⭐⭐4.5",
+      "stock": 61,
+      "brand": "Sony",
+      "category": "Headphones",
+      "thumbnail": "https://multimedia.bbycastatic.ca/multimedia/products/250x250/139/13922/13922528.jpg",
+      "images": [
+        "https://dummyjson.com/image/i/products/13/1.jpg",
+        "https://dummyjson.com/image/i/products/13/2.png",
+        "https://dummyjson.com/image/i/products/13/3.jpg",
+        "https://dummyjson.com/image/i/products/13/4.jpg",
+        "https://dummyjson.com/image/i/products/13/thumbnail.webp"
+      ]
+    }
+  ]
+}

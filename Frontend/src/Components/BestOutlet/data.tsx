@@ -6,6 +6,8 @@ import Db from "./db.json";
 import { Link } from "react-router-dom";
 import { Star } from "@mui/icons-material";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
+import "./Data.css";
+import "./App1.css";
 
 interface Todo {
   title: string;
@@ -16,6 +18,8 @@ interface Todo {
   price: number;
   thumbnail: string;
   rating: string;
+  discountPercentage: number;
+  stock: number;
 }
 
 function Data() {
@@ -36,13 +40,13 @@ function Data() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:8070/Best")
+    fetch("http://localhost:8080/best")
       .then((res) =>
         res.json().then((response) => setTodos(response.slice(0, 13)))
       )
       .catch((err) => setError(err));
   }, []);
-
+  console.log(todos);
   return (
     <div>
       <>
@@ -57,18 +61,23 @@ function Data() {
             </div>
             <div className="buybestpro">
               {todos.map((todo: Todo) => (
-                <Link to={`/ProductDetailPage${todo._id}`}>
+                <Link
+                  to={`/ProductDetailPage${todo._id}`}
+                  style={{ textDecoration: "none" }}
+                >
                   <div className="singleproduct">
                     <img src={todo.thumbnail} alt="" width="100%" />
-                    <h4>{todo.title}</h4>
-                    <p>{`$  ${todo.price}`}</p>
-                    <p>{`* ${todo.rating}`}</p>
-                    <StarBorderIcon > </StarBorderIcon>
-                    <StarBorderIcon> </StarBorderIcon>
-                    <StarBorderIcon> </StarBorderIcon>
-                    <StarBorderIcon> </StarBorderIcon>
+
+                    <p>{todo.title}</p>
+                    <p className="tododrating">{`${todo.rating}        (${todo.stock})`}</p>
+                    <h3 className="jsonprice">{`$  ${todo.price} `}</h3>
+                    <span className="jsondiscount">{`
+                       save  $ ${todo.discountPercentage}
+                  `}</span>
+                    <p style={{ fontSize: "12px" }}>✔️Available only</p>
+                    <p style={{ fontSize: "12px" }}>🛒Market Place Seller</p>
+
                     <br />
-                    <button>Add</button>
                   </div>
                 </Link>
               ))}

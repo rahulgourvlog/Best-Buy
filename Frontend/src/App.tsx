@@ -3,9 +3,7 @@ import "./App.css";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
-import Home from "./Components/Home/Home";
 import Cart from "./Components/Cart/Cart";
-import Best from "./Components/Products/best";
 import Signin from "./Components/Sign pages/Signin";
 import Login from "./Components/Create AccountPages/Login";
 import Users from "./Components/Userspage/Users";
@@ -16,6 +14,8 @@ import Checkout from "./Components/Checkout/Checkout";
 import Payment from "./Components/Checkout/Payment";
 import Otp from "./Components/Otp & success/Otp";
 import Your_account from "./Components/Your Account/Your_account";
+import BestOutlet from "./Components/BestOutlet/BestOutlet";
+import HomePage from "./Components/Home/HomePage";
 
 function App() {
   const location = useLocation();
@@ -28,11 +28,10 @@ function App() {
       )}
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/login" element={<Login />} />
         <Route path="/user" element={<Users />} />
-        <Route path="/Home" element={<Best />} />
         <Route path="/user" element={<Users />} />
         <Route path="/account" element={<Your_account />} />
         <Route path="/topdeals" element={<Tdpage />} />
@@ -42,6 +41,7 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/otp" element={<Otp />} />
+        <Route path="/bestoutlet" element={<BestOutlet />} />
       </Routes>
 
       {location.pathname === "/login" ||

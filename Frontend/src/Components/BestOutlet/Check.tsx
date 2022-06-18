@@ -6,7 +6,7 @@ function Check() {
   return (
     <div>
       <>
-        <Checkbox {...label} defaultChecked />
+        <Checkbox {...label} />
         {/* <Checkbox {...label} />
         <Checkbox {...label} disabled />
         <Checkbox {...label} disabled checked /> */}
