@@ -232,7 +232,7 @@ const Header = () => {
                           className="SignInOutNavLink"
                           onClick={() => {
                             localStorage.removeItem("userid");
-                            navigate("/");
+                            window.location.reload();
                           }}
                         >
                           <svg
