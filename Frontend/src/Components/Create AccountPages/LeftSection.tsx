@@ -148,7 +148,7 @@ const LeftSection = () => {
                   <div>
                     <input
                       className={styled.input}
-                      type={"email"}
+                      type={"text"}
                       name={"email"}
                       onChange={handlechange}
                     />

@@ -10,21 +10,21 @@ LoginRouter.post(
   "/signin",
   async (req: express.Request, res: express.Response) => {
     console.log("req.body:", req.body.firstName === undefined);
-    if (req.body.firstName === undefined) {
+    if (req.body.firstName === undefined || req.body.firstName === "") {
       return res.status(200).send({
         message: "Please enter a valid first name.",
         error: "firstName",
       });
     }
 
-    if (req.body.lastName === undefined) {
+    if (req.body.lastName === undefined || req.body.lastName === "") {
       return res.status(200).send({
         message: "Please enter a valid last name.",
         error: "lastName",
       });
     }
 
-    if (req.body.email === undefined) {
+    if (req.body.email === undefined || req.body.email === "") {
       return res.status(200).send({
         message: "Please enter a valid email address.",
         error: "email",
@@ -42,7 +42,6 @@ LoginRouter.post(
         error: "password",
       });
     }
-
     const passwordVal = validator.isStrongPassword(req.body.password);
     const emailVal = validator.isEmail(req.body.email);
 
@@ -59,7 +58,7 @@ LoginRouter.post(
       });
     } else if (!validator.isEmail(req.body.email)) {
       return res.status(200).send({
-        message: "Please give a valid email",
+        message: "Please give a valid email address",
         error: "email",
       });
     } else {
@@ -71,30 +70,6 @@ LoginRouter.post(
   }
 );
 
-// var passwordValidator = require('password-validator');
-
-// // Create a schema
-// var schema = new passwordValidator();
-
-// // Add properties to it
-// schema
-// .is().min(8)                                    // Minimum length 8
-// .is().max(100)                                  // Maximum length 100
-// .has().uppercase()                              // Must have uppercase letters
-// .has().lowercase()                              // Must have lowercase letters
-// .has().digits(2)                                // Must have at least 2 digits
-// .has().not().spaces()                           // Should not have spaces
-// .is().not().oneOf(['Passw0rd', 'Password123']); // Blacklist these values
-
-// // Validate against a password string
-// console.log(schema.validate('validPASS123'));
-// // => true
-// console.log(schema.validate('invalidPASS'));
-// // => false
-
-// // Get a full list of rules which failed
-// console.log(schema.validate('joke', { list: true }));
-// // => [ 'min', 'uppercase', 'digits' ]
 
 LoginRouter.get(
   "/:_id",
@@ -111,8 +86,8 @@ LoginRouter.post(
     const validuserEmail = await User.find({ email });
     const validuserPass = await User.find({ password });
 
-    console.log("validuserEmail:", validuserEmail);
-    console.log("validuserPass:", validuserPass);
+    // console.log("validuserEmail:", validuserEmail);
+    // console.log("validuserPass:", validuserPass);
 
     if (validuserEmail.length === 0 && validuserPass.length === 0) {
       res.status(200).send({ message: "Invalid Crediancial", error: "error" });
