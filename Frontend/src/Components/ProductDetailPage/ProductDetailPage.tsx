@@ -59,6 +59,7 @@ const ProductDetailPage = () => {
       userid: isLogged,
       ...pdata[0],
     };
+    console.log(cartData)
 
     axios.post(`http://localhost:8080/cart/new`, cartData, {
       headers: { "Content-Type": "application/json" },
