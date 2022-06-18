@@ -34,6 +34,8 @@ export type SchemaType = {
   rating: number;
   brand: string;
   category: string;
+  quantity:number;
+  userid:string
 };
 
 const cartSchema = new mongoose.Schema<SchemaType>({
@@ -48,6 +50,8 @@ const cartSchema = new mongoose.Schema<SchemaType>({
   rating: Number,
   brand: String,
   category: String,
+  quantity:Number,
+  userid:String
 });
 
 const Cart = mongoose.model("Cart", cartSchema);
