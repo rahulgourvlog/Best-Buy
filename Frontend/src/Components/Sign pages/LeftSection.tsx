@@ -89,7 +89,10 @@ const Left = () => {
                       style={{
                         marginTop: "8px",
                         position: "absolute",
-                        opacity: logError.error == "error" ? "1" : "0",
+                        opacity:
+                          logError.error == "error" || logError.error == "email"
+                            ? "1"
+                            : "0",
                       }}
                       className={styled.highlight}
                     >
@@ -147,7 +150,7 @@ const Left = () => {
                       {pass === "text" ? "show" : "hide"}
                     </div>
                   </div>
-                  <div
+                  {/* <div
                     style={{
                       marginTop: "8px",
                       position: "absolute",
@@ -156,12 +159,16 @@ const Left = () => {
                     className={styled.highlight}
                   >
                     {logError.message}
-                  </div>
+                  </div> */}
                   <div
                     style={{
                       marginTop: "8px",
                       position: "absolute",
-                      opacity: logError.error == "error" ? "1" : "0",
+                      opacity:
+                        logError.error == "error" ||
+                        logError.error == "password"
+                          ? "1"
+                          : "0",
                     }}
                     className={styled.highlight}
                   >
