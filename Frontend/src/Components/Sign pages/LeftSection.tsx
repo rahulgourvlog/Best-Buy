@@ -49,9 +49,10 @@ const Left = () => {
 
       const user = res.data;
       // console.log("user:", user);
+      localStorage.setItem("userid", user[0]._id);
       setIsLogged(user[0]._id);
       alert("Sign In Successful");
-      // navigate("/user");
+      navigate("/user");
     });
   };
   return (

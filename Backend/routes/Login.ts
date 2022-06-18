@@ -9,15 +9,15 @@ var LoginRouter = Router();
 LoginRouter.post(
   "/signin",
   async (req: express.Request, res: express.Response) => {
-    console.log("req.body:", req.body);
-    if (req.body.firstName === undefined || req.body.firstName.length > 0) {
+    console.log("req.body:", req.body.firstName === undefined);
+    if (req.body.firstName === undefined) {
       return res.status(200).send({
         message: "Please enter a valid first name.",
         error: "firstName",
       });
     }
 
-    if (req.body.lastName === undefined || req.body.lastName.length > 0) {
+    if (req.body.lastName === undefined) {
       return res.status(200).send({
         message: "Please enter a valid last name.",
         error: "lastName",
