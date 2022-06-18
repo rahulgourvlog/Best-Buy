@@ -13,6 +13,7 @@ type SchemaType = {
   brand: string;
   category: string;
   quantity: number;
+  userid: string,
 };
 
 const cartSchema = new mongoose.Schema<SchemaType>({
@@ -28,6 +29,7 @@ const cartSchema = new mongoose.Schema<SchemaType>({
   brand: String,
   category: String,
   quantity: Number,
+  userid: String,
 });
 
 const Cart = mongoose.model("Cart", cartSchema);
