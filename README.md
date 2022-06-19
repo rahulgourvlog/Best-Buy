@@ -1,5 +1,3 @@
-" Hey Everyone 👋 "
-======================
 <h1>BestBuy(clone)</h1>
 Shop Best Buy for electronics, computers, appliances, cell phones, video games & more new tech. In-store pickup & free 2-day shipping on thousands of items.
 </br>
