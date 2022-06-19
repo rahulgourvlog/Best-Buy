@@ -1,4 +1,4 @@
-<h1>BestBuy.com-(clone)</h1>
+<h1>BestBuy.ca-(clone)</h1>
 Shop Best Buy for electronics, computers, appliances, cell phones, video games & more new tech. In-store pickup & free 2-day shipping on thousands of items.
 </br>
 
@@ -8,13 +8,16 @@ A Collaborative project built by a team of 6 executed in 7 days.
 <h3><u>Demo 🎥</u></h3>
 
 
-Deployed Link:- [Enjoy the experience](https://www.google.com](https://best-buy-tawny.vercel.app/))
+Deployed Link:-
+[Enjoy the experience](https://www.google.com](https://best-buy-tawny.vercel.app/))</br>
+Blog:[Blog Link](https://www.google.com](https://medium.com/@corazonamith/clone-of-best-buy-com-83486e87301))</br>
+Presentation:[Presentation Video](https://www.google.com]([https://medium.com/@corazonamith/clone-of-best-buy-com-83486e87301](https://drive.google.com/file/d/1TTDSmxuQi1zpt-2AkLsm66i5Iex2POEp/view?usp=drivesdk)))
 
  
 <img width="100" height="100" Justify-content="center" alt="image" src="https://user-images.githubusercontent.com/96160297/174466899-8f641fe2-3540-4808-9aec-91bf8e77c0a4.png">
 In the project directory, you can run:
 
-npm start Runs the app in the development mode. Open http://localhost:3000 to view it in the browser. Run json server with db.json in port 8080
+npm start Runs the app in the development mode. Open http://localhost:3000 to view it in the browser. 
 
 The page will reload if you make edits. You will also see any lint errors in the console.
 
