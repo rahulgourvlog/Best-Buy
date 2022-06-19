@@ -1,46 +1,94 @@
-# Getting Started with Create React App
+<h1>BestBuy.com-(clone)</h1>
+Shop Best Buy for electronics, computers, appliances, cell phones, video games & more new tech. In-store pickup & free 2-day shipping on thousands of items.
+</br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Collaborative project built by a team of 6 executed in 7 days.
 
-## Available Scripts
 
+<h3><u>Demo 🎥</u></h3>
+
+
+Deployed Link:- [Enjoy the experience](https://www.google.com](https://best-buy-tawny.vercel.app/))
+
+ 
+<img width="949" alt="image" src="https://user-images.githubusercontent.com/96160297/174465973-924983fe-4c18-4331-ab71-8862cf773bdc.png">
 In the project directory, you can run:
 
-### `npm start`
+npm start Runs the app in the development mode. Open http://localhost:3000 to view it in the browser. Run json server with db.json in port 8080
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The page will reload if you make edits. You will also see any lint errors in the console.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+npm run build Builds the app for production to the build folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### `npm test`
+The build is minified and the filenames include the hashes. Your app is ready to be deployed!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about deployment for more information.
 
-### `npm run build`
+Tech Stack 💻</h3>
+</br>
+HTML5</br>
+CSS3</br>
+JAVASCRIPT</br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h3>Libraries 💻</h3>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+React</br>
+Redux</br>
+Typescript</br>
+MongoDB</br>
+Express JS</br>
+Materil Ui</br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h3>Features ✨</h3>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<li>Authentication process undercover with Local Storage.</li>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<li>Dynamic Products, Wishlist page using Backend data.</li>
+<li>All the product description, prices, discounts, are updated in real time.</li>
+<h3>Responsibilities 💪</h3>
+<li>Built Product page where mapped all the relevant products data.</li>
 
-## Learn More
+<li>Added sorts and filters on the products page.</li>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<li>Built the cart page and added functionalities like increase or decrease quantity of products and also remove products from cart.</li>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<li>Made the description page and address page dynamic.</li>
+
+<li>Linked all the pages using routes and protected routes</li>
+
+<h3>Snap Shots 📷</h3>
+<p><bold>Home Page</bold></p>
+<img width="943" alt="image" src="https://user-images.githubusercontent.com/96160297/174466335-d8a23d12-f630-4b4b-8896-764cecc1d04b.png">
+
+
+
+Products Page
+<img width="938" alt="image" src="https://user-images.githubusercontent.com/96160297/174466317-495c42d2-364b-48ed-943c-94494858eb50.png">
+<img width="938" alt="image" src="https://user-images.githubusercontent.com/96160297/174466365-0eb82dab-db38-47eb-837d-ee1e407d64d7.png">
+
+
+
+
+
+<p>login Page</p>
+<img width="897" alt="image" src="https://user-images.githubusercontent.com/96160297/174466379-308ecd6c-6582-43ea-af09-12af569c41f1.png">
+<p>Cart page</>p
+<img width="933" alt="image" src="https://user-images.githubusercontent.com/96160297/174466431-f98d05eb-237e-4d88-b1b0-aac70e6455db.png">
+
+
+
+Contributors 😇</br>
+🧑‍💻 Saradhi
+</br>
+🧑‍💻 Devesh Goyal
+</br>
+🧑‍💻 Anand Biniya
+</br>
+🧑‍💻 Pankaj Kumar
+</br>
+🧑‍💻 Rahul Gour
+</br>
+👩‍💻 Saraswati
