@@ -8,10 +8,10 @@ A Collaborative project built by a team of 6 executed in 7 days.
 <h3><u>Demo 🎥</u></h3>
 
 
-Deployed Link:-
-[Enjoy the experience](https://www.google.com](https://best-buy-tawny.vercel.app/])</br>
+Deployed Link:
+[Enjoy the experience](https://best-buy-tawny.vercel.app/])</br>
 Blog:[Blog Link](https://medium.com/@corazonamith/clone-of-best-buy-com-83486e87301])</br>
-Presentation:[Presentation Video](https://medium.com/@corazonamith/clone-of-best-buy-com-83486e87301](https://drive.google.com/file/d/1TTDSmxuQi1zpt-2AkLsm66i5Iex2POEp/view?usp=drivesdk])
+Presentation:[Presentation Video](https://drive.google.com/file/d/1TTDSmxuQi1zpt-2AkLsm66i5Iex2POEp/view?usp=drivesdk])
 
  
 <img width="100" height="100" Justify-content="center" alt="image" src="https://user-images.githubusercontent.com/96160297/174466899-8f641fe2-3540-4808-9aec-91bf8e77c0a4.png">
