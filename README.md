@@ -11,7 +11,7 @@ A Collaborative project built by a team of 6 executed in 7 days.
 Deployed Link:- [Enjoy the experience](https://www.google.com](https://best-buy-tawny.vercel.app/))
 
  
-<img width="949" alt="image" src="https://user-images.githubusercontent.com/96160297/174465973-924983fe-4c18-4331-ab71-8862cf773bdc.png">
+<img width="100" height="100" Justify-content="center" alt="image" src="https://user-images.githubusercontent.com/96160297/174466899-8f641fe2-3540-4808-9aec-91bf8e77c0a4.png">
 In the project directory, you can run:
 
 npm start Runs the app in the development mode. Open http://localhost:3000 to view it in the browser. Run json server with db.json in port 8080
