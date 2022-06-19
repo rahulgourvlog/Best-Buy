@@ -12,7 +12,7 @@ A Collaborative project built by a team of 6 executed in 7 days.
 
 Deployed Link:
 - [Enjoy the experience](https://best-buy-tawny.vercel.app/)</br>
-- Blog:[Blog Link](https://medium.com/@corazonamith/clone-of-best-buy-com-83486e87301)</br>
+- Blog:[Blog Link](https://medium.com/@corazonamith/creating-best-buys-ecommerce-website-2968c0e98bad)</br>
 - Presentation:[Presentation Video](https://drive.google.com/file/d/1TTDSmxuQi1zpt-2AkLsm66i5Iex2POEp/view?usp=drivesdk)
 
  
