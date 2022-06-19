@@ -29,21 +29,14 @@ See the section about deployment for more information.
 
 Tech Stack 💻</h3>
 </br>
-HTML5</br>
-CSS3</br>
-JAVASCRIPT</br>
+<h1>FRONT END</h1>
+REACT with Typescript</br>
+MUI</br>
 
-
-<h3>Libraries 💻</h3>
-
-
-React</br>
-Redux</br>
-Typescript</br>
-MongoDB</br>
-Express JS</br>
-Materil Ui</br>
-
+<h1>BACK END</h1>
+NodeJS </br>
+EXPRESS </br>
+MongoDB </br>
 
 <h3>Features ✨</h3>
 
