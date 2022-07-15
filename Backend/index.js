@@ -13,7 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-const Connection = require("./storage/db.ts");
+const Connection = require("./storage/db");
 const cartRoute = require("./routes/cart.route");
 const bestProductRoute = require("./routes/bestProduct.route");
 const LoginRouter = require("./routes/Login");
