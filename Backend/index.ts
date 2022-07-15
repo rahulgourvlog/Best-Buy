@@ -1,5 +1,5 @@
 import express from "express";
-const Connection = require("./storage/db");
+const Connection = require("./storage/db.ts");
 const cartRoute = require("./routes/cart.route");
 const bestProductRoute = require("./routes/bestProduct.route");
 const LoginRouter = require("./routes/Login");
