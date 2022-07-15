@@ -20,7 +20,7 @@ const LoginRouter = require("./routes/Login");
 const cors = require("cors");
 let app = (0, express_1.default)();
 app.use(cors({
-    origin: ["http://localhost:3000","https://best-buy-tawny.vercel.app"],
+    origin: ["http://localhost:3000", "https://best-buy-tawny.vercel.app"],
 }));
 app.use(express_1.default.urlencoded({ extended: true }));
 app.use(express_1.default.json());

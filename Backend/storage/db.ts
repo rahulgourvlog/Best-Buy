@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
+require("dotenv").config();
 
-const Connection = mongoose.connect(
-  "mongodb+srv://Devesh26:2T-K-uVH56*tmf9@cluster0.tbzsaga.mongodb.net/?retryWrites=true&w=majority"
-);
+const Connection = mongoose.connect(process.env.MONGOLINK);
 
 module.exports = Connection;
