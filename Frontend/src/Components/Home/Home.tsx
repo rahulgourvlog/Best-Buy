@@ -94,8 +94,8 @@ export const Home = () => {
       <h1>Shop by category</h1>
       <div className='five'>
         <div>
-          <img src="https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt100fc1a0ee5fdd12/5d23bb6f8d27ea11c3822271/ht-20190712-homepage-ht-shopby.jpg?width=250&quality=80&auto=webp" alt="" />
-          <Link to={"/TVs"}><h5>TVs, Home Theatre, and Accessories</h5></Link>
+           <img src="https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt4cddcbaa288413ec/5f5a7640c0eb1d4aeabe8f7f/14882490.jpg?width=250&quality=80&auto=webp" alt="" />
+          <Link to={"/Wearable"}><h5>Wearable Technology</h5></Link>
         </div>
         <div>
           <img src="https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/bltad02379eb78e9028/5e28a49463d1b6503160ee40/computing-evergreen-category-icon-laptops.jpg?width=250&quality=80&auto=webp" alt="" />
@@ -126,8 +126,9 @@ export const Home = () => {
           <Link to={"/Video Games"}><h5>Video Games, Consoles, and Accessories</h5></Link>
         </div>
         <div>
-          <img src="https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt4cddcbaa288413ec/5f5a7640c0eb1d4aeabe8f7f/14882490.jpg?width=250&quality=80&auto=webp" alt="" />
-          <Link to={"/Wearable"}><h5>Wearable Technology</h5></Link>
+          <img src="https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt100fc1a0ee5fdd12/5d23bb6f8d27ea11c3822271/ht-20190712-homepage-ht-shopby.jpg?width=250&quality=80&auto=webp" alt="" />
+          <Link to={"/TVs"}><h5>TVs, Home Theatre, and Accessories</h5></Link>
+         
         </div>
         <div>
           <img src="https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt77b27294b5c07f31/5d9f83ee0767ca0e800b06fa/computing-evergreen-icon-pc-gaming.jpg?width=250&quality=80&auto=webp" alt="" />
